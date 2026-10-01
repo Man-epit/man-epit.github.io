@@ -1,0 +1,90 @@
+---
+// Shared detail layout for projects and hackathons/awards.
+import Media from './Media.astro';
+import Tags from './Tags.astro';
+import { DRAFT } from '../config';
+import { L } from '../lib';
+import { UI, type Lang } from '../i18n/ui';
+
+interface Props {
+  p: any; // entry data, with `title`
+  lang: Lang;
+  base: string; // URL folder of the list: "projects" | "events"
+  list: { slug: string; title: any }[]; // for the pager
+  specs: [string, string][];
+  meta: string;
+  badge?: string;
+  back: [string, string];
+  related: { slug: string; title: any }[];
+}
+const { p, lang, base, list, specs, meta, badge, back, related } = Astro.props;
+const t = UI[lang];
+const hidden = (k: string) => p.hide.includes(k);
+const show = (k: string, filled: unknown) => !hidden(k) && (Boolean(filled) || DRAFT);
+
+const i = list.findIndex((x) => x.slug === p.slug);
+const prev = list[(i - 1 + list.length) % list.length];
+const next = list[(i + 1) % list.length];
+
+const m = p.media;
+const specCells = specs.filter(([, v]) => v || DRAFT);
+const summary = L(p.summary, lang);
+const contextText = L(p.contextText, lang);
+const contrib = (L(p.contributions, lang) || []) as string[];
+const learned = L(p.learned, lang);
+const links = DRAFT ? p.links : p.links.filter((l: any) => l.url);
+const gallery = m.length > 1 ? m.slice(1) : t.shots.map((caption, j) => ({ type: j === 2 ? 'clip' : 'image', caption }));
+---
+<div class="crumb"><a href={back[0]}>{back[1]}</a></div>
+<div class="dhead">
+  <div class="meta" style="justify-content:flex-start;flex-wrap:wrap;gap:10px">
+    {badge && <span class="award">★ {badge}</span>}<span class="label">{meta}</span>
+  </div>
+  <h1>{L(p.title, lang)}</h1>
+  <p class="sum">{summary || <span class="todo">{t.summaryTodo}</span>}</p>
+  <div class="tags"><Tags tags={p.tags} /></div>
+</div>
+{show('specs', specCells.some(([, v]) => v)) && (
+  <div class="specs" style={`grid-template-columns:repeat(${specCells.length},1fr)`}>
+    {specCells.map(([k, v]) => <div><div class="label">{k}</div><div class="v">{v || <span class="todo">{t.toFill}</span>}</div></div>)}
+  </div>
+)}
+{(m[0] || DRAFT) && <Media m={m[0] ?? { type: 'clip', caption: t.heroMedia }} dir={p.slug} lang={lang} />}
+<div class="dgrid">
+  <div class="prose">
+    {show('context', contextText) && <div><h2>{t.context}</h2><p>{contextText || <span class="todo">{t.ctxTodo}</span>}</p></div>}
+    {show('did', contrib.length) && (
+      <div><h2>{t.did}</h2>{contrib.length ? <ul>{contrib.map((x) => <li>{x}</li>)}</ul> : <p><span class="todo">{t.didTodo}</span></p>}</div>
+    )}
+    {show('results', p.results.length) && (
+      <div><h2>{t.results}</h2>{p.results.length
+        ? <div class="results">{p.results.map((r: any) => <div><strong>{L(r.v, lang)}</strong><span>{L(r.l, lang)}</span></div>)}</div>
+        : <p><span class="todo">{t.resTodo}</span></p>}</div>
+    )}
+    {show('gallery', m.length > 1) && (
+      <div><h2>{t.gallery}</h2><div class="gallery">{gallery.map((x: any) => <Media m={x} dir={p.slug} lang={lang} cls="sq" sizes="(max-width: 640px) 50vw, 240px" />)}</div></div>
+    )}
+    {show('learned', learned) && <div><h2>{t.learned}</h2><p>{learned || <span class="todo">{t.learnTodo}</span>}</p></div>}
+  </div>
+  <aside class="side">
+    {show('links', links.length) && (
+      <div class="panel"><h3>{t.links}</h3><ul>
+        {links.length ? links.map((l: any) => <li>{l.url
+          ? <a href={l.url} target="_blank" rel="noopener">{L(l.label, lang)} ↗</a>
+          : <span class="todo">{L(l.label, lang)}: {t.linkTodo}</span>}</li>)
+        : <li><span class="todo">{t.noLinks}</span></li>}
+      </ul></div>
+    )}
+    {show('stack', p.tags.length) && (
+      <div class="panel"><h3>{t.stack}</h3><div class="tags" style="padding:0">{p.tags.length ? <Tags tags={p.tags} /> : <span class="todo">{t.toFill}</span>}</div></div>
+    )}
+    {related.length > 0 && !hidden('related') && (
+      <div class="panel"><h3>{t.related}</h3><div class="rel">{related.map((r) => <a href={`/${lang}/projects/${r.slug}/`}>{L(r.title, lang)}</a>)}</div></div>
+    )}
+  </aside>
+</div>
+{DRAFT && <p class="devnote" set:html={t.devnote} />}
+<nav class="pager" aria-label={back[1]}>
+  <a href={`/${lang}/${base}/${prev.slug}/`}><span class="label">{t.prev}</span><b>{L(prev.title, lang)}</b></a>
+  <a href={`/${lang}/${base}/${next.slug}/`}><span class="label">{t.next}</span><b>{L(next.title, lang)}</b></a>
+</nav>

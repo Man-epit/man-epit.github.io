@@ -1,0 +1,26 @@
+slug: wesc
+title: wesc
+category: emb
+year: ""
+status: done
+featured: false
+order: 70
+summary:
+  en: "Library that drives a VESC motor controller over UART: encodes commands (duty, current, RPM, servo…) and decodes telemetry with CRC checks."
+  fr: "Bibliothèque de pilotage d'un contrôleur moteur VESC en UART : encode les commandes (duty, courant, RPM, servo…) et décode la télémétrie avec vérification CRC."
+tags:
+  - C
+  - POSIX termios
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""
+related:
+  - RoboCar

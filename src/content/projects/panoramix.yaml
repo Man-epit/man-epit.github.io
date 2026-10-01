@@ -1,0 +1,27 @@
+slug: panoramix
+title: panoramix
+category: sys
+year: ""
+status: done
+featured: false
+order: 170
+summary:
+  en: "Concurrency exercise: one druid thread refills a shared potion pot for N villager threads, synchronised with a mutex and two semaphores."
+  fr: "Exercice de concurrence : un thread druide remplit une marmite de potion partagée par N threads villageois, synchronisés par un mutex et deux sémaphores."
+tags:
+  - C
+  - pthreads
+  - POSIX semaphores
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""
+related:
+  - plazza

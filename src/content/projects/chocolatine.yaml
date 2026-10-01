@@ -1,0 +1,27 @@
+slug: chocolatine
+title: chocolatine
+category: web
+year: ""
+status: done
+featured: false
+order: 250
+summary:
+  en: GitHub Actions CI/CD pipeline (style check → build → tests → mirror push) around a printf reimplementation.
+  fr: Pipeline CI/CD GitHub Actions (vérification du style → build → tests → push miroir) autour d'une réimplémentation de printf.
+tags:
+  - GitHub Actions
+  - C
+  - Criterion
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""
+related:
+  - octopus

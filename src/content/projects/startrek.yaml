@@ -1,0 +1,58 @@
+slug: startrek
+title: startrek
+category: ai
+year: ""
+status: done
+featured: true
+order: 60
+summary:
+  en: Deep Q-Network written from scratch that learns to land in Gymnasium's LunarLander, with YAML configs, baselines and multi-seed experiments. Reaches an average return of about 240.
+  fr: Deep Q-Network écrit de zéro qui apprend à atterrir dans LunarLander (Gymnasium), avec configs YAML, baselines et expériences multi-seeds. Atteint un retour moyen d'environ 240.
+role: ""
+team: ""
+context: ""
+contextText:
+  en: LunarLander counts as solved at an average return of 200. The goal was to get there with my own DQN and to prove the result holds across random seeds.
+  fr: LunarLander est considéré comme résolu à partir d'un retour moyen de 200. L'objectif était d'y arriver avec mon propre DQN et de prouver que le résultat tient sur plusieurs seeds.
+contributions:
+  en:
+    - DQN implementation written from scratch in PyTorch
+    - YAML configs to run experiments reproducibly
+    - Baselines and multi-seed runs to compare results fairly
+    - Learning curves plotted with Matplotlib
+  fr:
+    - Implémentation d'un DQN écrite de zéro en PyTorch
+    - Configs YAML pour des expériences reproductibles
+    - Baselines et exécutions multi-seeds pour comparer honnêtement
+    - Courbes d'apprentissage tracées avec Matplotlib
+results:
+  - v: ≈240
+    l:
+      en: average return (solved at 200)
+      fr: retour moyen (résolu à 200)
+tags:
+  - Python
+  - PyTorch
+  - Gymnasium
+  - NumPy
+  - Matplotlib
+media:
+  - type: clip
+    src: ""
+    caption:
+      en: Trained agent landing
+      fr: L'agent entraîné qui atterrit
+  - type: image
+    src: ""
+    caption:
+      en: Learning curve across seeds
+      fr: Courbe d'apprentissage sur plusieurs seeds
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""
+related:
+  - machine_learning
+  - Robocar-Racing_Simulator
+learned: ""

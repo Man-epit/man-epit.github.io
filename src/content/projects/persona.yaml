@@ -1,0 +1,30 @@
+slug: persona
+title: persona
+category: ai
+year: ""
+status: done
+featured: false
+order: 110
+summary:
+  en: "Chat-controlled AI newsletter service: sign-up with an email code, encrypted user data, prompt-injection guardrails, hourly free and premium newsletters, and GDPR deletion."
+  fr: "Service de newsletters IA piloté par chat : inscription par code e-mail, données utilisateur chiffrées, protections contre l'injection de prompts, newsletters gratuites et premium toutes les heures, et suppression RGPD."
+tags:
+  - n8n
+  - PostgreSQL
+  - Docker Compose
+  - Mistral
+  - Tavily
+  - SMTP
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""
+related:
+  - codename

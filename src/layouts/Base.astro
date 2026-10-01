@@ -1,0 +1,61 @@
+---
+import '../styles/global.css';
+import { getProfile } from '../lib';
+import { UI, LANGS, type Lang } from '../i18n/ui';
+
+interface Props { lang: Lang; title?: string; description?: string; page?: 'home' | 'projects' | 'events' }
+const { lang, title, description, page } = Astro.props;
+const t = UI[lang];
+const profile = await getProfile();
+const path = Astro.url.pathname;
+const swap = (l: Lang) => path.replace(/^\/(en|fr)(?=\/|$)/, `/${l}`);
+const items = [['home', t.home, `/${lang}/`, ''], ['projects', t.projects, `/${lang}/projects/`, ''], ['events', t.hackathons, `/${lang}/#events`, 'hide-sm'], ['contact', t.contact, `/${lang}/#contact`, '']];
+---
+<!doctype html>
+<html lang={lang}>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title ? `${title} · ${profile.name}` : `${profile.name} Portfolio`}</title>
+  {description && <meta name="description" content={description} />}
+  {LANGS.map((l) => <link rel="alternate" hreflang={l} href={swap(l)} />)}
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href={`/${lang}/`}>manny<span>.</span>bm</a>
+      <div class="nav-r">
+        <ul>
+          {items.map(([k, label, href, cls]) => <li class={cls}><a class="l" href={href} aria-current={k === page ? 'page' : undefined}>{label}</a></li>)}
+        </ul>
+        <div class="lang" role="group" aria-label="Language / Langue">
+          {LANGS.map((l) => <a href={swap(l)} hreflang={l} aria-current={l === lang ? 'true' : undefined}>{l.toUpperCase()}</a>)}
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="wrap">
+    <slot />
+    <footer><span>© {new Date().getFullYear()} {profile.name}</span><span class="mono">{profile.location} · {profile.coords}</span></footer>
+  </main>
+  <script>
+    // Clips play only while visible.
+    const io = new IntersectionObserver((es) => es.forEach((e) => {
+      const v = e.target as HTMLVideoElement;
+      if (e.isIntersecting) v.play().catch(() => {}); else v.pause();
+    }));
+    document.querySelectorAll('video[data-clip]').forEach((v) => io.observe(v));
+    // YouTube facade: the iframe loads on click.
+    document.querySelectorAll<HTMLButtonElement>('button[data-yt]').forEach((b) => b.addEventListener('click', () => {
+      const f = document.createElement('div');
+      f.className = b.className;
+      f.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${b.dataset.yt}?autoplay=1" title="${b.getAttribute('aria-label') ?? ''}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
+      b.replaceWith(f);
+    }));
+  </script>
+</body>
+</html>

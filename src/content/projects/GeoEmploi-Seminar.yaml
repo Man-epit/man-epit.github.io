@@ -1,0 +1,28 @@
+slug: GeoEmploi-Seminar
+title: GeoEmploi-Seminar
+category: web
+year: ""
+status: done
+featured: false
+order: 360
+summary:
+  en: "Map-first job board prototype: IGN map tiles through a caching proxy, commune-level geolocation with revocable consent, an accessible no-JS fallback and Lambert-93 exports."
+  fr: "Prototype de site d'emploi centré sur la carte : tuiles IGN via un proxy de cache, géolocalisation à la commune avec consentement révocable, version accessible sans JS et exports en Lambert-93."
+tags:
+  - FastAPI
+  - Jinja2
+  - JavaScript
+  - PostgreSQL
+  - Redis
+  - Docker Compose
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""

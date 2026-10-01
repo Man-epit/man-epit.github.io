@@ -1,0 +1,23 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Detail from '../../../components/Detail.astro';
+import { L, getEvents, getProjects, resolveRelated } from '../../../lib';
+import { UI, LANGS, type Lang } from '../../../i18n/ui';
+
+export async function getStaticPaths() {
+  const events = (await getEvents()).map((e) => ({ ...e.data, title: e.data.name }));
+  const projects = await getProjects();
+  return LANGS.flatMap((lang) => events.map((e) => ({ params: { lang, slug: e.slug }, props: { events, projects } })));
+}
+const lang = Astro.params.lang as Lang;
+const { events, projects } = Astro.props;
+const t = UI[lang];
+const e = events.find((x) => x.slug === Astro.params.slug)!;
+const related = resolveRelated(e.related, projects, e.slug).map((r) => r.data);
+---
+<Base lang={lang} page="events" title={L(e.name, lang)} description={L(e.summary, lang) || undefined}>
+  <Detail p={e} lang={lang} base="events" list={events} back={[`/${lang}/#events`, t.backEvents]}
+    meta={L(e.format, lang)} badge={L(e.result, lang)}
+    specs={[[t.result, L(e.result, lang)], [t.date, L(e.when, lang)], [t.format, L(e.format, lang)], [t.role, L(e.role, lang)]]}
+    related={related} />
+</Base>

@@ -1,0 +1,9 @@
+---
+// "/" → /fr/ for French browsers, /en/ otherwise.
+---
+<!doctype html>
+<meta charset="utf-8" />
+<title>Manny Bray-Mahinc</title>
+<meta http-equiv="refresh" content="0;url=/en/" />
+<script is:inline>location.replace((navigator.language || '').toLowerCase().startsWith('fr') ? '/fr/' : '/en/');</script>
+<a href="/en/">English</a> · <a href="/fr/">Français</a>

@@ -1,0 +1,54 @@
+slug: edf-dispatch
+title:
+  en: Cyclone crew dispatch
+  fr: Affectation des équipes cyclone
+category: work
+year: "2025"
+status: delivered
+featured: true
+order: 30
+summary:
+  en: Tool that assigns field crews during cyclone crises. Cut processing time from 2–4 hours to 15–30 minutes.
+  fr: Outil d'affectation des équipes terrain pendant les crises cycloniques. Temps de traitement réduit de 2–4 heures à 15–30 minutes.
+role:
+  en: Data analyst & automation developer
+  fr: Data analyst & développeur automatisation
+team:
+  en: EDF, 6 months
+  fr: EDF, 6 mois
+context:
+  en: Internship at EDF
+  fr: Stage chez EDF
+contextText:
+  en: During a cyclone, EDF has to decide quickly which crews go where. The assignment was done by hand and took hours.
+  fr: Pendant un cyclone, EDF doit décider vite quelle équipe part où. L'affectation se faisait à la main et prenait des heures.
+contributions:
+  en:
+    - Analysed operational and financial data and proposed improvements to data collection
+    - Designed and built the crew-assignment tool in Svelte and Supabase
+  fr:
+    - Analyse des données opérationnelles et financières, avec des propositions pour améliorer leur collecte
+    - Conception et développement de l'outil d'affectation en Svelte et Supabase
+results:
+  - v: 2–4h → 15–30min
+    l:
+      en: crew assignment time
+      fr: temps d'affectation des équipes
+tags:
+  - Svelte
+  - Supabase
+  - Data analysis
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Anonymised screenshot (check with EDF first)
+      fr: Capture anonymisée (à valider avec EDF)
+  - type: image
+    src: ""
+    caption:
+      en: Before/after process diagram
+      fr: Schéma du processus avant/après
+hide:
+  - links
+learned: ""

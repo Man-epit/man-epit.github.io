@@ -1,0 +1,38 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Tags from '../../../components/Tags.astro';
+import Media from '../../../components/Media.astro';
+import { CATEGORIES } from '../../../config';
+import { L, getProjects, catLabel } from '../../../lib';
+import { UI, LANGS, type Lang } from '../../../i18n/ui';
+
+export const getStaticPaths = () => LANGS.map((lang) => ({ params: { lang } }));
+const lang = Astro.params.lang as Lang;
+const t = UI[lang];
+const projects = await getProjects();
+const used = (Object.keys(CATEGORIES) as (keyof typeof CATEGORIES)[]).filter((k) => projects.some((p) => p.data.category === k));
+const chips: [string, string, number][] = [['all', t.all, projects.length], ...used.map((k): [string, string, number] => [k, catLabel(k, lang), projects.filter((p) => p.data.category === k).length])];
+---
+<Base lang={lang} page="projects" title={t.projects}>
+  <div class="phead"><h1>{t.projects}</h1><p>{t.projIntro(projects.length)}</p></div>
+  <div class="filters" role="group" aria-label={t.filterBy}>
+    {chips.map(([k, label, n]) => <button type="button" class="chip" data-c={k} aria-pressed={k === 'all' ? 'true' : 'false'}>{label}<span class="n">{n}</span></button>)}
+  </div>
+  <div class="plist" id="plist">{projects.map(({ data: p }) => (
+    <a class="prow" href={`/${lang}/projects/${p.slug}/`} data-c={p.category}>
+      <Media m={p.media[0] ?? { type: 'image' }} dir={p.slug} lang={lang} inLink sizes="(max-width: 540px) 100vw, 360px" />
+      <span class="nm">{p.featured ? '★ ' : ''}{L(p.title, lang)}</span>
+      <div class="tags"><Tags tags={p.tags} /></div>
+    </a>
+  ))}</div>
+  <div style="height:48px"></div>
+</Base>
+
+<script>
+  const chips = document.querySelectorAll<HTMLButtonElement>('.chip');
+  chips.forEach((ch) => ch.addEventListener('click', () => {
+    const c = ch.dataset.c;
+    chips.forEach((x) => x.setAttribute('aria-pressed', String(x === ch)));
+    document.querySelectorAll<HTMLElement>('#plist .prow').forEach((r) => (r.hidden = !(c === 'all' || r.dataset.c === c)));
+  }));
+</script>

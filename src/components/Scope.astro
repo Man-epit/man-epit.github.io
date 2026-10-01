@@ -1,0 +1,22 @@
+---
+// Oscilloscope trace in the hero (static SVG, drawn at build time).
+const { coords } = Astro.props as { coords: string };
+let d = 'M0 60';
+for (let x = 0; x <= 600; x += 6) {
+  let y;
+  if (x < 150) y = 60 + Math.sin(x * 0.21) * 6 + Math.sin(x * 0.07) * 4;
+  else if (x < 450) y = Math.floor((x - 150) / 50) % 2 === 0 ? 28 : 92;
+  else y = 60 + Math.sin(x * 0.15) * 22 * Math.exp(-(x - 450) / 60);
+  d += ` L${x} ${y.toFixed(1)}`;
+}
+---
+<div class="scope" aria-hidden="true">
+  <svg viewBox="0 0 600 120">
+    <g class="grid">
+      {[...Array(7)].map((_, i) => <line x1={i * 100} y1="0" x2={i * 100} y2="120" />)}
+      {[...Array(5)].map((_, i) => <line x1="0" y1={i * 30} x2="600" y2={i * 30} />)}
+    </g>
+    <path class="trace" d={d} />
+  </svg>
+  <div class="read"><span class="label">CH1 · UART 115200 baud</span><span class="label">{coords}</span></div>
+</div>

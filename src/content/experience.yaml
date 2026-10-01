@@ -1,0 +1,42 @@
+- id: work-epitech-02-2026-now
+  type: work
+  when:
+    en: 02/2026 – now
+    fr: 02/2026 – auj.
+  org: Epitech
+  role:
+    en: Teaching assistant
+    fr: Assistant pédagogique
+- id: work-edf-07-2025-12-2025
+  type: work
+  when: 07/2025 – 12/2025
+  org: EDF
+  role:
+    en: Data analyst & automation developer
+    fr: Data analyst & développeur automatisation
+  note:
+    en: "Cyclone crew dispatch: <b>2–4h → 15–30min</b>"
+    fr: "Affectation des équipes cyclone : <b>2–4h → 15–30min</b>"
+- id: edu-epitech-2024-now
+  type: edu
+  when:
+    en: 2024 – now
+    fr: 2024 – auj.
+  org: Epitech
+  role:
+    en: Programme Grande École, 3rd year
+    fr: Programme Grande École, 3e année
+- id: edu-universite-de-la-re-union-2023-2024
+  type: edu
+  when: 2023 – 2024
+  org: Université de La Réunion
+  role:
+    en: Double degree, Maths & CS
+    fr: Double licence Maths-Info
+- id: edu-baccalaure-at-ge-ne-ral-2023
+  type: edu
+  when: "2023"
+  org: Baccalauréat Général
+  role:
+    en: Independent candidate
+    fr: Candidat libre

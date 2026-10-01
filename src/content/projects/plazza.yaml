@@ -1,0 +1,27 @@
+slug: plazza
+title: plazza
+category: sys
+year: ""
+status: done
+featured: false
+order: 160
+summary:
+  en: "Pizzeria simulator: a reception process forks kitchens on demand, each with a thread pool of cooks and a refilling stock, communicating over named pipes with a binary protocol."
+  fr: "Simulateur de pizzeria : la réception crée des cuisines (fork) à la demande, chacune avec un pool de threads cuisiniers et un stock qui se recharge, communiquant par tubes nommés avec un protocole binaire."
+tags:
+  - C++20
+  - std::thread
+  - POSIX fork/mkfifo
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""
+related:
+  - panoramix

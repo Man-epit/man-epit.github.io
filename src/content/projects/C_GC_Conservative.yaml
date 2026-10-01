@@ -1,0 +1,24 @@
+slug: C_GC_Conservative
+title: C_GC_Conservative
+category: sys
+year: ""
+status: done
+featured: false
+order: 180
+summary:
+  en: "Conservative mark-and-sweep garbage collector for C: scans the stack for roots, follows pointers through the heap and supports interior pointers."
+  fr: "Ramasse-miettes conservatif mark-and-sweep pour le C : parcourt la pile pour trouver les racines, suit les pointeurs dans le tas et gère les pointeurs internes."
+tags:
+  - C
+  - GNU C builtins
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""

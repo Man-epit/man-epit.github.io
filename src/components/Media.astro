@@ -1,0 +1,49 @@
+---
+// One media item: image (astro:assets), clip (muted looping MP4), youtube (facade) or,
+// while `src` is empty, the dashed placeholder from the prototype.
+import { Picture, getImage } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import { L } from '../lib';
+import { UI, type Lang } from '../i18n/ui';
+
+interface Props {
+  m: { type: 'image' | 'clip' | 'youtube'; src?: string; poster?: string; caption?: any };
+  dir: string; // folder in src/assets/media/
+  lang: Lang;
+  cls?: string;
+  inLink?: boolean; // inside a card link: no play button, no iframe
+  sizes?: string;
+}
+const { m, dir, lang, cls = '', inLink = false, sizes = '(max-width: 1112px) 100vw, 1080px' } = Astro.props;
+const t = UI[lang];
+const caption = L(m.caption, lang);
+
+const images = import.meta.glob<ImageMetadata>('/src/assets/media/**/*.{jpg,jpeg,png,webp,avif}', { eager: true, import: 'default' });
+const clips = import.meta.glob<string>('/src/assets/media/**/*.{mp4,webm}', { eager: true, query: '?url', import: 'default' });
+const find = <T,>(set: Record<string, T>, name: string) => {
+  const hit = set[`/src/assets/media/${dir}/${name}`];
+  if (!hit) throw new Error(`Media not found: src/assets/media/${dir}/${name}`);
+  return hit;
+};
+
+const src = m.src ?? '';
+const image = src && m.type === 'image' ? find(images, src) : undefined;
+const clip = src && m.type === 'clip' ? find(clips, src) : undefined;
+// Clip poster: `poster`, or <name>.poster.webp written by `npm run media`.
+const posterName = m.poster ?? src.replace(/\.[^.]+$/, '.poster.webp');
+const posterImg = clip ? images[`/src/assets/media/${dir}/${posterName}`] : undefined;
+const poster = posterImg ? (await getImage({ src: posterImg, width: 1280, format: 'webp' })).src : undefined;
+---
+{image && <Picture src={image} alt={caption} formats={['avif', 'webp']} widths={[480, 960, 1600]} sizes={sizes} class:list={['media', cls]} />}
+{clip && <video class:list={['media', cls]} src={clip} poster={poster} muted loop playsinline preload="none" data-clip aria-label={caption}></video>}
+{src && m.type === 'youtube' && (inLink
+  ? <img class:list={['media', cls]} src={`https://i.ytimg.com/vi/${src}/hqdefault.jpg`} alt={caption} loading="lazy" />
+  : <button type="button" class:list={['yt', cls]} data-yt={src} aria-label={`${t.play}: ${caption}`}>
+      <img src={`https://i.ytimg.com/vi/${src}/hqdefault.jpg`} alt="" loading="lazy" /><span class="play" aria-hidden="true">▶</span>
+    </button>)}
+{!src && (
+  <div class:list={['ph', cls]}>
+    <span class="k">{m.type === 'image' ? t.image : t.video}</span>
+    <span class="d">{caption || t.mediaHere}</span>
+  </div>
+)}

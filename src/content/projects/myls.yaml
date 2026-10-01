@@ -1,0 +1,25 @@
+slug: myls
+title: myls
+category: sys
+year: ""
+status: done
+featured: false
+order: 200
+summary:
+  en: Reimplementation of ls with -l -a -r -R -d -t, using only low-level system calls and a hand-written my_printf.
+  fr: Réimplémentation de ls avec -l -a -r -R -d -t, uniquement avec des appels système bas niveau et un my_printf maison.
+tags:
+  - C
+  - POSIX
+  - Criterion
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""

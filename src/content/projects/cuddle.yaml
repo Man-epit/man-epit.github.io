@@ -1,0 +1,24 @@
+slug: cuddle
+title: cuddle
+category: low
+year: ""
+status: done
+featured: false
+order: 240
+summary:
+  en: "Small pandas-like dataframe library: CSV load/save, type inference, head/tail, describe, filter, sort, apply, groupby."
+  fr: "Petite bibliothèque de dataframes inspirée de pandas : lecture/écriture CSV, inférence de types, head/tail, describe, filter, sort, apply, groupby."
+tags:
+  - C
+  - libm
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""

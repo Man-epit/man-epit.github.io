@@ -1,0 +1,18 @@
+- id: epitech-lego-challenge-epitech-students-take-on-ai
+  outlet: Epitech
+  title:
+    en: "LEGO challenge: Epitech students take on AI"
+    fr: "Défi Lego connectés : les étudiants Epitech se challengent autour de l'IA"
+  when:
+    en: Oct 2025
+    fr: oct. 2025
+  url: https://www.epitech.eu/2025/10/10/defi-intelligence-artificielle-formation-epitech/
+- id: linkedin-anthony-palasse-epitech-ai-projects-at-the-pre-fecture-de-la-re-union
+  outlet: LinkedIn · Anthony Palasse
+  title:
+    en: Epitech AI projects at the Préfecture de La Réunion
+    fr: L'IA made in Epitech à la Préfecture de La Réunion
+  when:
+    en: Jul 2026
+    fr: juil. 2026
+  url: https://www.linkedin.com/in/anthonypalasse/

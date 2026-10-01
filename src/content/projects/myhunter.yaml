@@ -1,0 +1,24 @@
+slug: myhunter
+title: myhunter
+category: gfx
+year: ""
+status: done
+featured: false
+order: 340
+summary:
+  en: Duck Hunt-style shooting game with animated birds, menu, pause and lives.
+  fr: Jeu de tir façon Duck Hunt avec oiseaux animés, menu, pause et vies.
+tags:
+  - C
+  - CSFML
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""

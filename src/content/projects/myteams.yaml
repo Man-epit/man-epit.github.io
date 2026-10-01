@@ -1,0 +1,28 @@
+slug: myteams
+title: myteams
+category: sys
+year: ""
+status: done
+featured: false
+order: 140
+summary:
+  en: "Microsoft Teams-like chat: a single-threaded poll(2) TCP server and a terminal client, with teams → channels → threads → replies, private messages, live notifications and file persistence."
+  fr: "Messagerie type Microsoft Teams : serveur TCP mono-thread sur poll(2) et client terminal, avec équipes → canaux → fils → réponses, messages privés, notifications en direct et persistance sur fichier."
+tags:
+  - Rust
+  - FFI
+  - C
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""
+related:
+  - myftp
+  - Zappy

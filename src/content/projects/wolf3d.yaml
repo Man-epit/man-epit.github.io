@@ -1,0 +1,24 @@
+slug: wolf3d
+title: wolf3d
+category: gfx
+year: ""
+status: done
+featured: false
+order: 320
+summary:
+  en: Wolfenstein 3D-style raycasting engine with textured walls, 27 maps, a minimap and a small TCP relay server for multiplayer.
+  fr: "Moteur de raycasting façon Wolfenstein 3D : murs texturés, 27 cartes, minimap et petit serveur relais TCP pour le multijoueur."
+tags:
+  - C
+  - CSFML
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""

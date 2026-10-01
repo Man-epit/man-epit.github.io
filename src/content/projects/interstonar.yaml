@@ -1,0 +1,24 @@
+slug: interstonar
+title: interstonar
+category: algo
+year: ""
+status: done
+featured: false
+order: 280
+summary:
+  en: "Physics CLI: sphere tracing over signed distance functions to find what a rock hits, plus an N-body gravity simulation with collisions."
+  fr: "Outil de physique en ligne de commande : sphere tracing sur des fonctions de distance signée pour savoir ce que touche une roche, et simulation gravitationnelle à N corps avec collisions."
+tags:
+  - Python 3.11
+  - VPython
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""

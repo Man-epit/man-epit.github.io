@@ -1,0 +1,29 @@
+slug: myftp
+title: myftp
+category: sys
+year: ""
+status: done
+featured: false
+order: 150
+summary:
+  en: "Multi-client FTP server (RFC 959 subset) on raw sockets and poll(2): login, PASV/PORT, LIST/RETR/STOR/DELE, each client jailed to its root directory."
+  fr: "Serveur FTP multi-clients (sous-ensemble de la RFC 959) sur sockets bruts et poll(2) : login, PASV/PORT, LIST/RETR/STOR/DELE, chaque client confiné dans son répertoire racine."
+tags:
+  - C
+  - POSIX sockets
+  - poll
+  - fork
+  - Criterion
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""
+related:
+  - myteams

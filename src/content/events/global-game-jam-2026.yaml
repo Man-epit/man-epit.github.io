@@ -1,0 +1,42 @@
+slug: global-game-jam-2026
+name: Global Game Jam 2026
+order: 60
+result:
+  en: Participant
+  fr: Participant
+when: 01/2026
+format:
+  en: 48h · team of 6
+  fr: 48h · équipe de 6
+role: ""
+summary:
+  en: Built a game in C++ on our own engine, written from scratch during the jam.
+  fr: Jeu en C++ sur notre propre moteur, écrit de zéro pendant la jam.
+contextText: ""
+tags:
+  - C++
+media:
+  - type: clip
+    src: ""
+    caption:
+      en: Gameplay recording
+      fr: Capture de gameplay
+  - type: image
+    src: ""
+    caption:
+      en: Engine architecture
+      fr: Architecture du moteur
+  - type: image
+    src: ""
+    caption:
+      en: Team photo
+      fr: Photo d'équipe
+links:
+  - label:
+      en: Game page (globalgamejam.org)
+      fr: Page du jeu (globalgamejam.org)
+    url: ""
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""

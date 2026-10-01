@@ -1,0 +1,25 @@
+profile:
+  name: Manny Bray-Mahinc
+  pitch:
+    en: 3rd-year student in Epitech's Programme Grande École, looking for a 4-month internship from April 2027.
+    fr: Étudiant en 3e année du Programme Grande École d'Epitech, à la recherche d'un stage de 4 mois à partir d'avril 2027.
+  location: La Réunion, France
+  coords: 21.1°S 55.5°E
+  email: braymahinc@gmail.com
+  linkedin: https://www.linkedin.com/in/manny-bray-mahinc
+  github: ""
+  cv:
+    en: ""
+    fr: ""
+  portrait:
+    type: image
+    src: ""
+    caption:
+      en: Portrait photo, or you working on the car
+      fr: Photo portrait, ou toi en train de travailler sur la voiture
+  pressPhoto:
+    type: image
+    src: ""
+    caption:
+      en: "Photo: Préfecture demo or BDE event"
+      fr: "Photo : démo à la Préfecture ou événement BDE"

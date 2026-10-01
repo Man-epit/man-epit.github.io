@@ -1,0 +1,28 @@
+slug: tardis
+title: tardis
+category: ai
+year: ""
+status: done
+featured: false
+order: 130
+summary:
+  en: "SNCF train-delay project: data cleaning, exploratory analysis, delay and cancellation models, and a Streamlit dashboard."
+  fr: "Projet sur les retards SNCF : nettoyage des données, analyse exploratoire, modèles de retard et d'annulation, et tableau de bord Streamlit."
+tags:
+  - Python
+  - pandas
+  - scikit-learn
+  - seaborn
+  - Streamlit
+  - Jupyter
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""

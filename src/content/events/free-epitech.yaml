@@ -1,0 +1,41 @@
+slug: free-epitech
+name: Free × Epitech
+order: 20
+result:
+  en: 2nd place
+  fr: 2e place
+when: ""
+format:
+  en: 1 week · team of 4
+  fr: 1 semaine · équipe de 4
+role: ""
+summary:
+  en: App showing network quality for any address, with a 3D map of towers and signal rays, plus an algorithm that places new towers to cover dead zones.
+  fr: Application qui affiche la qualité réseau pour une adresse, avec une carte 3D des antennes et des rayons de signal, et un algorithme qui place de nouvelles antennes pour couvrir les zones blanches.
+contextText: ""
+media:
+  - type: clip
+    src: ""
+    caption:
+      en: "Demo: address search → network quality"
+      fr: "Démo : recherche d'adresse → qualité réseau"
+  - type: image
+    src: ""
+    caption:
+      en: 3D map with towers and signal rays
+      fr: Carte 3D avec antennes et rayons
+  - type: image
+    src: ""
+    caption:
+      en: Tower placement covering dead zones
+      fr: Placement d'antennes sur les zones blanches
+  - type: image
+    src: ""
+    caption:
+      en: Team photo
+      fr: Photo d'équipe
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""

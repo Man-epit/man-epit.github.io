@@ -1,0 +1,30 @@
+- id: president-student-union-bde
+  role:
+    en: President, Student Union (BDE)
+    fr: Président du BDE
+  when:
+    en: 2025 – now
+    fr: 2025 – auj.
+  text:
+    en: Lead the team, manage the budget and organise campus events.
+    fr: Direction de l'équipe, gestion du budget et organisation des événements du campus.
+- id: company-ambassador
+  role:
+    en: Company Ambassador
+    fr: Ambassadeur entreprises
+  when:
+    en: 2026 – now
+    fr: 2026 – auj.
+  text:
+    en: Represent students to Epitech La Réunion's partner companies.
+    fr: Représentation des étudiants auprès des entreprises partenaires d'Epitech La Réunion.
+- id: amateur-radio-licence-anfr
+  role:
+    en: Amateur radio licence (ANFR)
+    fr: Licence de radioamateur (ANFR)
+  when:
+    en: In progress
+    fr: En cours
+  text:
+    en: "Self-taught preparation: hardware engineering and signal transmission."
+    fr: "Préparation en autodidacte : électronique et transmission du signal."

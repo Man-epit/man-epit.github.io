@@ -1,0 +1,33 @@
+slug: crealise
+name: Crealise
+order: 30
+result:
+  en: 2nd place
+  fr: 2e place
+when: ""
+format:
+  en: Joined a Crealise team
+  fr: Intégré à une équipe Crealise
+role:
+  en: Technical lead (only Epitech student)
+  fr: Référent technique (seul étudiant Epitech)
+summary:
+  en: Brought Epitech's technical side to a design team. We designed an app for people in distress, in response to growing isolation among people who use AI as a friend or therapist.
+  fr: J'ai apporté le regard technique d'Epitech à une équipe de design. Nous avons conçu une application pour les personnes en détresse, face à l'isolement croissant de ceux qui utilisent l'IA comme ami ou comme psy.
+contextText: ""
+media:
+  - type: image
+    src: ""
+    caption:
+      en: App mockups
+      fr: Maquettes de l'application
+  - type: image
+    src: ""
+    caption:
+      en: Team at work
+      fr: L'équipe au travail
+  - type: image
+    src: ""
+    caption:
+      en: Final presentation
+      fr: Présentation finale

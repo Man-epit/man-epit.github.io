@@ -1,0 +1,25 @@
+slug: my_world
+title: my_world
+category: gfx
+year: ""
+status: done
+featured: false
+order: 330
+summary:
+  en: "Isometric terrain editor: raise and lower points, resize the grid, zoom, textures by height."
+  fr: "Éditeur de terrain isométrique : monter et baisser des points, redimensionner la grille, zoomer, textures selon l'altitude."
+tags:
+  - C
+  - CSFML
+  - Criterion
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""

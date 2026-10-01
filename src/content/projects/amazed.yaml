@@ -1,0 +1,24 @@
+slug: amazed
+title: amazed
+category: algo
+year: ""
+status: done
+featured: false
+order: 260
+summary:
+  en: Moves robots through a graph of rooms and tunnels read from stdin, spreading them across shortest paths so only one robot occupies a room per turn.
+  fr: Déplace des robots dans un graphe de salles et de tunnels lu sur stdin, en les répartissant sur les plus courts chemins pour qu'un seul robot occupe chaque salle à chaque tour.
+tags:
+  - C
+  - Criterion
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""

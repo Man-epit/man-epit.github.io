@@ -1,0 +1,25 @@
+slug: mytop
+title: mytop
+category: sys
+year: ""
+status: done
+featured: false
+order: 190
+summary:
+  en: "Clone of Linux top: reads /proc and redraws the header (load, tasks, CPU, memory) and a process table every 3 s."
+  fr: "Clone de top : lit /proc et rafraîchit l'en-tête (charge, tâches, CPU, mémoire) et la table des processus toutes les 3 s."
+tags:
+  - C
+  - ncurses
+  - /proc
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""

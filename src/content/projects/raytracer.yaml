@@ -1,0 +1,28 @@
+slug: raytracer
+title: raytracer
+category: gfx
+year: ""
+status: done
+featured: false
+order: 300
+summary:
+  en: "Multithreaded CPU raytracer: libconfig scenes, shapes and lights as dlopen plugins, BVH, reflection and refraction, .obj import and progressive rendering."
+  fr: "Raytracer CPU multithreadé : scènes libconfig, formes et lumières en plugins dlopen, BVH, réflexion et réfraction, import .obj et rendu progressif."
+tags:
+  - C++20
+  - CMake
+  - SFML
+  - libconfig++
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""
+related:
+  - arcade

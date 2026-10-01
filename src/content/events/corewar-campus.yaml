@@ -1,0 +1,33 @@
+slug: corewar-campus
+name: Corewar
+order: 50
+result:
+  en: 1st of campus
+  fr: 1er du campus
+when: "2025"
+format:
+  en: End-of-1st-year project
+  fr: Projet de fin de 1re année
+summary:
+  en: "Ranked first on the campus for the 1st-year final project: a Core War virtual machine with an OpenGL view of the battle in memory."
+  fr: "Classé premier du campus au projet de fin de 1re année : une machine virtuelle Core War avec une vue OpenGL du combat en mémoire."
+tags:
+  - C
+  - OpenGL
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Final defence / ranking
+      fr: Soutenance finale / classement
+  - type: clip
+    src: ""
+    caption:
+      en: OpenGL battle view
+      fr: Vue OpenGL du combat
+related:
+  - corewar
+  - robot_factory
+hide:
+  - did
+  - learned

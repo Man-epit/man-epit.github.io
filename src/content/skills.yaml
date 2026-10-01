@@ -1,0 +1,47 @@
+- id: languages
+  group:
+    en: Languages
+    fr: Langages
+  items:
+    - C
+    - C++
+    - Rust
+    - Python
+    - JavaScript
+    - Haskell
+- id: embedded-systems
+  group:
+    en: Embedded & systems
+    fr: Embarqué & systèmes
+  items:
+    - NVIDIA Jetson
+    - UART / termios
+    - POSIX sockets
+    - pthreads
+    - Linux /proc
+    - systemd
+- id: ai-data
+  group:
+    en: AI & data
+    fr: IA & data
+  items:
+    - PyTorch
+    - TensorFlow/Keras
+    - scikit-learn
+    - pandas
+    - Gymnasium
+    - Gemini
+    - Ollama
+- id: web-devops-tools
+  group:
+    en: Web, DevOps & tools
+    fr: Web, DevOps & outils
+  items:
+    - Git
+    - Docker Compose
+    - Ansible
+    - GitHub Actions
+    - Svelte
+    - Supabase
+    - FastAPI
+    - n8n

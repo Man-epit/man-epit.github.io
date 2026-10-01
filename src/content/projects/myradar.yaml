@@ -1,0 +1,24 @@
+slug: myradar
+title: myradar
+category: gfx
+year: ""
+status: done
+featured: false
+order: 350
+summary:
+  en: "2D air-traffic simulation: aircraft and control towers read from a script and drawn at 60 FPS."
+  fr: "Simulation 2D de trafic aérien : avions et tours de contrôle lus depuis un script et affichés à 60 FPS."
+tags:
+  - C
+  - CSFML
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""

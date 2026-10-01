@@ -1,0 +1,25 @@
+slug: setting_up
+title: setting_up
+category: algo
+year: ""
+status: done
+featured: false
+order: 270
+summary:
+  en: "Biggest-square (BSQ) solver in one dynamic-programming pass, from a file or a generated map. Bonus: largest cube in 3D with a raylib viewer."
+  fr: "Recherche du plus grand carré (BSQ) en une passe de programmation dynamique, depuis un fichier ou une carte générée. Bonus : plus grand cube en 3D avec un visualiseur raylib."
+tags:
+  - C
+  - raylib
+  - Criterion
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""

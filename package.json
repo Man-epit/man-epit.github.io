@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "DRAFT=true astro dev",
+    "build": "astro build",
+    "build:draft": "DRAFT=true astro build",
+    "preview": "astro preview",
+    "media": "node scripts/compress-media.mjs",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "astro": "^7.3.5",
+    "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@types/node": "^24.19.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=22.12"
+  }
+}

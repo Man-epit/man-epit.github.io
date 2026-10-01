@@ -1,0 +1,27 @@
+slug: codename
+title: codename
+category: ai
+year: ""
+status: done
+featured: false
+order: 100
+summary:
+  en: 'Prompt-injection lab: defence prompts guard a secret and are scored against attack prompts on a local LLM, with a batch harness and a Streamlit "War Room" that refines defences automatically.'
+  fr: "Laboratoire d'injection de prompts : des prompts de défense protègent un secret et sont notés face à des prompts d'attaque sur un LLM local, avec un banc de tests et une « War Room » Streamlit qui affine les défenses automatiquement."
+tags:
+  - Python
+  - Ollama
+  - Streamlit
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""
+related:
+  - persona

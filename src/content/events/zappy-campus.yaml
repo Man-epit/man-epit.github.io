@@ -1,0 +1,33 @@
+slug: zappy-campus
+name: Zappy
+order: 40
+result:
+  en: 1st of campus
+  fr: 1er du campus
+when: "2026"
+format:
+  en: End-of-2nd-year project
+  fr: Projet de fin de 2e année
+summary:
+  en: "Ranked first on the campus for the 2nd-year final project: a networked survival game with a C++ server, Python AI players and a browser viewer."
+  fr: "Classé premier du campus au projet de fin de 2e année : un jeu de survie en réseau avec serveur C++, joueurs IA en Python et visualiseur navigateur."
+tags:
+  - C++20
+  - Python
+  - PixiJS
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Final defence / ranking
+      fr: Soutenance finale / classement
+  - type: clip
+    src: ""
+    caption:
+      en: Game running with AI teams
+      fr: Partie en cours avec les équipes d'IA
+related:
+  - Zappy
+hide:
+  - did
+  - learned

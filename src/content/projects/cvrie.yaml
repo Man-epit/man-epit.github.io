@@ -1,0 +1,26 @@
+slug: cvrie
+title: cvrie
+category: ai
+year: ""
+status: done
+featured: false
+order: 120
+summary:
+  en: "Two medical ML studies: stroke classification on brain CT scans (PCA + SVM, grid-searched models) and clustering of patient testimonies (TF-IDF + NMF, t-SNE)."
+  fr: "Deux études de ML médical : classification d'AVC sur scanners cérébraux (PCA + SVM, modèles optimisés par grid search) et clustering de témoignages de patients (TF-IDF + NMF, t-SNE)."
+tags:
+  - Python
+  - scikit-learn
+  - pandas
+  - Jupyter
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""

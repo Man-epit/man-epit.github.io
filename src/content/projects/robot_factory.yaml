@@ -1,0 +1,27 @@
+slug: robot_factory
+title: robot_factory
+category: low
+year: ""
+status: done
+featured: false
+order: 210
+summary:
+  en: "Two-pass assembler for Corewar: turns .s champion sources into .cor bytecode (header, coding bytes, label resolution)."
+  fr: "Assembleur deux passes pour Corewar : transforme les champions .s en bytecode .cor (en-tête, octets de codage, résolution des labels)."
+tags:
+  - C
+  - Make
+  - Criterion
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""
+related:
+  - corewar

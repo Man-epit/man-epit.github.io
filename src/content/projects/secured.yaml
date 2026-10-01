@@ -1,0 +1,24 @@
+slug: secured
+title: secured
+category: low
+year: ""
+status: done
+featured: false
+order: 230
+summary:
+  en: String-keyed hash table library with a hand-written hash function, separate chaining and its own mini_printf.
+  fr: Bibliothèque de table de hachage à clés texte, avec fonction de hachage maison, chaînage séparé et son propre mini_printf.
+tags:
+  - C
+  - Criterion
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""

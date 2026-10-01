@@ -1,0 +1,4 @@
+---
+const { tags = [] } = Astro.props as { tags?: string[] };
+---
+{tags.map((x) => <span class="tag">{x}</span>)}

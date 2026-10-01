@@ -1,0 +1,15 @@
+---
+// Project card: media, name, stack tags. Nothing else (owner's rule).
+import Media from './Media.astro';
+import Tags from './Tags.astro';
+import { L } from '../lib';
+import type { Lang } from '../i18n/ui';
+const { p, lang } = Astro.props as { p: any; lang: Lang };
+---
+<a class="card" href={`/${lang}/projects/${p.slug}/`}>
+  <Media m={p.media[0] ?? { type: 'image' }} dir={p.slug} lang={lang} inLink sizes="(max-width: 560px) 100vw, 360px" />
+  <div class="body">
+    <h3>{L(p.title, lang)}</h3>
+    <div class="tags"><Tags tags={p.tags} /></div>
+  </div>
+</a>

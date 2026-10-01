@@ -1,0 +1,43 @@
+slug: mace-epitech
+name: Mace × Epitech
+order: 10
+result:
+  en: 1st place
+  fr: 1re place
+when: ""
+format:
+  en: 1 week · team of 10
+  fr: 1 semaine · équipe de 10
+role: ""
+summary:
+  en: "How do you turn tourists into engaged tourists? We built an IoT proof of concept: connected cameras detect food waste at buffets and generate reports to reduce it."
+  fr: "Comment transformer des touristes en touristes engagés ? Nous avons construit une preuve de concept IoT : des caméras connectées détectent le gaspillage alimentaire aux buffets et produisent des rapports pour le réduire."
+contextText:
+  en: "Week-long challenge set by Mace with Epitech: make tourism in La Réunion more responsible by getting visitors involved."
+  fr: "Défi d'une semaine proposé par Mace avec Epitech : rendre le tourisme à La Réunion plus responsable en impliquant les visiteurs."
+media:
+  - type: clip
+    src: ""
+    caption:
+      en: "Demo: camera detecting food waste"
+      fr: "Démo : la caméra détecte le gaspillage"
+  - type: image
+    src: ""
+    caption:
+      en: Team photo with the award
+      fr: Photo d'équipe avec le prix
+  - type: image
+    src: ""
+    caption:
+      en: Generated waste report
+      fr: Rapport de gaspillage généré
+  - type: image
+    src: ""
+    caption:
+      en: Pitch on stage
+      fr: Pitch sur scène
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""

@@ -1,0 +1,29 @@
+slug: arcade
+title: arcade
+category: gfx
+year: ""
+status: done
+featured: false
+order: 310
+summary:
+  en: "Plugin-based game platform: games (Snake, Pac-Man, Pong, Space Invaders) and display backends loaded at runtime, with hot-swapping of the renderer."
+  fr: "Plateforme de jeux à plugins : jeux (Snake, Pac-Man, Pong, Space Invaders) et moteurs d'affichage chargés à l'exécution, avec changement de rendu à chaud."
+tags:
+  - C++20
+  - libdl
+  - ncurses
+  - SDL2
+  - SFML
+media:
+  - type: image
+    src: ""
+    caption:
+      en: Screenshot or short demo
+      fr: Capture d'écran ou courte démo
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""
+related:
+  - raytracer
