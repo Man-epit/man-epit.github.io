@@ -1,24 +1,27 @@
 slug: C_GC_Conservative
 title: C_GC_Conservative
 category: sys
-year: ""
+year: "2025"
 status: done
 featured: false
 order: 180
 summary:
   en: "Conservative mark-and-sweep garbage collector for C: scans the stack for roots, follows pointers through the heap and supports interior pointers."
   fr: "Ramasse-miettes conservatif mark-and-sweep pour le C : parcourt la pile pour trouver les racines, suit les pointeurs dans le tas et gère les pointeurs internes."
+team:
+  en: Solo
+  fr: Seul
 tags:
   - C
   - GNU C builtins
 media:
   - type: image
-    src: ""
+    src: demo.webp
     caption:
-      en: Screenshot or short demo
-      fr: Capture d'écran ou courte démo
+      en: The int[50] block allocated on line 18 is freed once unreachable
+      fr: Le bloc int[50] alloué ligne 18 est libéré une fois inaccessible
 links:
   - label:
       en: Source code
       fr: Code source
-    url: ""
+    url: https://github.com/Man-epit/C_GC_Conservative

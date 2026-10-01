@@ -1,24 +1,35 @@
 slug: interstonar
 title: interstonar
 category: algo
-year: ""
+year: "2026"
 status: done
 featured: false
 order: 280
 summary:
   en: "Physics CLI: sphere tracing over signed distance functions to find what a rock hits, plus an N-body gravity simulation with collisions."
   fr: "Outil de physique en ligne de commande : sphere tracing sur des fonctions de distance signée pour savoir ce que touche une roche, et simulation gravitationnelle à N corps avec collisions."
+team:
+  en: Solo
+  fr: Seul
+context:
+  en: Epitech project, 2nd year
+  fr: Projet Epitech, 2e année
 tags:
   - Python 3.11
   - VPython
 media:
   - type: image
-    src: ""
+    src: trajectory.webp
     caption:
-      en: Screenshot or short demo
-      fr: Capture d'écran ou courte démo
+      en: Rock trajectory from the global mode output
+      fr: Trajectoire de la roche issue du mode global
+  - type: image
+    src: cli.webp
+    caption:
+      en: Local mode (sphere tracing) and global mode (N-body)
+      fr: Mode local (sphere tracing) et mode global (N corps)
 links:
   - label:
       en: Source code
       fr: Code source
-    url: ""
+    url: https://github.com/Man-epit/interstonar

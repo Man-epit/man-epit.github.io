@@ -1,13 +1,19 @@
 slug: wesc
 title: wesc
 category: emb
-year: ""
+year: "2026"
 status: done
 featured: false
 order: 70
 summary:
   en: "Library that drives a VESC motor controller over UART: encodes commands (duty, current, RPM, servo…) and decodes telemetry with CRC checks."
   fr: "Bibliothèque de pilotage d'un contrôleur moteur VESC en UART : encode les commandes (duty, courant, RPM, servo…) et décode la télémétrie avec vérification CRC."
+team:
+  en: 4 people
+  fr: 4 personnes
+context:
+  en: Epitech Robocar programme
+  fr: Programme Robocar d'Epitech
 tags:
   - C
   - POSIX termios
@@ -21,6 +27,6 @@ links:
   - label:
       en: Source code
       fr: Code source
-    url: ""
+    url: https://github.com/TheSoukoukou/wesc
 related:
   - RoboCar

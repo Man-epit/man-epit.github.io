@@ -1,27 +1,33 @@
 slug: panoramix
 title: panoramix
 category: sys
-year: ""
+year: "2026"
 status: done
 featured: false
 order: 170
 summary:
   en: "Concurrency exercise: one druid thread refills a shared potion pot for N villager threads, synchronised with a mutex and two semaphores."
   fr: "Exercice de concurrence : un thread druide remplit une marmite de potion partagée par N threads villageois, synchronisés par un mutex et deux sémaphores."
+team:
+  en: Solo
+  fr: Seul
+context:
+  en: Epitech project, 2nd year
+  fr: Projet Epitech, 2e année
 tags:
   - C
   - pthreads
   - POSIX semaphores
 media:
   - type: image
-    src: ""
+    src: run.webp
     caption:
-      en: Screenshot or short demo
-      fr: Capture d'écran ou courte démo
+      en: Druid and villagers sharing the potion pot
+      fr: Le druide et les villageois se partagent la marmite
 links:
   - label:
       en: Source code
       fr: Code source
-    url: ""
+    url: https://github.com/Man-epit/panoramix
 related:
   - plazza

@@ -1,27 +1,35 @@
 slug: machine_learning
 title: machine_learning
 category: ai
-year: ""
+year: "2025"
 status: done
 featured: false
 order: 90
 summary:
   en: "Reinforcement-learning path: tabular Q-learning, a neural network in pure Python, then a DQN that drives a 2D race car with ray sensors and human demonstrations."
   fr: "Parcours en apprentissage par renforcement : Q-learning tabulaire, réseau de neurones en Python pur, puis DQN qui pilote une voiture de course 2D avec capteurs à rayons et démonstrations humaines."
+team:
+  en: Solo
+  fr: Seul
 tags:
   - Python
   - TensorFlow/Keras
   - pygame
 media:
-  - type: image
-    src: ""
+  - type: clip
+    src: racing-agent.mp4
     caption:
-      en: Screenshot or short demo
-      fr: Capture d'écran ou courte démo
+      en: Trained DQN driving the track with ray sensors
+      fr: DQN entraîné qui pilote sur le circuit avec ses capteurs à rayons
+  - type: image
+    src: track.webp
+    caption:
+      en: Track, checkpoints and ray sensors
+      fr: Circuit, points de passage et capteurs
 links:
   - label:
       en: Source code
       fr: Code source
-    url: ""
+    url: https://github.com/Man-epit/machine_learning
 related:
   - startrek

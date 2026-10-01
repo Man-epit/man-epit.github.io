@@ -1,24 +1,30 @@
 slug: secured
 title: secured
 category: low
-year: ""
+year: "2025"
 status: done
 featured: false
 order: 230
 summary:
   en: String-keyed hash table library with a hand-written hash function, separate chaining and its own mini_printf.
   fr: Bibliothèque de table de hachage à clés texte, avec fonction de hachage maison, chaînage séparé et son propre mini_printf.
+team:
+  en: 2 people
+  fr: 2 personnes
+context:
+  en: Epitech project, 1st year
+  fr: Projet Epitech, 1re année
 tags:
   - C
   - Criterion
 media:
   - type: image
-    src: ""
+    src: hashtable.webp
     caption:
-      en: Screenshot or short demo
-      fr: Capture d'écran ou courte démo
+      en: Insert, search and delete in a 5-bucket table
+      fr: Insertion, recherche et suppression dans une table à 5 alvéoles
 links:
   - label:
       en: Source code
       fr: Code source
-    url: ""
+    url: https://github.com/Man-epit/secured

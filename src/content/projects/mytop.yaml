@@ -1,25 +1,31 @@
 slug: mytop
 title: mytop
 category: sys
-year: ""
+year: "2024"
 status: done
 featured: false
 order: 190
 summary:
   en: "Clone of Linux top: reads /proc and redraws the header (load, tasks, CPU, memory) and a process table every 3 s."
   fr: "Clone de top : lit /proc et rafraîchit l'en-tête (charge, tâches, CPU, mémoire) et la table des processus toutes les 3 s."
+team:
+  en: Solo
+  fr: Seul
+context:
+  en: Epitech project, 1st year
+  fr: Projet Epitech, 1re année
 tags:
   - C
   - ncurses
   - /proc
 media:
   - type: image
-    src: ""
+    src: my_top.webp
     caption:
-      en: Screenshot or short demo
-      fr: Capture d'écran ou courte démo
+      en: Header and process table read from /proc
+      fr: En-tête et table des processus lus depuis /proc
 links:
   - label:
       en: Source code
       fr: Code source
-    url: ""
+    url: https://github.com/Man-epit/mytop

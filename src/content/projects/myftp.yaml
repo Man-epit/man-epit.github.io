@@ -1,13 +1,19 @@
 slug: myftp
 title: myftp
 category: sys
-year: ""
+year: "2026"
 status: done
 featured: false
 order: 150
 summary:
   en: "Multi-client FTP server (RFC 959 subset) on raw sockets and poll(2): login, PASV/PORT, LIST/RETR/STOR/DELE, each client jailed to its root directory."
   fr: "Serveur FTP multi-clients (sous-ensemble de la RFC 959) sur sockets bruts et poll(2) : login, PASV/PORT, LIST/RETR/STOR/DELE, chaque client confiné dans son répertoire racine."
+team:
+  en: Solo
+  fr: Seul
+context:
+  en: Epitech project, 2nd year
+  fr: Projet Epitech, 2e année
 tags:
   - C
   - POSIX sockets
@@ -15,15 +21,21 @@ tags:
   - fork
   - Criterion
 media:
-  - type: image
-    src: ""
+  - type: clip
+    src: session.mp4
+    poster: session.webp
     caption:
-      en: Screenshot or short demo
-      fr: Capture d'écran ou courte démo
+      en: Login, download, upload, and an escape attempt refused with 550
+      fr: Connexion, téléchargement, envoi, et tentative de sortie refusée avec 550
+  - type: image
+    src: session.webp
+    caption:
+      en: Session with a standard ftp client
+      fr: Session avec un client ftp standard
 links:
   - label:
       en: Source code
       fr: Code source
-    url: ""
+    url: https://github.com/Man-epit/myftp
 related:
   - myteams

@@ -1,6 +1,6 @@
 // Compress raw media from inbox/<slug>/ into src/assets/media/<slug>/.
 //   photos → <name>.webp, max 2000px, quality 82
-//   videos → <name>.mp4 (12 s max, 1280px wide, no audio) + <name>.poster.webp
+//   videos → <name>.mp4 (12 s max, 1280px wide, no audio) + <name>.poster.webp (frame at 3 s)
 // Originals are moved to originals/<slug>/ (both folders are git-ignored).
 // Usage: npm run media
 import fs from 'node:fs';
@@ -37,7 +37,7 @@ for (const slug of fs.readdirSync(inbox)) {
       const mp4 = path.join(out, `${name}.mp4`);
       execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', src, '-t', '12', '-vf', 'scale=1280:-2', '-c:v', 'libx264',
         '-crf', '28', '-preset', 'slow', '-an', '-movflags', '+faststart', mp4], { stdio: 'inherit' });
-      const frame = execFileSync('ffmpeg', ['-loglevel', 'error', '-i', mp4, '-frames:v', '1', '-f', 'image2pipe', '-c:v', 'png', '-']);
+      const frame = execFileSync('ffmpeg', ['-loglevel', 'error', '-ss', '3', '-i', mp4, '-frames:v', '1', '-f', 'image2pipe', '-c:v', 'png', '-'], { maxBuffer: 64 * 1024 * 1024 });
       await sharp(frame).webp({ quality: 82 }).toFile(path.join(out, `${name}.poster.webp`));
       entry = `- type: clip\n    src: ${name}.mp4`;
     } else {

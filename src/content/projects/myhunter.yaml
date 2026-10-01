@@ -1,24 +1,35 @@
 slug: myhunter
 title: myhunter
 category: gfx
-year: ""
+year: "2024"
 status: done
 featured: false
 order: 340
 summary:
   en: Duck Hunt-style shooting game with animated birds, menu, pause and lives.
   fr: Jeu de tir façon Duck Hunt avec oiseaux animés, menu, pause et vies.
+team:
+  en: Solo
+  fr: Seul
+context:
+  en: Epitech project, 1st year
+  fr: Projet Epitech, 1re année
 tags:
   - C
   - CSFML
 media:
-  - type: image
-    src: ""
+  - type: clip
+    src: gameplay.mp4
     caption:
-      en: Screenshot or short demo
-      fr: Capture d'écran ou courte démo
+      en: "Gameplay: shooting birds, score and lives"
+      fr: "Partie : tir sur les oiseaux, score et vies"
+  - type: image
+    src: menu.webp
+    caption:
+      en: Main menu
+      fr: Menu principal
 links:
   - label:
       en: Source code
       fr: Code source
-    url: ""
+    url: https://github.com/Man-epit/myhunter

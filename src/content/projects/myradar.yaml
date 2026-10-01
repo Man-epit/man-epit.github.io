@@ -1,24 +1,35 @@
 slug: myradar
 title: myradar
 category: gfx
-year: ""
+year: "2025"
 status: done
 featured: false
 order: 350
 summary:
   en: "2D air-traffic simulation: aircraft and control towers read from a script and drawn at 60 FPS."
   fr: "Simulation 2D de trafic aérien : avions et tours de contrôle lus depuis un script et affichés à 60 FPS."
+team:
+  en: Solo
+  fr: Seul
+context:
+  en: Epitech project, 1st year
+  fr: Projet Epitech, 1re année
 tags:
   - C
   - CSFML
 media:
-  - type: image
-    src: ""
+  - type: clip
+    src: traffic.mp4
     caption:
-      en: Screenshot or short demo
-      fr: Capture d'écran ou courte démo
+      en: 70 aircraft and 6 control towers read from a script
+      fr: 70 avions et 6 tours de contrôle lus depuis un script
+  - type: image
+    src: radar.webp
+    caption:
+      en: Simulation at 60 FPS
+      fr: Simulation à 60 FPS
 links:
   - label:
       en: Source code
       fr: Code source
-    url: ""
+    url: https://github.com/Man-epit/myradar

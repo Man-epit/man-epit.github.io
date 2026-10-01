@@ -1,27 +1,43 @@
 slug: codename
 title: codename
 category: ai
-year: ""
+year: "2026"
 status: done
 featured: false
 order: 100
 summary:
   en: 'Prompt-injection lab: defence prompts guard a secret and are scored against attack prompts on a local LLM, with a batch harness and a Streamlit "War Room" that refines defences automatically.'
   fr: "Laboratoire d'injection de prompts : des prompts de défense protègent un secret et sont notés face à des prompts d'attaque sur un LLM local, avec un banc de tests et une « War Room » Streamlit qui affine les défenses automatiquement."
+team:
+  en: Solo
+  fr: Seul
+context:
+  en: Epitech project, 2nd year
+  fr: Projet Epitech, 2e année
 tags:
   - Python
   - Ollama
   - Streamlit
 media:
-  - type: image
-    src: ""
+  - type: clip
+    src: prompt-tester.mp4
     caption:
-      en: Screenshot or short demo
-      fr: Capture d'écran ou courte démo
+      en: Testing a defense prompt against the suite on a local LLM (6× speed)
+      fr: Test d'un prompt de défense sur un LLM local (vitesse ×6)
+  - type: image
+    src: analytics.webp
+    caption:
+      en: "Full run: defenses ranked, attacks by lethality"
+      fr: "Évaluation complète : défenses classées, attaques par létalité"
+  - type: image
+    src: prompt-tester.webp
+    caption:
+      en: Verdict and model answer for each test
+      fr: Verdict et réponse du modèle pour chaque test
 links:
   - label:
       en: Source code
       fr: Code source
-    url: ""
+    url: https://github.com/Man-epit/codename
 related:
   - persona

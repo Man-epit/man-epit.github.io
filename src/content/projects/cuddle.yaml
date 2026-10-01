@@ -1,24 +1,30 @@
 slug: cuddle
 title: cuddle
 category: low
-year: ""
+year: "2025"
 status: done
 featured: false
 order: 240
 summary:
   en: "Small pandas-like dataframe library: CSV load/save, type inference, head/tail, describe, filter, sort, apply, groupby."
   fr: "Petite bibliothèque de dataframes inspirée de pandas : lecture/écriture CSV, inférence de types, head/tail, describe, filter, sort, apply, groupby."
+team:
+  en: 2 people
+  fr: 2 personnes
+context:
+  en: Epitech project, 1st year
+  fr: Projet Epitech, 1re année
 tags:
   - C
   - libm
 media:
   - type: image
-    src: ""
+    src: dataframe.webp
     caption:
-      en: Screenshot or short demo
-      fr: Capture d'écran ou courte démo
+      en: Type inference, describe and groupby on a CSV
+      fr: Inférence de types, describe et groupby sur un CSV
 links:
   - label:
       en: Source code
       fr: Code source
-    url: ""
+    url: https://github.com/Man-epit/cuddle

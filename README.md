@@ -179,13 +179,13 @@ To use a custom domain, add `public/CNAME` containing the domain, then set it in
 
 ## Still to fill in
 
-- **Profile:** GitHub URL and the CV PDFs (EN/FR).
+- **Profile:** the CV PDFs (EN/FR), a portrait and a press photo.
 - **Event dates:** Mace, Free and Crealise.
-- **Roles and team sizes:** Zappy, Corewar, startrek and the events.
+- **Roles:** the featured projects and the events.
 - **RoboCar:** best lap time (add it to `results`) and the source link.
 - **Zappy:** which parts you owned (add a bullet to `contributions`).
-- **`review`:** its description.
-- **All photos and videos.**
+- **Media still missing:** RoboCar, Zappy, Lego × IA, Cyclone crew dispatch, Robocar-Racing_Simulator, wesc,
+  octopus, chocolatine, and all events. Every other project has real screenshots or clips in `src/assets/media/`.
 
 To see every gap highlighted, run `npm run dev`.
 

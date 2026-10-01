@@ -1,13 +1,16 @@
 slug: Robocar-Racing_Simulator
 title: Robocar-Racing_Simulator
 category: ai
-year: ""
+year: "2026"
 status: done
 featured: false
 order: 80
 summary:
   en: "Behavioural cloning for a Unity racing simulator: drive by keyboard to record data, train an MLP, then drive one or more cars with it."
   fr: "Clonage comportemental pour un simulateur de course Unity : conduite au clavier pour enregistrer les données, entraînement d'un MLP, puis pilotage d'une ou plusieurs voitures avec."
+context:
+  en: Epitech Robocar programme
+  fr: Programme Robocar d'Epitech
 tags:
   - Python
   - Unity ML-Agents
@@ -23,6 +26,6 @@ links:
   - label:
       en: Source code
       fr: Code source
-    url: ""
+    url: https://github.com/Quentin-taranne/Robocar-Racing_Simulator
 related:
   - RoboCar

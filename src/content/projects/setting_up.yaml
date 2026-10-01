@@ -1,25 +1,36 @@
 slug: setting_up
 title: setting_up
 category: algo
-year: ""
+year: "2024"
 status: done
 featured: false
 order: 270
 summary:
   en: "Biggest-square (BSQ) solver in one dynamic-programming pass, from a file or a generated map. Bonus: largest cube in 3D with a raylib viewer."
   fr: "Recherche du plus grand carré (BSQ) en une passe de programmation dynamique, depuis un fichier ou une carte générée. Bonus : plus grand cube en 3D avec un visualiseur raylib."
+team:
+  en: Solo
+  fr: Seul
+context:
+  en: Epitech project, 1st year
+  fr: Projet Epitech, 1re année
 tags:
   - C
   - raylib
   - Criterion
 media:
-  - type: image
-    src: ""
+  - type: clip
+    src: bsq-3d.mp4
     caption:
-      en: Screenshot or short demo
-      fr: Capture d'écran ou courte démo
+      en: "Bonus: largest empty cube in a 3D grid (raylib)"
+      fr: "Bonus : plus grand cube vide dans une grille 3D (raylib)"
+  - type: image
+    src: bsq.webp
+    caption:
+      en: Largest empty square found in a 34 × 90 map
+      fr: Plus grand carré vide trouvé dans une carte 34 × 90
 links:
   - label:
       en: Source code
       fr: Code source
-    url: ""
+    url: https://github.com/Man-epit/setting_up

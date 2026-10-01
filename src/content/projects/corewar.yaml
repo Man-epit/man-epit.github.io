@@ -9,7 +9,9 @@ summary:
   en: "Core War virtual machine: loads .cor champions into a circular 6 KiB arena and runs all 16 instructions with cycle costs and fork. Bonus: debug shell, coloured dump and an OpenGL view."
   fr: "Machine virtuelle Core War : charge des champions .cor dans une arène circulaire de 6 Kio et exécute les 16 instructions avec leur coût en cycles et fork. Bonus : shell de débogage, dump coloré et vue OpenGL."
 role: ""
-team: ""
+team:
+  en: 2 people
+  fr: 2 personnes
 context:
   en: End-of-1st-year project
   fr: Projet de fin de 1re année
@@ -40,20 +42,25 @@ tags:
   - Criterion
 media:
   - type: clip
-    src: ""
+    src: opengl-arena.mp4
     caption:
-      en: OpenGL view of a battle in memory
-      fr: Vue OpenGL d'un combat en mémoire
+      en: "OpenGL view: four champions in the 6 KiB arena"
+      fr: "Vue OpenGL : quatre champions dans l'arène de 6 Kio"
   - type: image
-    src: ""
+    src: debug-shell.webp
     caption:
-      en: Debug shell and coloured dump
-      fr: Shell de débogage et dump coloré
+      en: "Debug shell: champion info and coloured memory dump"
+      fr: "Shell de débogage : infos des champions et dump mémoire coloré"
+  - type: image
+    src: arena.webp
+    caption:
+      en: Each champion's code and process pointer in its colour
+      fr: Le code et le pointeur de chaque champion dans sa couleur
 links:
   - label:
       en: Source code
       fr: Code source
-    url: ""
+    url: https://github.com/Man-epit/corewar
 related:
   - robot_factory
 learned: ""

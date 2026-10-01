@@ -1,13 +1,19 @@
 slug: persona
 title: persona
 category: ai
-year: ""
+year: "2026"
 status: done
 featured: false
 order: 110
 summary:
   en: "Chat-controlled AI newsletter service: sign-up with an email code, encrypted user data, prompt-injection guardrails, hourly free and premium newsletters, and GDPR deletion."
   fr: "Service de newsletters IA piloté par chat : inscription par code e-mail, données utilisateur chiffrées, protections contre l'injection de prompts, newsletters gratuites et premium toutes les heures, et suppression RGPD."
+team:
+  en: Solo
+  fr: Seul
+context:
+  en: Epitech project, 2nd year
+  fr: Projet Epitech, 2e année
 tags:
   - n8n
   - PostgreSQL
@@ -17,14 +23,24 @@ tags:
   - SMTP
 media:
   - type: image
-    src: ""
+    src: workflow-chatbot.webp
     caption:
-      en: Screenshot or short demo
-      fr: Capture d'écran ou courte démo
+      en: "Chatbot workflow: injection checks, session routing, guest and member agents"
+      fr: "Workflow du chatbot : détection d'injection, routage de session, agents invité et membre"
+  - type: image
+    src: workflow-newsletter.webp
+    caption:
+      en: "Hourly newsletter: free and premium branches"
+      fr: "Newsletter horaire : branches gratuite et premium"
+  - type: image
+    src: workflow-guardrails.webp
+    caption:
+      en: Prompt-injection guardrails
+      fr: Garde-fous contre l'injection de prompts
 links:
   - label:
       en: Source code
       fr: Code source
-    url: ""
+    url: https://github.com/Man-epit/persona
 related:
   - codename

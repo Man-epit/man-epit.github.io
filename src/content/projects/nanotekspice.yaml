@@ -1,24 +1,30 @@
 slug: nanotekspice
 title: nanotekspice
 category: low
-year: ""
+year: "2026"
 status: done
 featured: false
 order: 220
 summary:
   en: "Digital logic simulator: reads a .nts netlist and simulates gates, flip-flops, 4000-series chips and ROM/RAM tick by tick in an interactive shell, with three-state logic."
   fr: "Simulateur de logique numérique : lit une netlist .nts et simule portes, bascules, puces série 4000 et ROM/RAM tick par tick dans un shell interactif, en logique à trois états."
+team:
+  en: 2 people
+  fr: 2 personnes
+context:
+  en: Epitech project, 2nd year
+  fr: Projet Epitech, 2e année
 tags:
   - C++17
   - CMake
 media:
   - type: image
-    src: ""
+    src: adder-4008.webp
     caption:
-      en: Screenshot or short demo
-      fr: Capture d'écran ou courte démo
+      en: "4-bit adder (4008): 11 + 6 = 17"
+      fr: "Additionneur 4 bits (4008) : 11 + 6 = 17"
 links:
   - label:
       en: Source code
       fr: Code source
-    url: ""
+    url: https://github.com/Man-epit/nanotekspice

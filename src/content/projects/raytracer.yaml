@@ -1,28 +1,60 @@
 slug: raytracer
 title: raytracer
 category: gfx
-year: ""
+year: "2026"
 status: done
 featured: false
 order: 300
 summary:
   en: "Multithreaded CPU raytracer: libconfig scenes, shapes and lights as dlopen plugins, BVH, reflection and refraction, .obj import and progressive rendering."
   fr: "Raytracer CPU multithreadé : scènes libconfig, formes et lumières en plugins dlopen, BVH, réflexion et réfraction, import .obj et rendu progressif."
+team:
+  en: 4 people
+  fr: 4 personnes
+context:
+  en: Epitech project, 2nd year
+  fr: Projet Epitech, 2e année
 tags:
   - C++20
   - CMake
   - SFML
   - libconfig++
 media:
-  - type: image
-    src: ""
+  - type: clip
+    src: orbit.mp4
+    poster: golden_orbit.webp
     caption:
-      en: Screenshot or short demo
-      fr: Capture d'écran ou courte démo
+      en: "Orbiting the camera: each view re-renders progressively"
+      fr: "Rotation de la caméra : chaque vue est recalculée progressivement"
+  - type: image
+    src: golden_orbit.webp
+    caption:
+      en: Reflection and refraction on a torus and spheres
+      fr: Réflexion et réfraction sur un tore et des sphères
+  - type: image
+    src: bnp_1.webp
+    caption:
+      en: Möbius strip, torus, glass sphere and cone
+      fr: Ruban de Möbius, tore, sphère de verre et cône
+  - type: image
+    src: abstract_geometry.webp
+    caption:
+      en: Pyramid on a checkerboard plane
+      fr: Pyramide sur un plan en damier
+  - type: image
+    src: 11_OBJ_handling.webp
+    caption:
+      en: Mesh imported from an .obj file
+      fr: Maillage importé depuis un fichier .obj
+  - type: image
+    src: 07_materials_volume.webp
+    caption:
+      en: Transparent materials
+      fr: Matériaux transparents
 links:
   - label:
       en: Source code
       fr: Code source
-    url: ""
+    url: https://github.com/Man-epit/raytracer
 related:
   - arcade

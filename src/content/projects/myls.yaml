@@ -1,25 +1,31 @@
 slug: myls
 title: myls
 category: sys
-year: ""
+year: "2024"
 status: done
 featured: false
 order: 200
 summary:
   en: Reimplementation of ls with -l -a -r -R -d -t, using only low-level system calls and a hand-written my_printf.
   fr: Réimplémentation de ls avec -l -a -r -R -d -t, uniquement avec des appels système bas niveau et un my_printf maison.
+team:
+  en: Solo
+  fr: Seul
+context:
+  en: Epitech project, 1st year
+  fr: Projet Epitech, 1re année
 tags:
   - C
   - POSIX
   - Criterion
 media:
   - type: image
-    src: ""
+    src: my_ls.webp
     caption:
-      en: Screenshot or short demo
-      fr: Capture d'écran ou courte démo
+      en: my_ls with -l, -la, -R and -lt
+      fr: my_ls avec -l, -la, -R et -lt
 links:
   - label:
       en: Source code
       fr: Code source
-    url: ""
+    url: https://github.com/Man-epit/myls

@@ -1,13 +1,19 @@
 slug: GeoEmploi-Seminar
 title: GeoEmploi-Seminar
 category: web
-year: ""
+year: "2026"
 status: done
 featured: false
 order: 360
 summary:
   en: "Map-first job board prototype: IGN map tiles through a caching proxy, commune-level geolocation with revocable consent, an accessible no-JS fallback and Lambert-93 exports."
   fr: "Prototype de site d'emploi centré sur la carte : tuiles IGN via un proxy de cache, géolocalisation à la commune avec consentement révocable, version accessible sans JS et exports en Lambert-93."
+team:
+  en: 3 people
+  fr: 3 personnes
+context:
+  en: Epitech project, 3rd year
+  fr: Projet Epitech, 3e année
 tags:
   - FastAPI
   - Jinja2
@@ -16,13 +22,23 @@ tags:
   - Redis
   - Docker Compose
 media:
-  - type: image
-    src: ""
+  - type: clip
+    src: map.mp4
     caption:
-      en: Screenshot or short demo
-      fr: Capture d'écran ou courte démo
+      en: "Job seeker view: zooming from France into Paris offers"
+      fr: "Vue demandeur d'emploi : zoom de la France vers les offres de Paris"
+  - type: image
+    src: map-consent.webp
+    caption:
+      en: Geolocation asked with an explicit, revocable consent
+      fr: Géolocalisation demandée avec un consentement explicite et révocable
+  - type: image
+    src: map-paris.webp
+    caption:
+      en: Offers clustered on IGN map tiles
+      fr: Offres regroupées sur les tuiles IGN
 links:
   - label:
       en: Source code
       fr: Code source
-    url: ""
+    url: https://github.com/Man-epit/Seminar
