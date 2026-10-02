@@ -1,4 +1,5 @@
-import { getCollection } from 'astro:content';
+import { getCollection, type CollectionKey } from 'astro:content';
+import fs from 'node:fs';
 import { CATEGORIES } from './config';
 import type { Lang } from './i18n/ui';
 
@@ -25,3 +26,31 @@ export const catLabel = (k: keyof typeof CATEGORIES, lang: Lang) => CATEGORIES[k
 // Fail the build on a typo in `related`.
 export const resolveRelated = (slugs: string[], projects: Awaited<ReturnType<typeof getProjects>>, from: string) =>
   slugs.map((s) => projects.find((p) => p.data.slug === s) ?? (() => { throw new Error(`${from}: unknown related project "${s}"`); })());
+
+// file() collections come back sorted by id; put them back in the order of the YAML file.
+export const inFileOrder = async <C extends CollectionKey>(name: C, path: string) => {
+  const ids = [...fs.readFileSync(path, 'utf8').matchAll(/^- id: *(.+?) *$/gm)].map((m) => m[1].replace(/^["']|["']$/g, ''));
+  return (await getCollection(name)).sort((a, b) => ids.indexOf(a.id) - ids.indexOf(b.id));
+};
+
+// Newest first, by the start date written in `when` ("02/2026 – now", "2023 – 2024", "2023").
+const startOf = (when: string) => {
+  const m = when.match(/(?:(\d{1,2})\/)?(\d{4})/);
+  return m ? Number(m[2]) * 12 + Number(m[1] ?? 0) : 0;
+};
+const endOf = (when: string) => (/now|auj|présent/i.test(when) ? Infinity : startOf(when.split(/[–-]/).pop() ?? ''));
+export const getExperience = async () =>
+  (await getCollection('experience')).sort((a, b) => {
+    const wa = L(a.data.when, 'en'), wb = L(b.data.when, 'en');
+    return startOf(wb) - startOf(wa) || endOf(wb) - endOf(wa);
+  });
+
+// Collaborator names → { name, url }. A name missing from collaborators.yaml is still shown, without a link.
+export const resolveCollaborators = async (names: string[], from: string) => {
+  const known = new Map((await getCollection('collaborators')).map((c) => [c.id.toLowerCase(), c.data.url]));
+  return names.map((name) => {
+    if (!known.has(name.toLowerCase()))
+      console.warn(`[collaborators] ${from}: "${name}" is not in src/content/collaborators.yaml, shown without a link`);
+    return { name, url: known.get(name.toLowerCase()) ?? '' };
+  });
+};

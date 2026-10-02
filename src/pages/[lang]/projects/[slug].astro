@@ -17,6 +17,6 @@ const related = resolveRelated(p.related, projects, p.slug).map((r) => r.data);
 <Base lang={lang} page="projects" title={L(p.title, lang)} description={L(p.summary, lang) || undefined}>
   <Detail p={p} lang={lang} base="projects" list={projects.map((x) => x.data)} back={[`/${lang}/projects/`, t.back]}
     meta={[catLabel(p.category, lang), p.year].filter(Boolean).join(' · ')}
-    specs={[[t.role, L(p.role, lang)], [t.team, L(p.team, lang)], [t.ctx, L(p.context, lang)], [t.status, t.st[p.status]]]}
+    specs={[[t.team, L(p.team, lang)], [t.ctx, L(p.context, lang)], [t.status, t.st[p.status]]]}
     related={related} />
 </Base>

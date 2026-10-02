@@ -1,0 +1,38 @@
+slug: my_world
+title: my_world
+category: gfx
+year: "2025"
+status: done
+featured: false
+order: 330
+summary:
+  en: "Isometric terrain editor: raise and lower points, resize the grid, zoom, textures by height."
+  fr: "Éditeur de terrain isométrique : monter et baisser des points, redimensionner la grille, zoomer, textures selon l'altitude."
+team:
+  en: 2 people
+  fr: 2 personnes
+context:
+  en: Epitech project, 1st year
+  fr: Projet Epitech, 1re année
+tags:
+  - C
+  - CSFML
+  - Criterion
+media:
+  - type: clip
+    src: editing.mp4
+    caption:
+      en: Raising a hill and digging a lake point by point
+      fr: Création d'une colline et d'un lac point par point
+  - type: image
+    src: terrain.webp
+    caption:
+      en: "Textures change with height: grass, rock, water"
+      fr: "Les textures changent avec l'altitude : herbe, roche, eau"
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: https://github.com/Man-epit/my_world
+collaborators:
+  - Quentin Taranne-Payet

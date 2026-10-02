@@ -2,6 +2,5 @@ node_modules/
 dist/
 .astro/
 .env
-# raw media: drop files in inbox/, run `npm run media`; originals are moved to originals/
-inbox/
-originals/
+# raw media: drop files in src/content/<projects|events>/<slug>/originals/, then run `npm run media`
+src/content/**/originals/

@@ -20,7 +20,7 @@ const chips: [string, string, number][] = [['all', t.all, projects.length], ...u
   </div>
   <div class="plist" id="plist">{projects.map(({ data: p }) => (
     <a class="prow" href={`/${lang}/projects/${p.slug}/`} data-c={p.category}>
-      <Media m={p.media[0] ?? { type: 'image' }} dir={p.slug} lang={lang} inLink sizes="(max-width: 540px) 100vw, 360px" />
+      <Media m={p.media[0] ?? { type: 'image' }} dir={`projects/${p.slug}`} lang={lang} inLink sizes="(max-width: 540px) 100vw, 360px" />
       <span class="nm">{p.featured ? '★ ' : ''}{L(p.title, lang)}</span>
       <div class="tags"><Tags tags={p.tags} /></div>
     </a>

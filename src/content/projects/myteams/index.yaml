@@ -1,0 +1,42 @@
+slug: myteams
+title: myteams
+category: sys
+year: "2026"
+status: done
+featured: false
+order: 140
+summary:
+  en: "Microsoft Teams-like chat: a single-threaded poll(2) TCP server and a terminal client, with teams → channels → threads → replies, private messages, live notifications and file persistence."
+  fr: "Messagerie type Microsoft Teams : serveur TCP mono-thread sur poll(2) et client terminal, avec équipes → canaux → fils → réponses, messages privés, notifications en direct et persistance sur fichier."
+team:
+  en: 3 people
+  fr: 3 personnes
+context:
+  en: Epitech project, 2nd year
+  fr: Projet Epitech, 2e année
+tags:
+  - Rust
+  - FFI
+  - C
+media:
+  - type: clip
+    src: session.mp4
+    caption:
+      en: "Two clients: private message, team, subscription and channel (2× speed)"
+      fr: "Deux clients : message privé, équipe, abonnement et canal (vitesse ×2)"
+  - type: image
+    src: session.webp
+    caption:
+      en: Server log and live notifications on both clients
+      fr: Journal du serveur et notifications en direct sur les deux clients
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: https://github.com/Man-epit/myteams
+collaborators:
+  - Quentin Taranne-Payet
+  - Lucien Rivière
+related:
+  - myftp
+  - Zappy

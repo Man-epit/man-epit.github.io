@@ -3,7 +3,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "DRAFT=true astro dev",
+    "dev": "astro dev --host 0.0.0.0",
+    "dev:draft": "DRAFT=true astro dev --host 0.0.0.0",
     "build": "astro build",
     "build:draft": "DRAFT=true astro build",
     "preview": "astro preview",

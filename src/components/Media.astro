@@ -8,7 +8,7 @@ import { UI, type Lang } from '../i18n/ui';
 
 interface Props {
   m: { type: 'image' | 'clip' | 'youtube'; src?: string; poster?: string; caption?: any };
-  dir: string; // folder in src/assets/media/
+  dir: string; // entry folder under src/content/, e.g. projects/RoboCar or profile
   lang: Lang;
   cls?: string;
   inLink?: boolean; // inside a card link: no play button, no iframe
@@ -18,11 +18,11 @@ const { m, dir, lang, cls = '', inLink = false, sizes = '(max-width: 1112px) 100
 const t = UI[lang];
 const caption = L(m.caption, lang);
 
-const images = import.meta.glob<ImageMetadata>('/src/assets/media/**/*.{jpg,jpeg,png,webp,avif}', { eager: true, import: 'default' });
-const clips = import.meta.glob<string>('/src/assets/media/**/*.{mp4,webm}', { eager: true, query: '?url', import: 'default' });
+const images = import.meta.glob<ImageMetadata>('/src/content/**/media/*.{jpg,jpeg,png,webp,avif}', { eager: true, import: 'default' });
+const clips = import.meta.glob<string>('/src/content/**/media/*.{mp4,webm}', { eager: true, query: '?url', import: 'default' });
 const find = <T,>(set: Record<string, T>, name: string) => {
-  const hit = set[`/src/assets/media/${dir}/${name}`];
-  if (!hit) throw new Error(`Media not found: src/assets/media/${dir}/${name}`);
+  const hit = set[`/src/content/${dir}/media/${name}`];
+  if (!hit) throw new Error(`Media not found: src/content/${dir}/media/${name}`);
   return hit;
 };
 
@@ -31,7 +31,7 @@ const image = src && m.type === 'image' ? find(images, src) : undefined;
 const clip = src && m.type === 'clip' ? find(clips, src) : undefined;
 // Clip poster: `poster`, or <name>.poster.webp written by `npm run media`.
 const posterName = m.poster ?? src.replace(/\.[^.]+$/, '.poster.webp');
-const posterImg = clip ? images[`/src/assets/media/${dir}/${posterName}`] : undefined;
+const posterImg = clip ? images[`/src/content/${dir}/media/${posterName}`] : undefined;
 const poster = posterImg ? (await getImage({ src: posterImg, width: 1280, format: 'webp' })).src : undefined;
 ---
 {image && <Picture src={image} alt={caption} formats={['avif', 'webp']} widths={[480, 960, 1600]} sizes={sizes} class:list={['media', cls]} />}

@@ -40,7 +40,7 @@ const items = [['home', t.home, `/${lang}/`, ''], ['projects', t.projects, `/${l
   </header>
   <main class="wrap">
     <slot />
-    <footer><span>© {new Date().getFullYear()} {profile.name}</span><span class="mono">{profile.location} · {profile.coords}</span></footer>
+    <footer><span>© {new Date().getFullYear()} {profile.name}</span></footer>
   </main>
   <script>
     // Clips play only while visible.

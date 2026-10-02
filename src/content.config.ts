@@ -8,7 +8,7 @@ const loc = <T extends z.ZodType>(t: T) => z.union([t, z.object({ en: t, fr: t }
 const text = loc(z.string());
 
 // type: image | clip (short muted MP4) | youtube (src = video id).
-// src: file name inside src/assets/media/<slug>/ ; empty → dashed placeholder.
+// src: file name inside the entry's media/ folder; empty → dashed placeholder.
 const media = z.object({
   type: z.enum(['image', 'clip', 'youtube']),
   src: z.string().default(''),
@@ -16,7 +16,7 @@ const media = z.object({
   caption: text.optional(),
 });
 
-const SECTIONS = ['specs', 'context', 'did', 'results', 'gallery', 'learned', 'links', 'stack', 'related'] as const;
+const SECTIONS = ['specs', 'context', 'did', 'results', 'gallery', 'learned', 'links', 'stack', 'collaborators', 'related'] as const;
 
 // Fields shared by projects and events (all optional).
 const detail = {
@@ -31,12 +31,13 @@ const detail = {
   media: z.array(media).default([]),
   links: z.array(z.object({ label: text, url: z.string().default('') })).default([]),
   related: z.array(z.string()).default([]),
+  collaborators: z.array(z.string()).default([]), // names, looked up in collaborators.yaml
   hide: z.array(z.enum(SECTIONS)).default([]),
   learned: text.optional(),
 };
 
 const projects = defineCollection({
-  loader: glob({ pattern: '*.yaml', base: './src/content/projects' }),
+  loader: glob({ pattern: '*/index.yaml', base: './src/content/projects' }),
   schema: z.object({
     ...detail,
     title: text,
@@ -50,7 +51,7 @@ const projects = defineCollection({
 });
 
 const events = defineCollection({
-  loader: glob({ pattern: '*.yaml', base: './src/content/events' }),
+  loader: glob({ pattern: '*/index.yaml', base: './src/content/events' }),
   schema: z.object({
     ...detail,
     name: text,
@@ -80,8 +81,14 @@ const press = defineCollection({
   schema: z.object({ outlet: z.string(), title: text, when: text, url: z.string() }),
 });
 
+// One place for collaborators: name → profile link (GitHub, LinkedIn, portfolio…).
+const collaborators = defineCollection({
+  loader: file('src/content/collaborators.yaml'),
+  schema: z.object({ url: z.string().default('') }),
+});
+
 const profile = defineCollection({
-  loader: file('src/content/profile.yaml'),
+  loader: file('src/content/profile/index.yaml'),
   schema: z.object({
     name: z.string(),
     pitch: text,
@@ -96,4 +103,4 @@ const profile = defineCollection({
   }),
 });
 
-export const collections = { projects, events, experience, skills, leadership, press, profile };
+export const collections = { projects, events, experience, skills, leadership, press, profile, collaborators };

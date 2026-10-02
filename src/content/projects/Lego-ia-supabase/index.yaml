@@ -1,0 +1,93 @@
+slug: Lego-ia-supabase
+title: Lego × IA
+category: ai
+year: "2025"
+status: done
+featured: true
+order: 20
+summary:
+  en: "Real-time multiplayer LEGO building contest: players join by code on their phones and an AI judges their photos against a 100-point rubric. Built in three days."
+  fr: "Concours de construction LEGO multijoueur en temps réel : les joueurs rejoignent la partie par code sur leur téléphone et une IA note leurs photos sur une grille de 100 points. Réalisé en trois jours."
+role:
+  en: Full-stack developer
+  fr: Développeur full-stack
+team:
+  en: 2 people
+  fr: 2 personnes
+context:
+  en: Campus challenge, 3 days
+  fr: Défi du campus, 3 jours
+contextText:
+  en: After Google ran a LEGO challenge judged by AI at the Google Cloud Summit Paris 2025, the Réunion campus wanted a rematch between its director and Epitech's managing director. No public tool existed, so we built one, with no prior web or API experience.
+  fr: Après le défi LEGO jugé par IA de Google au Google Cloud Summit Paris 2025, le campus de La Réunion voulait une revanche entre son directeur et la directrice générale d'Epitech. Aucun outil public n'existait, alors nous l'avons construit, sans expérience préalable du web ni des API.
+contributions:
+  en:
+    - "Real-time game flow: players join by code from their phones, state synced through Supabase Realtime"
+    - Node/Express backend that sends each photo to Gemini with a 100-point scoring rubric
+    - Replaced Firebase and Gemini API features unavailable in La Réunion with Supabase and Google Cloud
+    - Ran the live contest between the two directors
+  fr:
+    - "Déroulé de partie en temps réel : connexion par code depuis le téléphone, état synchronisé via Supabase Realtime"
+    - Backend Node/Express qui envoie chaque photo à Gemini avec une grille de notation sur 100 points
+    - Remplacement des fonctions Firebase et API Gemini indisponibles à La Réunion par Supabase et Google Cloud
+    - Animation du concours en direct entre les deux directeurs
+results:
+  - v:
+      en: 3 days
+      fr: 3 jours
+    l:
+      en: from zero to live event
+      fr: de zéro à l'événement
+  - v: 100 pts
+    l:
+      en: AI scoring rubric
+      fr: grille de notation IA
+  - v: "2"
+    l:
+      en: directors competed on it
+      fr: directeurs se sont affrontés
+tags:
+  - JavaScript
+  - Vite
+  - Supabase Realtime
+  - PostgreSQL
+  - Node/Express
+  - Gemini
+media:
+  - type: image
+    src: contest.webp
+    caption:
+      en: "The live contest between the two directors (photo: Epitech)"
+      fr: "Le concours en direct entre les deux directeurs (photo : Epitech)"
+  - type: image
+    src: app-home.webp
+    caption:
+      en: "Home screen: host a game or join one by code"
+      fr: "Écran d'accueil : créer une partie ou la rejoindre par code"
+  - type: image
+    src: build-1.webp
+    caption:
+      en: "A build photographed for the AI judge (photo: Epitech)"
+      fr: "Une construction photographiée pour le juge IA (photo : Epitech)"
+  - type: image
+    src: build-2.webp
+    caption:
+      en: "Another contest build (photo: Epitech)"
+      fr: "Une autre construction du concours (photo : Epitech)"
+  - type: clip
+    src: ""
+    caption:
+      en: "Screen recording: join by code → photo → AI score"
+      fr: "Capture vidéo : code → photo → note de l'IA"
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: https://github.com/Man-epit/Lego-ia-supabase
+  - label:
+      en: Epitech article
+      fr: Article Epitech
+    url: https://www.epitech.eu/2025/10/10/defi-intelligence-artificielle-formation-epitech/
+collaborators:
+  - Quentin Taranne-Payet
+learned: ""

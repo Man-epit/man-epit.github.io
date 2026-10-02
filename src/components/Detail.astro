@@ -1,9 +1,9 @@
 ---
 // Shared detail layout for projects and hackathons/awards.
-import Media from './Media.astro';
+import Carousel from './Carousel.astro';
 import Tags from './Tags.astro';
 import { DRAFT } from '../config';
-import { L } from '../lib';
+import { L, resolveCollaborators } from '../lib';
 import { UI, type Lang } from '../i18n/ui';
 
 interface Props {
@@ -32,8 +32,11 @@ const summary = L(p.summary, lang);
 const contextText = L(p.contextText, lang);
 const contrib = (L(p.contributions, lang) || []) as string[];
 const learned = L(p.learned, lang);
+const collaborators = await resolveCollaborators(p.collaborators, `${base}/${p.slug}`);
 const links = DRAFT ? p.links : p.links.filter((l: any) => l.url);
-const gallery = m.length > 1 ? m.slice(1) : t.shots.map((caption, j) => ({ type: j === 2 ? 'clip' : 'image', caption }));
+// Media without a file only shows (as a placeholder) in draft mode; `hide: [gallery]` keeps only the first item.
+const filled = DRAFT ? (m.length ? m : [{ type: 'clip', caption: t.heroMedia }]) : m.filter((x: any) => x.src);
+const items = hidden('gallery') ? filled.slice(0, 1) : filled;
 ---
 <div class="crumb"><a href={back[0]}>{back[1]}</a></div>
 <div class="dhead">
@@ -49,7 +52,7 @@ const gallery = m.length > 1 ? m.slice(1) : t.shots.map((caption, j) => ({ type:
     {specCells.map(([k, v]) => <div><div class="label">{k}</div><div class="v">{v || <span class="todo">{t.toFill}</span>}</div></div>)}
   </div>
 )}
-{(m[0] || DRAFT) && <Media m={m[0] ?? { type: 'clip', caption: t.heroMedia }} dir={p.slug} lang={lang} />}
+{items.length > 0 && <Carousel items={items} dir={`${base}/${p.slug}`} lang={lang} />}
 <div class="dgrid">
   <div class="prose">
     {show('context', contextText) && <div><h2>{t.context}</h2><p>{contextText || <span class="todo">{t.ctxTodo}</span>}</p></div>}
@@ -60,9 +63,6 @@ const gallery = m.length > 1 ? m.slice(1) : t.shots.map((caption, j) => ({ type:
       <div><h2>{t.results}</h2>{p.results.length
         ? <div class="results">{p.results.map((r: any) => <div><strong>{L(r.v, lang)}</strong><span>{L(r.l, lang)}</span></div>)}</div>
         : <p><span class="todo">{t.resTodo}</span></p>}</div>
-    )}
-    {show('gallery', m.length > 1) && (
-      <div><h2>{t.gallery}</h2><div class="gallery">{gallery.map((x: any) => <Media m={x} dir={p.slug} lang={lang} cls="sq" sizes="(max-width: 640px) 50vw, 240px" />)}</div></div>
     )}
     {show('learned', learned) && <div><h2>{t.learned}</h2><p>{learned || <span class="todo">{t.learnTodo}</span>}</p></div>}
   </div>
@@ -77,6 +77,11 @@ const gallery = m.length > 1 ? m.slice(1) : t.shots.map((caption, j) => ({ type:
     )}
     {show('stack', p.tags.length) && (
       <div class="panel"><h3>{t.stack}</h3><div class="tags" style="padding:0">{p.tags.length ? <Tags tags={p.tags} /> : <span class="todo">{t.toFill}</span>}</div></div>
+    )}
+    {collaborators.length > 0 && !hidden('collaborators') && (
+      <div class="panel"><h3>{t.collaborators}</h3><ul class="collab">
+        {collaborators.map((c) => <li>{c.url ? <a href={c.url} target="_blank" rel="noopener">{c.name}</a> : c.name}</li>)}
+      </ul></div>
     )}
     {related.length > 0 && !hidden('related') && (
       <div class="panel"><h3>{t.related}</h3><div class="rel">{related.map((r) => <a href={`/${lang}/projects/${r.slug}/`}>{L(r.title, lang)}</a>)}</div></div>

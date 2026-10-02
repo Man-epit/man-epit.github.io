@@ -1,0 +1,35 @@
+slug: robot_factory
+title: robot_factory
+category: low
+year: "2025"
+status: done
+featured: false
+order: 210
+summary:
+  en: "Two-pass assembler for Corewar: turns .s champion sources into .cor bytecode (header, coding bytes, label resolution)."
+  fr: "Assembleur deux passes pour Corewar : transforme les champions .s en bytecode .cor (en-tête, octets de codage, résolution des labels)."
+team:
+  en: 2 people
+  fr: 2 personnes
+context:
+  en: Epitech project, 1st year
+  fr: Projet Epitech, 1re année
+tags:
+  - C
+  - Make
+  - Criterion
+media:
+  - type: image
+    src: assemble.webp
+    caption:
+      en: Assembling a champion into .cor bytecode
+      fr: Assemblage d'un champion en bytecode .cor
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: https://github.com/Man-epit/robot_factory
+collaborators:
+  - Nathaniel Leperlier
+related:
+  - corewar

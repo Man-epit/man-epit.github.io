@@ -1,0 +1,71 @@
+slug: startrek
+title: startrek
+category: ai
+year: "2026"
+status: done
+featured: true
+order: 60
+summary:
+  en: Deep Q-Network written from scratch that learns to land in Gymnasium's LunarLander, with YAML configs, baselines and multi-seed experiments. Reaches an average return of about 240.
+  fr: Deep Q-Network écrit de zéro qui apprend à atterrir dans LunarLander (Gymnasium), avec configs YAML, baselines et expériences multi-seeds. Atteint un retour moyen d'environ 240.
+role: ""
+team:
+  en: 2 people
+  fr: 2 personnes
+context:
+  en: Epitech project, 2nd year
+  fr: Projet Epitech, 2e année
+contextText:
+  en: LunarLander counts as solved at an average return of 200. The goal was to get there with a DQN written from scratch and to prove the result holds across random seeds.
+  fr: LunarLander est considéré comme résolu à partir d'un retour moyen de 200. L'objectif était d'y arriver avec un DQN écrit de zéro et de prouver que le résultat tient sur plusieurs seeds.
+contributions:
+  en:
+    - DQN implementation written from scratch in PyTorch
+    - YAML configs to run experiments reproducibly
+    - Baselines and multi-seed runs to compare results fairly
+    - Learning curves plotted with Matplotlib
+  fr:
+    - Implémentation d'un DQN écrite de zéro en PyTorch
+    - Configs YAML pour des expériences reproductibles
+    - Baselines et exécutions multi-seeds pour comparer honnêtement
+    - Courbes d'apprentissage tracées avec Matplotlib
+results:
+  - v: "239.6"
+    l:
+      en: mean eval return, tuned DQN over 5 seeds (solved at 200)
+      fr: retour moyen en évaluation, DQN optimisé sur 5 seeds (résolu à 200)
+  - v: "177.3"
+    l:
+      en: same DQN before tuning
+      fr: même DQN avant optimisation
+  - v: "5"
+    l:
+      en: seeds per experiment, 100 eval episodes each
+      fr: seeds par expérience, 100 épisodes d'évaluation chacune
+tags:
+  - Python
+  - PyTorch
+  - Gymnasium
+  - NumPy
+  - Matplotlib
+media:
+  - type: clip
+    src: landing.mp4
+    caption:
+      en: Random policy vs. trained DQN on LunarLander
+      fr: Politique aléatoire vs DQN entraîné sur LunarLander
+  - type: image
+    src: learning-curve.webp
+    caption:
+      en: Mean return over 5 seeds with 95% CI
+      fr: Retour moyen sur 5 seeds avec IC à 95 %
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: https://github.com/Man-epit/startrek
+collaborators:
+  - Quentin Taranne-Payet
+related:
+  - machine_learning
+learned: ""

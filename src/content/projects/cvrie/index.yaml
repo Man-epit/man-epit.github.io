@@ -1,0 +1,62 @@
+slug: cvrie
+title: cvrie
+category: ai
+year: "2026"
+status: done
+featured: false
+order: 120
+summary:
+  en: "Two medical ML studies: stroke classification on brain CT scans (PCA + SVM, grid-searched models) and clustering of patient testimonies (TF-IDF + NMF, t-SNE)."
+  fr: "Deux études de ML médical : classification d'AVC sur scanners cérébraux (PCA + SVM, modèles optimisés par grid search) et clustering de témoignages de patients (TF-IDF + NMF, t-SNE)."
+team:
+  en: 2 people
+  fr: 2 personnes
+context:
+  en: Epitech project, 2nd year
+  fr: Projet Epitech, 2e année
+results:
+  - v: 89.3%
+    l:
+      en: validation accuracy, 3-class stroke CT classifier
+      fr: précision en validation, classifieur d'AVC à 3 classes
+  - v: "0.865"
+    l:
+      en: macro F1 score
+      fr: score F1 macro
+  - v: "12"
+    l:
+      en: topic clusters from about 1,000 testimonies
+      fr: thèmes extraits d'environ 1 000 témoignages
+tags:
+  - Python
+  - scikit-learn
+  - pandas
+  - Jupyter
+media:
+  - type: image
+    src: nmf-clusters.webp
+    caption:
+      en: Patient testimonies grouped into 12 topics (NMF, t-SNE)
+      fr: Témoignages de patients regroupés en 12 thèmes (NMF, t-SNE)
+  - type: image
+    src: confusion-matrix.webp
+    caption:
+      en: "Stroke classifier: confusion matrix on the validation set"
+      fr: "Classifieur d'AVC : matrice de confusion sur la validation"
+  - type: image
+    src: kmeans-clusters.webp
+    caption:
+      en: K-Means comparison
+      fr: Comparaison avec K-Means
+  - type: image
+    src: choosing-k.webp
+    caption:
+      en: "Choosing K: elbow and silhouette"
+      fr: "Choix de K : coude et silhouette"
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: https://github.com/Man-epit/cvrie
+collaborators:
+  - Quentin Taranne-Payet

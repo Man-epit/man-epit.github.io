@@ -1,0 +1,58 @@
+slug: Zappy
+title: Zappy
+category: sys
+year: "2026"
+status: done
+featured: false
+order: 40
+summary:
+  en: "Networked survival game: a C++20 game server, autonomous Python AI players, a browser viewer in PixiJS and a mock server for testing."
+  fr: "Jeu de survie en réseau : serveur de jeu en C++20, joueurs IA autonomes en Python, visualiseur navigateur en PixiJS et faux serveur de test."
+role: ""
+team: ""
+context:
+  en: End-of-2nd-year project
+  fr: Projet de fin de 2e année
+contextText:
+  en: "Epitech's end-of-2nd-year project: AI teams must gather resources and cooperate to level up in a shared world run by a server."
+  fr: "Projet de fin de 2e année d'Epitech : des équipes d'IA doivent récolter des ressources et coopérer pour monter de niveau dans un monde partagé géré par un serveur."
+contributions:
+  en:
+    - Game server in C++20 on POSIX sockets with poll()
+    - Autonomous AI players in Python with asyncio
+    - Browser viewer with Node.js and PixiJS
+    - Mock server to test AI clients without the full game
+  fr:
+    - Serveur de jeu en C++20 sur sockets POSIX avec poll()
+    - Joueurs IA autonomes en Python avec asyncio
+    - Visualiseur navigateur en Node.js et PixiJS
+    - Faux serveur pour tester les IA sans le jeu complet
+tags:
+  - C++20
+  - POSIX sockets
+  - poll
+  - Python asyncio
+  - Node.js
+  - PixiJS
+  - Criterion
+media:
+  - type: clip
+    src: ""
+    caption:
+      en: Viewer recording with several AI teams playing
+      fr: Capture du visualiseur avec plusieurs équipes d'IA
+  - type: image
+    src: ""
+    caption:
+      en: Server / AI / viewer architecture
+      fr: Architecture serveur / IA / visualiseur
+collaborators:
+  - Lucien Rivière
+  - Quentin Taranne-Payet
+  - Nathaniel Leperlier
+  - Théo Futol
+  - Arthur Girardin--Calbe
+related:
+  - myteams
+  - myftp
+learned: ""

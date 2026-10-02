@@ -1,0 +1,19 @@
+# Everyone you worked with, in one place: name → link to their profile (GitHub, LinkedIn, portfolio…).
+# Projects and events list collaborators by name (`collaborators: [Lucien Rivière]`).
+# Leave `url` empty to show the name without a link.
+# If a name used in a project is missing here, the project still shows the name, without a link.
+
+Arthur Girardin--Calbe:
+  url: https://github.com/arthur-girardin-calbe
+Lucas Plante:
+  url: ""
+Lucien Rivière:
+  url: https://github.com/Say-Goodbi
+Nathaniel Leperlier:
+  url: ""
+Quentin Taranne-Payet:
+  url: https://github.com/Quentin-taranne
+Samuel Jaglale-Dalleau:
+  url: ""
+Théo Futol:
+  url: https://github.com/theo-futol

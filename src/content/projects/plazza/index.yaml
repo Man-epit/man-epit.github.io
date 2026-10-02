@@ -1,0 +1,41 @@
+slug: plazza
+title: plazza
+category: sys
+year: "2026"
+status: done
+featured: false
+order: 160
+summary:
+  en: "Pizzeria simulator: a reception process forks kitchens on demand, each with a thread pool of cooks and a refilling stock, communicating over named pipes with a binary protocol."
+  fr: "Simulateur de pizzeria : la réception crée des cuisines (fork) à la demande, chacune avec un pool de threads cuisiniers et un stock qui se recharge, communiquant par tubes nommés avec un protocole binaire."
+team:
+  en: 2 people
+  fr: 2 personnes
+context:
+  en: Epitech project, 2nd year
+  fr: Projet Epitech, 2e année
+tags:
+  - C++20
+  - std::thread
+  - POSIX fork/mkfifo
+media:
+  - type: clip
+    src: orders.mp4
+    poster: kitchens.webp
+    caption:
+      en: Orders spread across kitchens forked on demand
+      fr: Commandes réparties entre des cuisines créées à la demande
+  - type: image
+    src: kitchens.webp
+    caption:
+      en: "Kitchen status: cooks and ingredient stock"
+      fr: "État des cuisines : cuisiniers et stock d'ingrédients"
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: https://github.com/Man-epit/plazza
+collaborators:
+  - Arthur Girardin--Calbe
+related:
+  - panoramix

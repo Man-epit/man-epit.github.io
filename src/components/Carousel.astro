@@ -1,0 +1,80 @@
+---
+// One media item at a time. Swipe, arrows or dots move through the items (circular);
+// clicking an image or clip toggles fullscreen.
+import Media from './Media.astro';
+import { L } from '../lib';
+import { UI, type Lang } from '../i18n/ui';
+
+interface Props { items: any[]; dir: string; lang: Lang }
+const { items, dir, lang } = Astro.props;
+const t = UI[lang];
+const many = items.length > 1;
+---
+<figure class="car" data-car data-captions={JSON.stringify(items.map((m) => L(m.caption, lang) || ''))} tabindex="0" aria-roledescription="carousel" aria-label={t.gallery}>
+  <div class="car-view">
+    <div class="car-track">
+      {items.map((m, i) => (
+        <div class="car-slide" aria-roledescription="slide" aria-label={`${i + 1} / ${items.length}`} aria-hidden={i ? 'true' : undefined}>
+          <Media m={m} dir={dir} lang={lang} sizes="(max-width: 1112px) 100vw, 1080px" />
+        </div>
+      ))}
+    </div>
+    {many && <button type="button" class="car-btn prev" data-prev aria-label={t.prevMedia}>‹</button>}
+    {many && <button type="button" class="car-btn next" data-next aria-label={t.nextMedia}>›</button>}
+  </div>
+  <figcaption class="car-cap">
+    {many && <span class="label car-count" data-count>1 / {items.length}</span>}
+    <span data-caption>{L(items[0]?.caption, lang)}</span>
+  </figcaption>
+  {many && (
+    <div class="car-dots">
+      {items.map((_, i) => <button type="button" data-dot={i} aria-label={`${i + 1} / ${items.length}`} aria-current={i ? undefined : 'true'}></button>)}
+    </div>
+  )}
+</figure>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-car]').forEach((car) => {
+    const track = car.querySelector<HTMLElement>('.car-track')!;
+    const slides = [...car.querySelectorAll<HTMLElement>('.car-slide')];
+    const dots = [...car.querySelectorAll<HTMLElement>('[data-dot]')];
+    const caps: string[] = JSON.parse(car.dataset.captions ?? '[]');
+    const n = slides.length;
+    let i = 0;
+
+    const go = (to: number) => {
+      i = (to + n) % n;
+      track.style.transform = `translateX(${-i * 100}%)`;
+      slides.forEach((s, k) => {
+        s.setAttribute('aria-hidden', String(k !== i));
+        const v = s.querySelector('video');
+        if (v) k === i ? v.play().catch(() => {}) : v.pause();
+      });
+      dots.forEach((d, k) => (k === i ? d.setAttribute('aria-current', 'true') : d.removeAttribute('aria-current')));
+      car.querySelector('[data-count]')?.replaceChildren(`${i + 1} / ${n}`);
+      car.querySelector('[data-caption]')!.textContent = caps[i];
+    };
+
+    car.querySelector('[data-prev]')?.addEventListener('click', () => go(i - 1));
+    car.querySelector('[data-next]')?.addEventListener('click', () => go(i + 1));
+    dots.forEach((d, k) => d.addEventListener('click', () => go(k)));
+    car.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') go(i - 1);
+      if (e.key === 'ArrowRight') go(i + 1);
+    });
+
+    // Swipe, or click to toggle fullscreen.
+    const view = car.querySelector<HTMLElement>('.car-view')!;
+    let x0: number | null = null;
+    view.addEventListener('pointerdown', (e) => { x0 = e.clientX; });
+    view.addEventListener('pointerup', (e) => {
+      if (x0 === null) return;
+      const dx = e.clientX - x0;
+      x0 = null;
+      const target = e.target as HTMLElement;
+      if (target.closest('.car-btn, .yt')) return;
+      if (n > 1 && Math.abs(dx) > 40) go(dx < 0 ? i + 1 : i - 1);
+      else if (Math.abs(dx) < 10) document.fullscreenElement ? document.exitFullscreen() : car.requestFullscreen?.();
+    });
+  });
+</script>

@@ -1,0 +1,31 @@
+slug: stone_analysis
+title: stone_analysis
+category: algo
+year: "2026"
+status: done
+featured: false
+order: 290
+summary:
+  en: "WAV tool: finds dominant frequencies with an FFT written from scratch, and hides or recovers a message in the samples' least significant bits."
+  fr: "Outil WAV : trouve les fréquences dominantes avec une FFT écrite de zéro, et cache ou récupère un message dans les bits de poids faible des échantillons."
+team:
+  en: 2 people
+  fr: 2 personnes
+context:
+  en: Epitech project, 2nd year
+  fr: Projet Epitech, 2e année
+tags:
+  - Python 3
+media:
+  - type: image
+    src: fft-and-lsb.webp
+    caption:
+      en: Top frequencies by FFT, then a message hidden and recovered
+      fr: Fréquences dominantes par FFT, puis message caché et retrouvé
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: https://github.com/Man-epit/stone_analysis
+collaborators:
+  - Lucien Rivière

@@ -1,0 +1,52 @@
+slug: tardis
+title: tardis
+category: ai
+year: "2025"
+status: done
+featured: false
+order: 130
+summary:
+  en: "SNCF train-delay project: data cleaning, exploratory analysis, delay and cancellation models, and a Streamlit dashboard."
+  fr: "Projet sur les retards SNCF : nettoyage des données, analyse exploratoire, modèles de retard et d'annulation, et tableau de bord Streamlit."
+team:
+  en: 3 people
+  fr: 3 personnes
+context:
+  en: Epitech project, 1st year
+  fr: Projet Epitech, 1re année
+tags:
+  - Python
+  - pandas
+  - scikit-learn
+  - seaborn
+  - Streamlit
+  - Jupyter
+media:
+  - type: image
+    src: dashboard.webp
+    caption:
+      en: Streamlit dashboard
+      fr: Tableau de bord Streamlit
+  - type: image
+    src: delay-causes.webp
+    caption:
+      en: Share of delays by cause
+      fr: Part des retards par cause
+  - type: image
+    src: train-status.webp
+    caption:
+      en: Train status by delay severity
+      fr: Statut des trains selon la gravité du retard
+  - type: image
+    src: arrival-delay-by-month.webp
+    caption:
+      en: Average arrival delay by month
+      fr: Retard moyen à l'arrivée par mois
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: https://github.com/Man-epit/tardis
+collaborators:
+  - Quentin Taranne-Payet
+  - Nathaniel Leperlier

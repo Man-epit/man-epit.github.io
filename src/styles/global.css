@@ -22,6 +22,7 @@
   --warm:#F0954F; --warm-soft:#3A2415; --ph:#18252F; --ph-line:#3C4F5D;
 }
 *{box-sizing:border-box}
+[hidden]{display:none !important}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;padding-inline:16px}
 a{color:var(--accent)}
 a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
@@ -209,7 +210,7 @@ footer{padding-block:0 32px;color:var(--muted);font-size:13px;display:flex;justi
 .rel a:hover{border-color:var(--accent)}
 
 /* real media (added for the Astro port) */
-.media{display:block;width:100%;height:auto;border-radius:8px;background:var(--ph)}
+.media{display:block;width:100%;height:auto;max-height:80vh;object-fit:contain;border-radius:8px;background:var(--ph)}
 .card .media,.prow .media{aspect-ratio:16/9;object-fit:cover}
 .media.sq,.evc .media{aspect-ratio:1/1;object-fit:cover}
 .yt{position:relative;display:block;width:100%;aspect-ratio:16/9;padding:0;border:0;border-radius:8px;overflow:hidden;cursor:pointer;background:#000}
@@ -220,3 +221,31 @@ footer{padding-block:0 32px;color:var(--muted);font-size:13px;display:flex;justi
 .yt.sq{aspect-ratio:1/1}
 .lang a{display:block;padding:5px 9px;font:600 12px var(--mono);color:var(--muted);text-decoration:none;letter-spacing:.06em}
 .lang a[aria-current="true"]{background:var(--ink);color:var(--bg)}
+
+/* media carousel (detail pages): one item at a time, circular, click for fullscreen */
+.car{margin:0;outline:none}
+.car-view{position:relative;overflow:hidden;border-radius:var(--r);background:var(--ph);touch-action:pan-y;user-select:none;cursor:zoom-in}
+.car-track{display:flex;transition:transform .35s ease}
+@media (prefers-reduced-motion:reduce){.car-track{transition:none}}
+.car-slide{flex:0 0 100%;aspect-ratio:16/9;position:relative;overflow:hidden}
+.car-slide picture{display:contents}
+.car-slide .media,.car-slide .ph,.car-slide .yt{position:absolute;inset:0;width:100%;height:100%;max-height:none;object-fit:contain;border-radius:0;aspect-ratio:auto;border:0;background:transparent}
+.car-slide img{-webkit-user-drag:none}
+.car-btn{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:color-mix(in srgb,var(--surface) 85%,transparent);color:var(--ink);font-size:24px;line-height:1;cursor:pointer;display:grid;place-items:center}
+.car-btn:hover{border-color:var(--accent)}
+.car-btn.prev{left:12px}.car-btn.next{right:12px}
+.car-cap{display:flex;gap:12px;align-items:baseline;margin-top:10px;color:var(--muted);font-size:14px;min-height:1.4em}
+.car-dots{display:flex;gap:6px;justify-content:center;margin-top:8px}
+.car-dots button{width:8px;height:8px;border-radius:50%;border:0;padding:0;background:var(--line);cursor:pointer}
+.car-dots button[aria-current="true"]{background:var(--accent)}
+.car:fullscreen{background:#000;display:flex;flex-direction:column;justify-content:center;padding:16px}
+.car:fullscreen .car-view{flex:1;background:#000;border-radius:0;cursor:zoom-out}
+.car:fullscreen .car-slide{aspect-ratio:auto;height:100%}
+.car:fullscreen .car-track{height:100%}
+.car:fullscreen .car-cap{color:#ccc;justify-content:center}
+
+.icon{flex:none;vertical-align:-2px}
+.crow .v .icon{margin-right:4px}
+.media.portrait{aspect-ratio:1/1;object-fit:cover;max-width:320px;margin-inline:auto}
+.collab{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.collab a{font-weight:600;text-decoration:none}

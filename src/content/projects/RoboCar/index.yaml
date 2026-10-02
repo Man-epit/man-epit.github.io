@@ -1,0 +1,88 @@
+slug: RoboCar
+title: RoboCar
+category: emb
+year: 2025–2026
+status: progress
+featured: true
+order: 10
+summary:
+  en: "Control software for an RC car on an NVIDIA Jetson: gamepad input, ramped throttle and steering sent over UART to the motor controller, and a mode launcher that starts at boot."
+  fr: "Logiciel de contrôle d'une voiture RC sur NVIDIA Jetson : entrée manette, accélération et direction lissées envoyées en UART au contrôleur moteur, et lanceur de modes au démarrage."
+role:
+  en: Embedded developer
+  fr: Développeur embarqué
+team:
+  en: 6 people
+  fr: 6 personnes
+context:
+  en: Epitech Robocar programme, 15 campuses
+  fr: Programme Robocar d'Epitech, 15 campus
+contextText:
+  en: "Robocar is a national Epitech programme: each campus builds a small autonomous car and races it on a track. Our campus team works on the whole chain, from motor control to driving models."
+  fr: "Robocar est un programme national d'Epitech : chaque campus construit une petite voiture autonome et la fait courir sur circuit. Notre équipe travaille sur toute la chaîne, du contrôle moteur aux modèles de conduite."
+contributions:
+  en:
+    - Read gamepad input with libevdev and ramp throttle and steering for smooth control
+    - Send commands over UART (termios) to the VESC motor controller through the team's wesc library
+    - Boot-time launcher (Bash + systemd) to pick the driving mode without a screen
+    - Trained driving models in a Unity simulator first
+    - Demoed the car at the Préfecture de La Réunion on 14 July 2026
+  fr:
+    - Lecture de la manette avec libevdev et rampes d'accélération et de direction pour un pilotage fluide
+    - Envoi des commandes en UART (termios) au contrôleur VESC via la bibliothèque wesc de l'équipe
+    - Lanceur au démarrage (Bash + systemd) pour choisir le mode de conduite sans écran
+    - Entraînement des modèles de conduite d'abord dans un simulateur Unity
+    - Démonstration à la Préfecture de La Réunion le 14 juillet 2026
+results:
+  - v:
+      en: 3rd
+      fr: 3e
+    l:
+      en: place at the RoboCar final in Paris
+      fr: place à la finale RoboCar à Paris
+  - v: 14/07
+    l:
+      en: public demo at the Préfecture
+      fr: démo publique à la Préfecture
+tags:
+  - C
+  - NVIDIA Jetson
+  - libevdev
+  - termios UART
+  - Bash
+  - systemd
+media:
+  - type: clip
+    src: race.mp4
+    caption:
+      en: The car on track at the RoboCar final, Epitech Paris
+      fr: La voiture en piste à la finale RoboCar, Epitech Paris
+  - type: image
+    src: ""
+    caption:
+      en: "Hardware: Jetson, VESC, wiring"
+      fr: "Matériel : Jetson, VESC, câblage"
+  - type: clip
+    src: ""
+    caption:
+      en: Gamepad control with throttle ramp
+      fr: Pilotage manette avec rampe d'accélération
+  - type: image
+    src: ""
+    caption:
+      en: Demo at the Préfecture, 14 July
+      fr: Démo à la Préfecture, 14 juillet
+links:
+  - label:
+      en: Robocar programme (Epitech)
+      fr: Programme Robocar (Epitech)
+    url: https://www.epitech.eu/2025/09/04/projet-robocar-la-grande-finale/
+collaborators:
+  - Théo Futol
+  - Lucas Plante
+  - Lucien Rivière
+  - Quentin Taranne-Payet
+  - Samuel Jaglale-Dalleau
+related:
+  - wesc
+learned: ""

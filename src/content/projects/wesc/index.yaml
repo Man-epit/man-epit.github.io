@@ -1,0 +1,31 @@
+slug: wesc
+title: wesc
+category: emb
+year: "2026"
+status: done
+featured: true
+order: 70
+summary:
+  en: "Library that drives a VESC motor controller over UART: encodes commands (duty, current, RPM, servo…) and decodes telemetry with CRC checks."
+  fr: "Bibliothèque de pilotage d'un contrôleur moteur VESC en UART : encode les commandes (duty, courant, RPM, servo…) et décode la télémétrie avec vérification CRC."
+team:
+  en: 4 people
+  fr: 4 personnes
+context:
+  en: Epitech Robocar programme
+  fr: Programme Robocar d'Epitech
+tags:
+  - C
+  - POSIX termios
+media:
+  - type: image
+    src: vesc-pinout.webp
+    caption:
+      en: "Flipsky VESC pinout: CAN, sensors, COMM (UART), SWD and USB"
+      fr: "Brochage du VESC Flipsky : CAN, capteurs, COMM (UART), SWD et USB"
+collaborators:
+  - Lucas Plante
+  - Quentin Taranne-Payet
+  - Théo Futol
+related:
+  - RoboCar

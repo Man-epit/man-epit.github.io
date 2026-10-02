@@ -1,11 +1,11 @@
 ---
-import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Card from '../../components/Card.astro';
 import Media from '../../components/Media.astro';
 import Scope from '../../components/Scope.astro';
+import Icon from '../../components/Icon.astro';
 import { DRAFT } from '../../config';
-import { L, getProjects, getEvents, getProfile } from '../../lib';
+import { L, getProjects, getEvents, getProfile, getExperience, inFileOrder } from '../../lib';
 import { UI, LANGS, type Lang } from '../../i18n/ui';
 
 export const getStaticPaths = () => LANGS.map((lang) => ({ params: { lang } }));
@@ -15,10 +15,10 @@ const profile = await getProfile();
 const projects = await getProjects();
 const featured = projects.filter((p) => p.data.featured);
 const events = await getEvents();
-const experience = await getCollection('experience');
-const skills = await getCollection('skills');
-const leadership = await getCollection('leadership');
-const press = await getCollection('press');
+const experience = await getExperience();
+const skills = await inFileOrder('skills', 'src/content/skills.yaml');
+const leadership = await inFileOrder('leadership', 'src/content/leadership.yaml');
+const press = await inFileOrder('press', 'src/content/press.yaml');
 const cv = profile.cv[lang];
 const github = profile.github.replace(/^https?:\/\//, '').replace(/\/$/, '');
 ---
@@ -30,13 +30,14 @@ const github = profile.github.replace(/^https?:\/\//, '').replace(/\/$/, '');
       <div class="btns">
         <a class="btn primary" href={`/${lang}/projects/`}>{t.seeProjects}</a>
         {(cv || DRAFT) && <a class="btn" href={cv || '#'} download={cv ? '' : undefined}>{t.cv}</a>}
-        {(profile.github || DRAFT) && <a class="btn" href={profile.github || '#'} target="_blank" rel="noopener">GitHub</a>}
-        <a class="btn" href={profile.linkedin} target="_blank" rel="noopener">LinkedIn</a>
+        {(profile.github || DRAFT) && <a class="btn" href={profile.github || '#'} target="_blank" rel="noopener">
+          <Icon name="github" />GitHub</a>}
+        <a class="btn" href={profile.linkedin} target="_blank" rel="noopener"><Icon name="linkedin" />LinkedIn</a>
       </div>
     </div>
     <div>
       <Scope coords={profile.coords} />
-      <div style="margin-top:14px"><Media m={profile.portrait} dir="profile" lang={lang} sizes="(max-width: 820px) 100vw, 420px" /></div>
+      {(profile.portrait.src || DRAFT) && <div style="margin-top:14px"><Media m={profile.portrait} dir="profile" lang={lang} cls="portrait" sizes="(max-width: 820px) 100vw, 420px" /></div>}
     </div>
   </section>
 
@@ -59,7 +60,7 @@ const github = profile.github.replace(/^https?:\/\//, '').replace(/\/$/, '');
     <div class="shead"><h2>{t.hackTitle}</h2><span class="label">{t.entries(events.length)}</span></div>
     <div class="ev">{events.map(({ data: e }) => (
       <a class="evc" href={`/${lang}/events/${e.slug}/`}>
-        <Media m={e.media.find((x) => x.type === 'image') ?? { type: 'image', caption: e.name }} dir={e.slug} lang={lang} inLink sizes="96px" />
+        <Media m={e.media.find((x) => x.type === 'image') ?? { type: 'image', caption: e.name }} dir={`events/${e.slug}`} lang={lang} inLink sizes="96px" />
         <div>
           <div class="top"><span class="award">★ {L(e.result, lang)}</span><span class="label">{L(e.when, lang)}</span></div>
           <h3>{L(e.name, lang)}</h3>
@@ -87,7 +88,7 @@ const github = profile.github.replace(/^https?:\/\//, '').replace(/\/$/, '');
         <ul class="press">{press.map(({ data: p }) => (
           <li><div><a href={p.url} target="_blank" rel="noopener">{L(p.title, lang)}</a><div class="label" style="margin-top:4px">{p.outlet}</div></div><span class="label">{L(p.when, lang)}</span></li>
         ))}</ul>
-        <div style="margin-top:16px"><Media m={profile.pressPhoto} dir="profile" lang={lang} sizes="(max-width: 760px) 100vw, 500px" /></div>
+        {(profile.pressPhoto.src || DRAFT) && <div style="margin-top:16px"><Media m={profile.pressPhoto} dir="profile" lang={lang} sizes="(max-width: 760px) 100vw, 500px" /></div>}
       </div>
     </div>
   </section>
@@ -96,8 +97,8 @@ const github = profile.github.replace(/^https?:\/\//, '').replace(/\/$/, '');
     <div><h2>{t.contactTitle}</h2><p>{t.contactText}</p></div>
     <div class="rows">
       <div class="crow"><span class="v" id="mail">{profile.email}</span><button type="button" id="copy" data-copy={t.copy} data-copied={t.copied} data-selected={t.selected}>{t.copy}</button></div>
-      <div class="crow"><span class="v">{profile.linkedin.replace(/^https?:\/\/(www\.)?/, '')}</span><a href={profile.linkedin} target="_blank" rel="noopener">{t.open}</a></div>
-      {(github || DRAFT) && <div class="crow"><span class="v">{github || 'github.com/[username]'}</span><a href={profile.github || '#'} target="_blank" rel="noopener">{t.open}</a></div>}
+      <div class="crow"><span class="v"><Icon name="linkedin" size={14} /> {profile.linkedin.replace(/^https?:\/\/(www\.)?/, '')}</span><a href={profile.linkedin} target="_blank" rel="noopener">{t.open}</a></div>
+      {(github || DRAFT) && <div class="crow"><span class="v"><Icon name="github" size={14} /> {github || 'github.com/[username]'}</span><a href={profile.github || '#'} target="_blank" rel="noopener">{t.open}</a></div>}
     </div>
   </section>
 </Base>
