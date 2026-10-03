@@ -6,14 +6,19 @@ status: done
 featured: false
 order: 260
 summary:
-  en: Moves robots through a graph of rooms and tunnels read from stdin, spreading them across shortest paths so only one robot occupies a room per turn.
-  fr: Déplace des robots dans un graphe de salles et de tunnels lu sur stdin, en les répartissant sur les plus courts chemins pour qu'un seul robot occupe chaque salle à chaque tour.
+  en: "Getting a crowd of robots through a maze as fast as possible: the program reads a network of rooms and tunnels, finds the shortest routes, and spreads the robots across them so that no two ever share a room, a small version of the traffic and routing problems real networks face."
+  fr: "Faire traverser un labyrinthe à une foule de robots le plus vite possible : le programme lit un réseau de salles et de tunnels, trouve les chemins les plus courts et y répartit les robots pour que deux d'entre eux ne partagent jamais une salle, une version miniature des problèmes de trafic et de routage des vrais réseaux."
 team:
   en: 3 people
   fr: 3 personnes
 context:
   en: Epitech project, 1st year
   fr: Projet Epitech, 1re année
+skills:
+  - { en: "Graph theory", fr: "Théorie des graphes" }
+  - { en: "Pathfinding (BFS)", fr: "Recherche de chemin (BFS)" }
+  - { en: "Flow optimisation", fr: "Optimisation de flux" }
+  - { en: "Parsing", fr: "Parsing" }
 tags:
   - C
   - Criterion

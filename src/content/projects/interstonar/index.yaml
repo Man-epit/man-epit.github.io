@@ -6,14 +6,19 @@ status: done
 featured: false
 order: 280
 summary:
-  en: "Physics CLI: sphere tracing over signed distance functions to find what a rock hits, plus an N-body gravity simulation with collisions."
-  fr: "Outil de physique en ligne de commande : sphere tracing sur des fonctions de distance signée pour savoir ce que touche une roche, et simulation gravitationnelle à N corps avec collisions."
+  en: "Two space physics problems from the command line: predict what a flying rock will hit by ray-marching through shapes described as equations, and simulate planets pulling on each other under gravity until they collide."
+  fr: "Deux problèmes de physique spatiale en ligne de commande : prédire ce que va percuter une roche en vol en avançant le long de son trajet à travers des formes décrites par des équations, et simuler des planètes qui s'attirent par gravité jusqu'à entrer en collision."
 team:
   en: Solo
   fr: Seul
 context:
   en: Epitech project, 2nd year
   fr: Projet Epitech, 2e année
+skills:
+  - { en: "Numerical simulation", fr: "Simulation numérique" }
+  - { en: "Physics (N-body)", fr: "Physique (N corps)" }
+  - { en: "Ray marching / signed distance functions", fr: "Ray marching / fonctions de distance signée" }
+  - { en: "Vector maths", fr: "Calcul vectoriel" }
 tags:
   - Python 3.11
   - VPython

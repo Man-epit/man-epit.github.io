@@ -6,14 +6,18 @@ status: done
 featured: false
 order: 290
 summary:
-  en: "WAV tool: finds dominant frequencies with an FFT written from scratch, and hides or recovers a message in the samples' least significant bits."
-  fr: "Outil WAV : trouve les fréquences dominantes avec une FFT écrite de zéro, et cache ou récupère un message dans les bits de poids faible des échantillons."
+  en: "Sound as data: find the notes hidden in an audio file with a Fourier transform written from scratch, and hide a secret message inside the sound itself, invisible to the ear (steganography)."
+  fr: "Le son comme donnée : retrouver les fréquences d'un fichier audio avec une transformée de Fourier écrite de zéro, et cacher un message secret dans le son lui-même, inaudible à l'oreille (stéganographie)."
 team:
   en: 2 people
   fr: 2 personnes
 context:
   en: Epitech project, 2nd year
   fr: Projet Epitech, 2e année
+skills:
+  - { en: "Signal processing (FFT)", fr: "Traitement du signal (FFT)" }
+  - { en: "Steganography", fr: "Stéganographie" }
+  - { en: "Binary file formats (WAV)", fr: "Formats de fichiers binaires (WAV)" }
 tags:
   - Python 3
 media:

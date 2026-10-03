@@ -6,14 +6,18 @@ status: done
 featured: false
 order: 270
 summary:
-  en: "Biggest-square (BSQ) solver in one dynamic-programming pass, from a file or a generated map. Bonus: largest cube in 3D with a raylib viewer."
-  fr: "Recherche du plus grand carré (BSQ) en une passe de programmation dynamique, depuis un fichier ou une carte générée. Bonus : plus grand cube en 3D avec un visualiseur raylib."
+  en: "Find the biggest empty square on a map full of obstacles, in a single pass over the grid thanks to dynamic programming, then the same challenge in 3D: the largest empty cube, shown in a raylib viewer."
+  fr: "Trouver le plus grand carré vide sur une carte pleine d'obstacles, en un seul passage sur la grille grâce à la programmation dynamique, puis le même défi en 3D : le plus grand cube vide, affiché dans un visualiseur raylib."
 team:
   en: Solo
   fr: Seul
 context:
   en: Epitech project, 1st year
   fr: Projet Epitech, 1re année
+skills:
+  - { en: "Dynamic programming", fr: "Programmation dynamique" }
+  - { en: "Algorithmic complexity", fr: "Complexité algorithmique" }
+  - { en: "3D visualisation", fr: "Visualisation 3D" }
 tags:
   - C
   - raylib
