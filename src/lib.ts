@@ -5,7 +5,7 @@ import type { Lang } from './i18n/ui';
 
 type Loc<T> = T | { en: T; fr: T };
 
-// Pick the right language from a plain value or an { en, fr } object.
+// Value for the given language, from a plain value or an { en, fr } object.
 export const L = <T>(v: Loc<T> | undefined, lang: Lang): T | '' => {
   if (v && typeof v === 'object' && !Array.isArray(v) && 'en' in v) return v[lang] ?? v.en;
   return (v as T) ?? '';
@@ -22,12 +22,13 @@ export const getEvents = async () => (await getCollection('events')).sort(byOrde
 export const getProfile = async () => (await getCollection('profile'))[0].data;
 
 export const catLabel = (k: keyof typeof CATEGORIES, lang: Lang) => CATEGORIES[k][lang];
+export const catLabels = (ks: (keyof typeof CATEGORIES)[], lang: Lang) => ks.map((k) => CATEGORIES[k][lang]).join(' / ');
 
-// Fail the build on a typo in `related`.
+// Throws on an unknown slug in `related`.
 export const resolveRelated = (slugs: string[], projects: Awaited<ReturnType<typeof getProjects>>, from: string) =>
   slugs.map((s) => projects.find((p) => p.data.slug === s) ?? (() => { throw new Error(`${from}: unknown related project "${s}"`); })());
 
-// file() collections come back sorted by id; put them back in the order of the YAML file.
+// The file() loader sorts entries by id, so restore the order of the YAML file.
 export const inFileOrder = async <C extends CollectionKey>(name: C, path: string) => {
   const ids = [...fs.readFileSync(path, 'utf8').matchAll(/^- id: *(.+?) *$/gm)].map((m) => m[1].replace(/^["']|["']$/g, ''));
   return (await getCollection(name)).sort((a, b) => ids.indexOf(a.id) - ids.indexOf(b.id));
@@ -45,7 +46,7 @@ export const getExperience = async () =>
     return startOf(wb) - startOf(wa) || endOf(wb) - endOf(wa);
   });
 
-// Collaborator names → { name, url }. A name missing from collaborators.yaml is still shown, without a link.
+// Collaborator names to { name, url }. Names missing from collaborators.yaml keep no link and log a warning.
 export const resolveCollaborators = async (names: string[], from: string) => {
   const known = new Map((await getCollection('collaborators')).map((c) => [c.id.toLowerCase(), c.data.url]));
   return names.map((name) => {

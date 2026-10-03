@@ -16,7 +16,7 @@ tags:
   - Python
   - PixiJS
 media:
-  - type: image   # placeholder until real photos/videos exist: delete this item then
+  - type: image   # placeholder, remove once real media is added
     src: placeholder.webp
   - type: image
     src: ""

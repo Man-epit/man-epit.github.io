@@ -1,28 +1,50 @@
 slug: wesc
 title: wesc
-category: emb
+categories: [emb]
 year: "2026"
 status: done
 featured: true
 order: 70
 summary:
-  en: "Library that drives a VESC motor controller over UART: encodes commands (duty, current, RPM, servo…) and decodes telemetry with CRC checks."
-  fr: "Bibliothèque de pilotage d'un contrôleur moteur VESC en UART : encode les commandes (duty, courant, RPM, servo…) et décode la télémétrie avec vérification CRC."
+  en: "Our own C library to drive the car's ESC (a VESC motor controller) over UART, written for RoboCar to get better performance than the standard tooling: encodes the commands (duty cycle, current, brake, RPM, steering servo) and decodes telemetry with CRC checks. Open source soon."
+  fr: "Notre propre bibliothèque C pour piloter l'ESC de la voiture (un contrôleur moteur VESC) en UART, écrite pour RoboCar afin d'obtenir de meilleures performances que l'outillage standard : encodage des commandes (rapport cyclique, courant, frein, RPM, servo de direction) et décodage de la télémétrie avec vérification CRC. Bientôt open source."
 team:
   en: 4 people
   fr: 4 personnes
 context:
-  en: Epitech Robocar programme
-  fr: Programme Robocar d'Epitech
+  en: Epitech RoboCar programme
+  fr: Programme RoboCar d'Epitech
+contextText:
+  en: "Built inside the RoboCar project (a UTAC challenge, one team per Epitech campus). Every driving decision of the car goes through this library, so its latency matters."
+  fr: "Développée dans le cadre du projet RoboCar (un défi de l'UTAC, une équipe par campus Epitech). Chaque décision de conduite de la voiture passe par cette bibliothèque, sa latence compte donc."
+contributions:
+  en:
+    - "Packet framing (start byte, length, payload, CRC-16, stop byte) and one encoder per command"
+    - Telemetry decoding (temperatures, currents, RPM, voltage, fault codes) with strict framing and CRC checks
+    - Errors reported through errno, so the calling program can recover instead of crashing
+  fr:
+    - "Mise en trame des paquets (octet de début, longueur, données, CRC-16, octet de fin) et un encodeur par commande"
+    - Décodage de la télémétrie (températures, courants, RPM, tension, codes de défaut) avec vérification stricte de la trame et du CRC
+    - Erreurs remontées via errno, pour que le programme appelant puisse réagir au lieu de planter
 tags:
   - C
   - POSIX termios
+skills:
+  - { en: Serial protocols, fr: Protocoles série }
+  - { en: Binary encoding, fr: Encodage binaire }
+  - { en: CRC / data integrity, fr: CRC / intégrité des données }
+  - { en: Embedded C, fr: C embarqué }
 media:
   - type: image
     src: vesc-pinout.webp
     caption:
       en: "Flipsky VESC pinout: CAN, sensors, COMM (UART), SWD and USB"
       fr: "Brochage du VESC Flipsky : CAN, capteurs, COMM (UART), SWD et USB"
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    soon: true
 collaborators:
   - Lucas Plante
   - Quentin Taranne-Payet

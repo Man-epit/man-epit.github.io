@@ -8,7 +8,7 @@ const loc = <T extends z.ZodType>(t: T) => z.union([t, z.object({ en: t, fr: t }
 const text = loc(z.string());
 
 // type: image | clip (short muted MP4) | youtube (src = video id).
-// src: file name inside the entry's media/ folder; empty → dashed placeholder.
+// src: file name in the entry's media/ folder (empty: dashed placeholder in draft mode).
 const media = z.object({
   type: z.enum(['image', 'clip', 'youtube']),
   src: z.string().default(''),
@@ -16,7 +16,7 @@ const media = z.object({
   caption: text.optional(),
 });
 
-const SECTIONS = ['specs', 'context', 'did', 'results', 'gallery', 'learned', 'links', 'stack', 'collaborators', 'related'] as const;
+const SECTIONS = ['specs', 'context', 'did', 'results', 'gallery', 'learned', 'links', 'stack', 'skills', 'collaborators', 'related'] as const;
 
 // Fields shared by projects and events (all optional).
 const detail = {
@@ -28,8 +28,9 @@ const detail = {
   contributions: loc(z.array(z.string())).optional(),
   results: z.array(z.object({ v: text, l: text })).default([]),
   tags: z.array(z.string()).default([]),
+  skills: z.array(text).default([]),
   media: z.array(media).default([]),
-  links: z.array(z.object({ label: text, url: z.string().default('') })).default([]),
+  links: z.array(z.object({ label: text, url: z.string().default(''), soon: z.boolean().default(false) })).default([]),
   related: z.array(z.string()).default([]),
   collaborators: z.array(z.string()).default([]), // names, looked up in collaborators.yaml
   hide: z.array(z.enum(SECTIONS)).default([]),
@@ -41,7 +42,7 @@ const projects = defineCollection({
   schema: z.object({
     ...detail,
     title: text,
-    category: z.enum(Object.keys(CATEGORIES) as [keyof typeof CATEGORIES]),
+    categories: z.array(z.enum(Object.keys(CATEGORIES) as [keyof typeof CATEGORIES])).min(1),
     year: z.string().optional(),
     status: z.enum(['done', 'progress', 'delivered']).default('done'),
     featured: z.boolean().default(false),
@@ -81,7 +82,7 @@ const press = defineCollection({
   schema: z.object({ outlet: z.string(), title: text, when: text, url: z.string() }),
 });
 
-// One place for collaborators: name → profile link (GitHub, LinkedIn, portfolio…).
+// Collaborators: name and profile link.
 const collaborators = defineCollection({
   loader: file('src/content/collaborators.yaml'),
   schema: z.object({ url: z.string().default('') }),

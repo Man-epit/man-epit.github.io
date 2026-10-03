@@ -1,13 +1,13 @@
 slug: RoboCar
 title: RoboCar
-category: emb
+categories: [emb, ai]
 year: 2025–2026
 status: progress
 featured: true
 order: 10
 summary:
-  en: "Control software for an RC car on an NVIDIA Jetson: gamepad input, ramped throttle and steering sent over UART to the motor controller, and a mode launcher that starts at boot."
-  fr: "Logiciel de contrôle d'une voiture RC sur NVIDIA Jetson : entrée manette, accélération et direction lissées envoyées en UART au contrôleur moteur, et lanceur de modes au démarrage."
+  en: "Self-driving RC car built for Epitech's national RoboCar programme: an OAK-D Lite camera on an NVIDIA Jetson Nano drives the car through an AI model or a lighter ray-based algorithm, and our own motor-controller library written in C."
+  fr: "Voiture RC autonome réalisée pour le programme national RoboCar d'Epitech : une caméra OAK-D Lite sur une NVIDIA Jetson Nano pilote la voiture via un modèle d'IA ou un algorithme à rayons plus léger, et notre propre bibliothèque de contrôle moteur écrite en C."
 role:
   en: Embedded developer
   fr: Développeur embarqué
@@ -15,24 +15,22 @@ team:
   en: 6 people
   fr: 6 personnes
 context:
-  en: Epitech Robocar programme, 15 campuses
-  fr: Programme Robocar d'Epitech, 15 campus
+  en: Epitech RoboCar programme, one team per campus
+  fr: Programme RoboCar d'Epitech, une équipe par campus
 contextText:
-  en: "Robocar is a national Epitech programme: each campus builds a small autonomous car and races it on a track. Our campus team works on the whole chain, from motor control to driving models."
-  fr: "Robocar est un programme national d'Epitech : chaque campus construit une petite voiture autonome et la fait courir sur circuit. Notre équipe travaille sur toute la chaîne, du contrôle moteur aux modèles de conduite."
+  en: "RoboCar started as a challenge from UTAC to Epitech students. Each campus enters one team, which builds a self-driving car and races it against the other campuses."
+  fr: "RoboCar est né d'un défi lancé par l'UTAC aux étudiants d'Epitech. Chaque campus engage une équipe, qui construit une voiture autonome et l'affronte en course face aux autres campus."
 contributions:
   en:
-    - Read gamepad input with libevdev and ramp throttle and steering for smooth control
-    - Send commands over UART (termios) to the VESC motor controller through the team's wesc library
-    - Boot-time launcher (Bash + systemd) to pick the driving mode without a screen
-    - Trained driving models in a Unity simulator first
-    - Demoed the car at the Préfecture de La Réunion on 14 July 2026
+    - "Two driving modes from the same camera: an image-recognition model trained with supervised learning, more resilient in complex turns, and a ray-casting algorithm on the camera's output that uses far fewer resources"
+    - Decision algorithms written in C that turn the camera analysis into throttle and steering
+    - "Our own ESC library in C (wesc): a rewrite of the VESC UART protocol for better performance than the standard tooling, soon to be open-sourced"
+    - "Hardware integration: NVIDIA Jetson Nano, OAK-D Lite camera, VESC electronic speed controller and steering servo"
   fr:
-    - Lecture de la manette avec libevdev et rampes d'accélération et de direction pour un pilotage fluide
-    - Envoi des commandes en UART (termios) au contrôleur VESC via la bibliothèque wesc de l'équipe
-    - Lanceur au démarrage (Bash + systemd) pour choisir le mode de conduite sans écran
-    - Entraînement des modèles de conduite d'abord dans un simulateur Unity
-    - Démonstration à la Préfecture de La Réunion le 14 juillet 2026
+    - "Deux modes de conduite à partir de la même caméra : un modèle de reconnaissance d'images entraîné en apprentissage supervisé, plus robuste dans les virages complexes, et un algorithme de lancer de rayons sur la sortie de la caméra, bien moins gourmand en ressources"
+    - Algorithmes de décision écrits en C qui transforment l'analyse de la caméra en accélération et direction
+    - "Notre propre bibliothèque ESC en C (wesc) : une réécriture du protocole UART du VESC, plus performante que l'outillage standard, bientôt open source"
+    - "Intégration matérielle : NVIDIA Jetson Nano, caméra OAK-D Lite, variateur VESC et servo de direction"
 results:
   - v:
       en: 3rd
@@ -40,42 +38,29 @@ results:
     l:
       en: place at the RoboCar final in Paris
       fr: place à la finale RoboCar à Paris
-  - v: 14/07
-    l:
-      en: public demo at the Préfecture
-      fr: démo publique à la Préfecture
 tags:
   - C
-  - NVIDIA Jetson
-  - libevdev
-  - termios UART
+  - Python
   - Bash
-  - systemd
+  - NVIDIA Jetson Nano
+  - OAK-D Lite
+  - UART
+skills:
+  - Embedded Linux
+  - { en: Serial protocols (UART), fr: Protocoles série (UART) }
+  - { en: Real-time control, fr: Contrôle temps réel }
+  - { en: Computer vision, fr: Vision par ordinateur }
+  - { en: Supervised learning, fr: Apprentissage supervisé }
 media:
   - type: clip
     src: race.mp4
     caption:
       en: The car on track at the RoboCar final, Epitech Paris
       fr: La voiture en piste à la finale RoboCar, Epitech Paris
-  - type: image
-    src: ""
-    caption:
-      en: "Hardware: Jetson, VESC, wiring"
-      fr: "Matériel : Jetson, VESC, câblage"
-  - type: clip
-    src: ""
-    caption:
-      en: Gamepad control with throttle ramp
-      fr: Pilotage manette avec rampe d'accélération
-  - type: image
-    src: ""
-    caption:
-      en: Demo at the Préfecture, 14 July
-      fr: Démo à la Préfecture, 14 juillet
 links:
   - label:
-      en: Robocar programme (Epitech)
-      fr: Programme Robocar (Epitech)
+      en: RoboCar programme (Epitech)
+      fr: Programme RoboCar (Epitech)
     url: https://www.epitech.eu/2025/09/04/projet-robocar-la-grande-finale/
 collaborators:
   - Théo Futol

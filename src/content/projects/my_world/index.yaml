@@ -1,6 +1,6 @@
 slug: my_world
 title: my_world
-category: gfx
+categories: [gfx]
 year: "2025"
 status: done
 featured: false

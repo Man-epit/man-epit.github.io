@@ -1,7 +1,6 @@
-# Everyone you worked with, in one place: name → link to their profile (GitHub, LinkedIn, portfolio…).
-# Projects and events list collaborators by name (`collaborators: [Lucien Rivière]`).
-# Leave `url` empty to show the name without a link.
-# If a name used in a project is missing here, the project still shows the name, without a link.
+# Collaborators: name and profile link (GitHub, LinkedIn, website).
+# Projects and events reference them by name: `collaborators: [Lucien Rivière]`.
+# An empty url shows the name without a link.
 
 Anthony Lauret:
   url: ""

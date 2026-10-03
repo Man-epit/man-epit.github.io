@@ -10,8 +10,9 @@ export const getStaticPaths = () => LANGS.map((lang) => ({ params: { lang } }));
 const lang = Astro.params.lang as Lang;
 const t = UI[lang];
 const projects = await getProjects();
-const used = (Object.keys(CATEGORIES) as (keyof typeof CATEGORIES)[]).filter((k) => projects.some((p) => p.data.category === k));
-const chips: [string, string, number][] = [['all', t.all, projects.length], ...used.map((k): [string, string, number] => [k, catLabel(k, lang), projects.filter((p) => p.data.category === k).length])];
+const count = (k: keyof typeof CATEGORIES) => projects.filter((p) => p.data.categories.includes(k)).length;
+const used = (Object.keys(CATEGORIES) as (keyof typeof CATEGORIES)[]).filter((k) => count(k));
+const chips: [string, string, number][] = [['all', t.all, projects.length], ...used.map((k): [string, string, number] => [k, catLabel(k, lang), count(k)])];
 ---
 <Base lang={lang} page="projects" title={t.projects}>
   <div class="phead"><h1>{t.projects}</h1><p>{t.projIntro(projects.length)}</p></div>
@@ -19,7 +20,7 @@ const chips: [string, string, number][] = [['all', t.all, projects.length], ...u
     {chips.map(([k, label, n]) => <button type="button" class="chip" data-c={k} aria-pressed={k === 'all' ? 'true' : 'false'}>{label}<span class="n">{n}</span></button>)}
   </div>
   <div class="plist" id="plist">{projects.map(({ data: p }) => (
-    <a class="prow" href={`/${lang}/projects/${p.slug}/`} data-c={p.category}>
+    <a class="prow" href={`/${lang}/projects/${p.slug}/`} data-c={p.categories.join(' ')}>
       <Media m={p.media[0] ?? { type: 'image' }} dir={`projects/${p.slug}`} lang={lang} inLink sizes="(max-width: 540px) 100vw, 360px" />
       <span class="nm">{p.featured ? '★ ' : ''}{L(p.title, lang)}</span>
       <div class="tags"><Tags tags={p.tags} /></div>
@@ -33,6 +34,6 @@ const chips: [string, string, number][] = [['all', t.all, projects.length], ...u
   chips.forEach((ch) => ch.addEventListener('click', () => {
     const c = ch.dataset.c;
     chips.forEach((x) => x.setAttribute('aria-pressed', String(x === ch)));
-    document.querySelectorAll<HTMLElement>('#plist .prow').forEach((r) => (r.hidden = !(c === 'all' || r.dataset.c === c)));
+    document.querySelectorAll<HTMLElement>('#plist .prow').forEach((r) => (r.hidden = !(c === 'all' || r.dataset.c!.split(' ').includes(c!))));
   }));
 </script>

@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 
-// User site (<username>.github.io) → served from the root, no `base` needed.
+// User site served from the domain root, so no `base`.
 export default defineConfig({
   i18n: {
     defaultLocale: 'en',

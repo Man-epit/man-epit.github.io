@@ -1,12 +1,10 @@
-// Compress the raw files in each entry's originals/ folder into its media/ folder:
-//   src/content/{projects,events}/<slug>/originals/  →  src/content/{projects,events}/<slug>/media/
-//   src/content/profile/originals/                    →  src/content/profile/media/
-//   photos → <name>.webp, max 2000px, quality 82
-//   videos → <name>.mp4 (12 s max, fits in 1280x1280, no audio) + <name>.poster.webp (frame at 3 s)
-// Also renders each public/cv/<name>.pdf to src/content/profile/media/<name>-<page>.webp (CV preview page).
-// Only files whose output is missing or older than the original are processed.
-// originals/ folders are git-ignored; media/ is committed.
-// Usage: npm run media
+// npm run media
+// Compresses the raw files of each entry's originals/ folder into its media/ folder
+// (src/content/{projects,events}/<slug>/ and src/content/profile/):
+//   photos: <name>.webp, max 2000 px, quality 82
+//   videos: <name>.mp4 (first 12 s, max 1280 px, no audio) and <name>.poster.webp (frame at 3 s)
+// Also renders public/cv/<name>.pdf to src/content/profile/media/<name>-<page>.webp for the CV page.
+// Files are skipped when their output is newer than the original.
 import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';

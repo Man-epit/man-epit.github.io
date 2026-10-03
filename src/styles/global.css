@@ -209,7 +209,7 @@ footer{padding-block:0 32px;color:var(--muted);font-size:13px;display:flex;justi
 .rel a{font-family:var(--mono);font-size:14px;text-decoration:none;border:1px solid var(--line);border-radius:6px;padding:4px 9px;background:var(--surface)}
 .rel a:hover{border-color:var(--accent)}
 
-/* real media (added for the Astro port) */
+/* media */
 .media{display:block;width:100%;height:auto;max-height:80vh;object-fit:contain;border-radius:8px;background:var(--ph)}
 .card .media,.prow .media{aspect-ratio:16/9;object-fit:cover}
 .media.sq,.evc .media{aspect-ratio:1/1;object-fit:cover}
@@ -222,7 +222,7 @@ footer{padding-block:0 32px;color:var(--muted);font-size:13px;display:flex;justi
 .lang a{display:block;padding:5px 9px;font:600 12px var(--mono);color:var(--muted);text-decoration:none;letter-spacing:.06em}
 .lang a[aria-current="true"]{background:var(--ink);color:var(--bg)}
 
-/* media carousel (detail pages): one item at a time, circular, click for fullscreen */
+/* media carousel */
 .car{margin:0;outline:none}
 .car-view{position:relative;overflow:hidden;border-radius:var(--r);background:var(--ph);touch-action:pan-y;user-select:none;cursor:zoom-in}
 .car-track{display:flex;transition:transform .35s ease}
@@ -251,3 +251,4 @@ footer{padding-block:0 32px;color:var(--muted);font-size:13px;display:flex;justi
 .collab a{font-weight:600;text-decoration:none}
 .cvhead{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
 .cvpage{display:block;width:100%;max-width:820px;height:auto;margin:0 auto 24px;border:1px solid var(--line);border-radius:8px;box-shadow:0 8px 30px rgb(0 0 0 / .12)}
+.soon{font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--warm);background:var(--warm-soft);border-radius:4px;padding:2px 6px;margin-left:4px}

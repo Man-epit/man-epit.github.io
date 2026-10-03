@@ -1,6 +1,6 @@
 slug: Zappy
 title: Zappy
-category: sys
+categories: [net]
 year: "2026"
 status: done
 featured: false
@@ -36,7 +36,7 @@ tags:
   - PixiJS
   - Criterion
 media:
-  - type: image   # placeholder until real photos/videos exist: delete this item then
+  - type: image   # placeholder, remove once real media is added
     src: placeholder.webp
   - type: clip
     src: ""
