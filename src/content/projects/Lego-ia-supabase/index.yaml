@@ -6,8 +6,8 @@ status: done
 featured: true
 order: 20
 summary:
-  en: "Real-time multiplayer LEGO building contest: players join by code on their phones and an AI judges their photos against a 100-point rubric. Built in three days."
-  fr: "Concours de construction LEGO multijoueur en temps réel : les joueurs rejoignent la partie par code sur leur téléphone et une IA note leurs photos sur une grille de 100 points. Réalisé en trois jours."
+  en: "Google showed off an AI that judges LEGO builds at its Cloud Summit, and we rebuilt it in three days for a contest between two directors. As first-year Epitech students with no prior experience, at a time when AI API keys were hard to get and most Google AI services weren't enabled in La Réunion, we found our way through Vertex AI."
+  fr: "Google a présenté au Cloud Summit une IA qui juge des constructions LEGO, et nous l'avons reproduite en trois jours pour un concours entre deux directeurs. En 1re année à Epitech, sans expérience préalable, à une époque où les clés d'API IA étaient difficiles à obtenir et où la plupart des services IA de Google n'étaient pas activés à La Réunion, nous avons trouvé notre chemin via Vertex AI."
 role:
   en: Full-stack developer
   fr: Développeur full-stack
@@ -46,6 +46,11 @@ results:
     l:
       en: directors competed on it
       fr: directeurs se sont affrontés
+skills:
+  - { en: Real-time systems, fr: Systèmes temps réel }
+  - { en: Prompt engineering, fr: Prompt engineering }
+  - { en: Full-stack web, fr: Web full-stack }
+  - { en: Database design, fr: Conception de base de données }
 tags:
   - JavaScript
   - Vite
