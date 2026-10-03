@@ -1,13 +1,13 @@
 slug: corewar
 title: Corewar
-categories: [lang]
+categories: [lang, sys]
 year: "2025"
 status: done
 featured: true
 order: 50
 summary:
-  en: "Core War virtual machine: loads .cor champions into a circular 6 KiB arena and runs all 16 instructions with cycle costs and fork. Bonus: debug shell, coloured dump and an OpenGL view."
-  fr: "Machine virtuelle Core War : charge des champions .cor dans une arène circulaire de 6 Kio et exécute les 16 instructions avec leur coût en cycles et fork. Bonus : shell de débogage, dump coloré et vue OpenGL."
+  en: "Programs fighting for control of a shared memory: we wrote the virtual machine that runs these battles, with its own instruction set and processes that fork, a shell to step through the fight, and a live 3D view of the memory, all the way to a VR headset. First of our campus."
+  fr: "Des programmes qui se battent pour le contrôle d'une mémoire partagée : nous avons écrit la machine virtuelle qui fait tourner ces combats, avec son jeu d'instructions et des processus qui se dupliquent, un shell pour avancer pas à pas, et une vue 3D en direct de la mémoire, jusque dans un casque VR. Premiers du campus."
 role: ""
 team:
   en: 2 people
@@ -22,24 +22,39 @@ contributions:
   en:
     - Circular 6 KiB memory arena and champion loader
     - All 16 instructions with their cycle costs, including process fork
-    - "Bonus: readline debug shell, coloured memory dump and live OpenGL view"
+    - "Bonus: a shell to control the simulation step by step and print any value at any time"
+    - "Bonus: a live 3D view of the memory in OpenGL (GLFW)"
+    - "Bonus: a VR mode, where the virtual machine acts as a server and a Unity client renders the battle in the headset"
     - "Companion assembler: robot_factory"
   fr:
     - Arène mémoire circulaire de 6 Kio et chargement des champions
     - Les 16 instructions avec leur coût en cycles, fork de processus compris
-    - "Bonus : shell de débogage readline, dump mémoire coloré et vue OpenGL en direct"
+    - "Bonus : un shell pour contrôler la simulation pas à pas et afficher n'importe quelle valeur à tout moment"
+    - "Bonus : une vue 3D en direct de la mémoire en OpenGL (GLFW)"
+    - "Bonus : un mode VR, où la machine virtuelle sert de serveur et un client Unity affiche le combat dans le casque"
     - "Assembleur associé : robot_factory"
 results:
-  - v: "16"
+  - v:
+      en: 1st
+      fr: 1er
     l:
-      en: instructions implemented
-      fr: instructions implémentées
+      en: of the campus
+      fr: du campus
 tags:
   - C
   - OpenGL
-  - GLFW/GLEW
+  - GLFW
+  - Unity
+  - VR
   - readline
   - Criterion
+skills:
+  - { en: Virtual machines, fr: Machines virtuelles }
+  - { en: Instruction set design, fr: Conception de jeu d'instructions }
+  - { en: Process scheduling, fr: Ordonnancement de processus }
+  - { en: Memory management, fr: Gestion mémoire }
+  - { en: 3D graphics (OpenGL), fr: Graphisme 3D (OpenGL) }
+  - { en: Client-server, fr: Client-serveur }
 media:
   - type: clip
     src: opengl-arena.mp4
