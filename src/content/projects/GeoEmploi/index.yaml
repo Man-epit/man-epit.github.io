@@ -1,0 +1,70 @@
+slug: GeoEmploi
+title: GeoEmploi
+categories: [web]
+year: "2026"
+status: done
+featured: true
+order: 30
+summary:
+  en: "A job board where the search starts from the map, built in one week for a demanding (fictional) ministry: government maps only, your location shared only if you agree and never more precisely than your town, fully usable without JavaScript, and everything self-hosted."
+  fr: "Un site d'emploi où la recherche commence par la carte, construit en une semaine pour un ministère (fictif) exigeant : uniquement des cartes de l'État, une position partagée seulement avec votre accord et jamais plus précise que la commune, un site utilisable sans JavaScript, et tout auto-hébergé."
+team:
+  en: 4 people
+  fr: 4 personnes
+context:
+  en: Epitech project, 3rd year
+  fr: Projet Epitech, 3e année
+contextText:
+  en: "One-week Epitech seminar built around a client brief: the \"Ministère du Job et Bonheur\" wants a job board with strict public-sector rules. Maps must come from the French government's IGN (OpenStreetMap is banned), geolocation needs explicit and revocable consent and stays at town level, an accessible version must work without JavaScript (RGAA), exports use Lambert-93 coordinates, and nothing may run on a cloud provider."
+  fr: "Séminaire Epitech d'une semaine construit autour du cahier des charges d'un client : le « Ministère du Job et Bonheur » veut un site d'emploi soumis aux règles du secteur public. Les cartes doivent venir de l'IGN (OpenStreetMap est interdit), la géolocalisation exige un consentement explicite et révocable et reste à l'échelle de la commune, une version accessible doit fonctionner sans JavaScript (RGAA), les exports sont en Lambert-93, et rien ne doit tourner chez un fournisseur cloud."
+contributions:
+  en:
+    - "Map-first search over IGN tiles, served through our own caching proxy, with a keyboard-friendly list as the no-JavaScript fallback"
+    - "Three roles: job seekers apply in one click and manage their profile, employers publish offers once an admin has verified them and accept or reject candidates, admins moderate reported offers and follow national metrics"
+    - "Privacy by design: opt-in geolocation that can be revoked at any time, an audit log of consent, GDPR data export and self-service account deletion"
+    - "Admin CSV exports with Lambert-93 coordinates, and in-app notifications for new candidates and decisions"
+    - "One-command install with Docker Compose (app, PostgreSQL, Redis, scheduler), and a CI pipeline that builds and smoke-tests a release image"
+  fr:
+    - "Recherche par la carte sur les tuiles IGN, servies par notre propre proxy avec cache, et une liste navigable au clavier comme version sans JavaScript"
+    - "Trois rôles : les candidats postulent en un clic et gèrent leur profil, les employeurs publient leurs offres une fois vérifiés par un admin et acceptent ou refusent les candidats, les admins modèrent les offres signalées et suivent les indicateurs nationaux"
+    - "Respect de la vie privée dès la conception : géolocalisation sur consentement, révocable à tout moment, journal des consentements, export des données RGPD et suppression du compte en autonomie"
+    - "Exports CSV admin avec coordonnées en Lambert-93, et notifications dans l'application pour les nouveaux candidats et les décisions"
+    - "Installation en une commande avec Docker Compose (application, PostgreSQL, Redis, planificateur), et une CI qui construit et teste une image de release"
+skills:
+  - { en: Geospatial data, fr: Données géospatiales }
+  - { en: GDPR / privacy by design, fr: RGPD / privacy by design }
+  - { en: Web accessibility (RGAA), fr: Accessibilité web (RGAA) }
+  - { en: Backend API design, fr: Conception d'API backend }
+  - { en: "DevOps (Docker, CI)", fr: "DevOps (Docker, CI)" }
+tags:
+  - FastAPI
+  - Jinja2
+  - JavaScript
+  - PostgreSQL
+  - Redis
+  - Docker Compose
+media:
+  - type: clip
+    src: map.mp4
+    caption:
+      en: "Job seeker view: zooming from France into Paris offers"
+      fr: "Vue demandeur d'emploi : zoom de la France vers les offres de Paris"
+  - type: clip
+    src: employer.mp4
+    caption:
+      en: "Employer view: managing an offer and accepting a candidate"
+      fr: "Vue employeur : gestion d'une offre et acceptation d'un candidat"
+  - type: clip
+    src: admin.mp4
+    caption:
+      en: "Admin view: users, offers, applications and national metrics"
+      fr: "Vue administrateur : utilisateurs, offres, candidatures et métriques nationales"
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: https://github.com/Man-epit/Seminar
+collaborators:
+  - Samuel Jaglale-Dalleau
+  - Vincent
+  - Clément
