@@ -6,14 +6,18 @@ status: done
 featured: false
 order: 230
 summary:
-  en: String-keyed hash table library with a hand-written hash function, separate chaining and its own mini_printf.
-  fr: Bibliothèque de table de hachage à clés texte, avec fonction de hachage maison, chaînage séparé et son propre mini_printf.
+  en: "A hash table built from scratch in C: my own hash function, collision handling by chaining, and a small printf of my own to display it, the data structure behind most databases and caches."
+  fr: "Une table de hachage construite de zéro en C : ma propre fonction de hachage, la gestion des collisions par chaînage, et un petit printf maison pour l'afficher, la structure de données derrière la plupart des bases de données et des caches."
 team:
   en: 2 people
   fr: 2 personnes
 context:
   en: Epitech project, 1st year
   fr: Projet Epitech, 1re année
+skills:
+  - { en: "Data structures", fr: "Structures de données" }
+  - { en: "Hashing", fr: "Hachage" }
+  - { en: "Memory management", fr: "Gestion mémoire" }
 tags:
   - C
   - Criterion

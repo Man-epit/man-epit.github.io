@@ -6,14 +6,18 @@ status: done
 featured: false
 order: 210
 summary:
-  en: "Two-pass assembler for Corewar: turns .s champion sources into .cor bytecode (header, coding bytes, label resolution)."
-  fr: "Assembleur deux passes pour Corewar : transforme les champions .s en bytecode .cor (en-tête, octets de codage, résolution des labels)."
+  en: "The other half of Corewar: an assembler that turns champions written in Corewar's assembly language into the bytecode our virtual machine runs, with label resolution and the exact binary format the arena expects."
+  fr: "L'autre moitié de Corewar : un assembleur qui transforme les champions écrits dans le langage assembleur de Corewar en bytecode exécuté par notre machine virtuelle, avec résolution des étiquettes et le format binaire exact attendu par l'arène."
 team:
   en: 2 people
   fr: 2 personnes
 context:
   en: Epitech project, 1st year
   fr: Projet Epitech, 1re année
+skills:
+  - { en: "Assemblers / compilers", fr: "Assembleurs / compilateurs" }
+  - { en: "Parsing", fr: "Parsing" }
+  - { en: "Binary file formats", fr: "Formats de fichiers binaires" }
 tags:
   - C
   - Make

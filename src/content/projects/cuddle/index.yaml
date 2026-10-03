@@ -1,19 +1,24 @@
 slug: cuddle
 title: cuddle
-categories: [lib]
+categories: [lib, data]
 year: "2025"
 status: done
 featured: false
 order: 240
 summary:
-  en: "Small pandas-like dataframe library: CSV load/save, type inference, head/tail, describe, filter, sort, apply, groupby."
-  fr: "Petite bibliothèque de dataframes inspirée de pandas : lecture/écriture CSV, inférence de types, head/tail, describe, filter, sort, apply, groupby."
+  en: "A small pandas for C: load a CSV file into a dataframe that guesses each column's type, then explore it with the operations data scientists use every day (head, describe, filter, sort, apply, group by) and save the result."
+  fr: "Un petit pandas pour le C : charger un fichier CSV dans un dataframe qui devine le type de chaque colonne, puis l'explorer avec les opérations que les data scientists utilisent tous les jours (head, describe, filter, sort, apply, group by) et enregistrer le résultat."
 team:
   en: 2 people
   fr: 2 personnes
 context:
   en: Epitech project, 1st year
   fr: Projet Epitech, 1re année
+skills:
+  - { en: "Data structures", fr: "Structures de données" }
+  - { en: "Data processing", fr: "Traitement de données" }
+  - { en: "Type inference", fr: "Inférence de types" }
+  - { en: "Library design", fr: "Conception de bibliothèque" }
 tags:
   - C
   - libm

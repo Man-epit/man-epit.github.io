@@ -1,19 +1,24 @@
 slug: nanotekspice
 title: nanotekspice
-categories: [lang]
+categories: [emb]
 year: "2026"
 status: done
 featured: false
 order: 220
 summary:
-  en: "Digital logic simulator: reads a .nts netlist and simulates gates, flip-flops, 4000-series chips and ROM/RAM tick by tick in an interactive shell, with three-state logic."
-  fr: "Simulateur de logique numérique : lit une netlist .nts et simule portes, bascules, puces série 4000 et ROM/RAM tick par tick dans un shell interactif, en logique à trois états."
+  en: "A digital electronics simulator: describe a circuit in a text file, with logic gates, flip-flops, real 4000-series chips, ROM and RAM, and watch its signals change tick by tick in an interactive shell, including the \"undefined\" state real wires can have."
+  fr: "Un simulateur d'électronique numérique : on décrit un circuit dans un fichier texte (portes logiques, bascules, vraies puces de la série 4000, ROM et RAM) et on observe ses signaux évoluer à chaque cycle dans un shell interactif, y compris l'état « indéfini » que peuvent avoir de vrais fils."
 team:
   en: 2 people
   fr: 2 personnes
 context:
   en: Epitech project, 2nd year
   fr: Projet Epitech, 2e année
+skills:
+  - { en: "Digital logic", fr: "Logique numérique" }
+  - { en: "Simulation", fr: "Simulation" }
+  - { en: "Object-oriented design (C++)", fr: "Conception orientée objet (C++)" }
+  - { en: "Parsing", fr: "Parsing" }
 tags:
   - C++17
   - CMake
