@@ -42,6 +42,12 @@ results:
     l:
       en: seeds per experiment, 100 eval episodes each
       fr: seeds par expérience, 100 épisodes d'évaluation chacune
+skills:
+  - { en: Reinforcement learning, fr: Apprentissage par renforcement }
+  - { en: Deep learning, fr: Deep learning }
+  - { en: Experimental methodology, fr: Méthodologie expérimentale }
+  - { en: Statistical analysis, fr: Analyse statistique }
+  - { en: Hyperparameter tuning, fr: Réglage des hyperparamètres }
 tags:
   - Python
   - PyTorch
