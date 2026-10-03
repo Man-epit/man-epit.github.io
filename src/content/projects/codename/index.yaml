@@ -6,14 +6,36 @@ status: done
 featured: false
 order: 100
 summary:
-  en: 'Prompt-injection lab: defence prompts guard a secret and are scored against attack prompts on a local LLM, with a batch harness and a Streamlit "War Room" that refines defences automatically.'
-  fr: "Laboratoire d'injection de prompts : des prompts de défense protègent un secret et sont notés face à des prompts d'attaque sur un LLM local, avec un banc de tests et une « War Room » Streamlit qui affine les défenses automatiquement."
+  en: "Can you trick an AI into revealing a secret it was told to keep? This lab pits defence prompts against a library of attacks (role-play, instruction override, encoding tricks) on a local LLM, scores every match, and lets a stronger model rewrite the losing defences until they hold."
+  fr: "Peut-on piéger une IA pour qu'elle révèle un secret qu'on lui a demandé de garder ? Ce labo oppose des prompts de défense à une bibliothèque d'attaques (jeu de rôle, contournement d'instructions, astuces d'encodage) sur un LLM local, note chaque affrontement, et laisse un modèle plus fort réécrire les défenses perdantes jusqu'à ce qu'elles tiennent."
 team:
   en: Solo
   fr: Seul
 context:
   en: Epitech project, 2nd year
   fr: Projet Epitech, 2e année
+contextText:
+  en: "Prompt injection is the main security risk of LLM applications: a user message that makes the model ignore its instructions. The lab plays both sides. A defence is a system prompt that must keep a secret unless the user gives the password, and attacks try to get the secret or the password out anyway."
+  fr: "L'injection de prompt est le principal risque de sécurité des applications LLM : un message utilisateur qui pousse le modèle à ignorer ses instructions. Le labo joue les deux camps. Une défense est un prompt système qui doit garder un secret sauf si l'utilisateur donne le mot de passe, et les attaques tentent d'obtenir le secret ou le mot de passe malgré tout."
+contributions:
+  en:
+    - "A library of attacks: instruction override, persona hijacking, system-prompt leaking, and encoding, splitting or translating the request"
+    - "Mandatory tests for the other side of the contract: with the right password, the model must actually give the secret"
+    - "A batch harness that runs every defence against every attack on a local model (Ollama) and scores the results"
+    - "A Streamlit \"War Room\": prompt editor, one-against-all tester, and analytics that rank defences by robustness and attacks by success rate"
+    - "An automatic loop where a stronger model rewrites a defence from its failures until it holds every test"
+  fr:
+    - "Une bibliothèque d'attaques : contournement d'instructions, détournement de persona, fuite du prompt système, et requêtes encodées, découpées ou traduites"
+    - "Des tests obligatoires pour l'autre côté du contrat : avec le bon mot de passe, le modèle doit réellement donner le secret"
+    - "Un banc de test qui lance chaque défense contre chaque attaque sur un modèle local (Ollama) et note les résultats"
+    - "Une « War Room » Streamlit : éditeur de prompts, testeur un-contre-tous, et analyses qui classent les défenses par robustesse et les attaques par taux de réussite"
+    - "Une boucle automatique où un modèle plus fort réécrit une défense à partir de ses échecs jusqu'à ce qu'elle passe tous les tests"
+skills:
+  - { en: LLM security, fr: Sécurité des LLM }
+  - { en: Prompt engineering, fr: Prompt engineering }
+  - { en: Red teaming, fr: Red teaming }
+  - { en: Evaluation / benchmarking, fr: Évaluation / benchmarking }
+  - { en: Automated prompt optimisation, fr: Optimisation automatique de prompts }
 tags:
   - Python
   - Ollama
