@@ -6,8 +6,8 @@ status: done
 featured: true
 order: 70
 summary:
-  en: "Our own C library to drive the car's ESC (a VESC motor controller) over UART, written for RoboCar to get better performance than the standard tooling: encodes the commands (duty cycle, current, brake, RPM, steering servo) and decodes telemetry with CRC checks. Open source soon."
-  fr: "Notre propre bibliothèque C pour piloter l'ESC de la voiture (un contrôleur moteur VESC) en UART, écrite pour RoboCar afin d'obtenir de meilleures performances que l'outillage standard : encodage des commandes (rapport cyclique, courant, frein, RPM, servo de direction) et décodage de la télémétrie avec vérification CRC. Bientôt open source."
+  en: "To make our self-driving car react faster, we stopped relying on the standard tools and wrote our own library to talk to its motor controller. Small, written in C, and open source soon."
+  fr: "Pour que notre voiture autonome réagisse plus vite, nous avons laissé de côté les outils standards et écrit notre propre bibliothèque pour dialoguer avec son contrôleur moteur. Légère, écrite en C, et bientôt open source."
 team:
   en: 4 people
   fr: 4 personnes

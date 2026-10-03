@@ -6,8 +6,8 @@ status: progress
 featured: true
 order: 10
 summary:
-  en: "Self-driving RC car built for Epitech's national RoboCar programme: an OAK-D Lite camera on an NVIDIA Jetson Nano drives the car through an AI model or a lighter ray-based algorithm, and our own motor-controller library written in C."
-  fr: "Voiture RC autonome réalisée pour le programme national RoboCar d'Epitech : une caméra OAK-D Lite sur une NVIDIA Jetson Nano pilote la voiture via un modèle d'IA ou un algorithme à rayons plus léger, et notre propre bibliothèque de contrôle moteur écrite en C."
+  en: "A small car that drives itself, built by our campus team for Epitech's national RoboCar race, and 3rd at the final in Paris. It sees the track through a single camera and decides on its own, with an AI model for tricky turns or a lighter algorithm when every bit of computing power counts."
+  fr: "Une petite voiture qui conduit seule, construite par l'équipe de notre campus pour la course nationale RoboCar d'Epitech, et 3e de la finale à Paris. Elle voit la piste à travers une seule caméra et décide seule, avec un modèle d'IA pour les virages difficiles ou un algorithme plus léger quand chaque ressource compte."
 role:
   en: Embedded developer
   fr: Développeur embarqué
