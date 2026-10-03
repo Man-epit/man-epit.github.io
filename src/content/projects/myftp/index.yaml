@@ -6,14 +6,20 @@ status: done
 featured: false
 order: 150
 summary:
-  en: "Multi-client FTP server (RFC 959 subset) on raw sockets and poll(2): login, PASV/PORT, LIST/RETR/STOR/DELE, each client jailed to its root directory."
-  fr: "Serveur FTP multi-clients (sous-ensemble de la RFC 959) sur sockets bruts et poll(2) : login, PASV/PORT, LIST/RETR/STOR/DELE, chaque client confiné dans son répertoire racine."
+  en: "A file server that any standard FTP client can connect to, written from scratch on raw sockets: many users at once on a single thread, uploads and downloads, and every user locked inside their own folder so nobody can reach the rest of the disk."
+  fr: "Un serveur de fichiers auquel n'importe quel client FTP standard peut se connecter, écrit de zéro sur des sockets bruts : plusieurs utilisateurs à la fois sur un seul thread, envoi et téléchargement de fichiers, et chaque utilisateur enfermé dans son propre dossier pour que personne n'accède au reste du disque."
 team:
   en: Solo
   fr: Seul
 context:
   en: Epitech project, 2nd year
   fr: Projet Epitech, 2e année
+skills:
+  - { en: "Network programming", fr: "Programmation réseau" }
+  - { en: "Implementing an RFC", fr: "Implémentation d'une RFC" }
+  - { en: "Event-driven I/O", fr: "E/S événementielles" }
+  - { en: "Path sandboxing / security", fr: "Isolation des chemins / sécurité" }
+  - { en: "Process management", fr: "Gestion de processus" }
 tags:
   - C
   - POSIX sockets
