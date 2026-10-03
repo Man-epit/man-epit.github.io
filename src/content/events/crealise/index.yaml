@@ -16,6 +16,8 @@ summary:
   fr: J'ai apporté le regard technique d'Epitech à une équipe de design. Nous avons conçu une application pour les personnes en détresse, face à l'isolement croissant de ceux qui utilisent l'IA comme ami ou comme psy.
 contextText: ""
 media:
+  - type: image   # placeholder until real photos/videos exist: delete this item then
+    src: placeholder.webp
   - type: image
     src: ""
     caption:

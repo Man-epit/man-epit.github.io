@@ -36,6 +36,8 @@ tags:
   - PixiJS
   - Criterion
 media:
+  - type: image   # placeholder until real photos/videos exist: delete this item then
+    src: placeholder.webp
   - type: clip
     src: ""
     caption:

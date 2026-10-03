@@ -22,6 +22,8 @@ tags:
   - Redis
   - PostgreSQL
 media:
+  - type: image   # placeholder until real photos/videos exist: delete this item then
+    src: placeholder.webp
   - type: image
     src: ""
     caption:

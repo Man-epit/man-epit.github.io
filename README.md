@@ -214,6 +214,8 @@ To use a custom domain, add `public/CNAME` containing the domain, then set it in
 - **Zappy:** which parts you owned (add a bullet to `contributions`).
 - **Media still missing:** Zappy, Cyclone crew dispatch, octopus, and the events Corewar (campus), Zappy (campus),
   Crealise, Free × Epitech and Global Game Jam. Every other entry has photos, screenshots or clips in its `media/` folder.
+  Meanwhile these entries show a generated `placeholder.webp` (first item of `media:`, marked with a comment).
+  When real media arrive, delete that item and the file `media/placeholder.webp`.
 
 To see every gap highlighted, run `npm run dev:draft`.
 
