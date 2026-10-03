@@ -16,7 +16,7 @@ npm run build        # production build in dist/, draft mode OFF
 npm run build:draft  # production build with draft mode ON
 npm run preview      # serve dist/
 npm run check        # type-check
-npm run media        # compress the raw photos/videos in each entry's originals/ folder
+npm run media        # compress the raw photos/videos in each entry's originals/ folder, render the CV previews
 ```
 
 You need Node 24 (`nvm use` reads `.nvmrc`). The CI uses the same version.
@@ -141,7 +141,10 @@ prints a warning naming the project.
 
 Edit `src/content/profile/index.yaml`: name, pitch, email, LinkedIn, GitHub URL, CV links, portrait and press photo.
 
-- **CV:** put the PDFs in `public/cv/`, then set `cv: { en: /cv/cv-manny-en.pdf, fr: /cv/cv-manny-fr.pdf }`.
+- **CV:** put the PDFs in `public/cv/`, set `cv: { en: /cv/cv-manny-en.pdf, fr: /cv/cv-manny-fr.pdf }`, then run
+  `npm run media`. The hero's "View CV" button opens `/en/cv/` (or `/fr/cv/`), which shows the CV as images and
+  has a download button. `npm run media` renders those images from the PDFs (needs `pdftoppm`, from poppler-utils)
+  into `src/content/profile/media/<pdf name>-<page>.webp`; run it again whenever a PDF changes.
 - **Portrait and press photo:** files go in `src/content/profile/media/` (raw ones in `profile/originals/`).
 
 When the CV or GitHub link is empty, its button is hidden in production.
@@ -205,12 +208,12 @@ To use a custom domain, add `public/CNAME` containing the domain, then set it in
 ## Still to fill in
 
 - **Profile:** a press photo.
-- **Event dates:** Mace, Free and Crealise.
+- **Event dates:** Free and Crealise.
 - **Roles:** the featured projects and the events.
 - **RoboCar:** best lap time (add it to `results`) and the source link.
 - **Zappy:** which parts you owned (add a bullet to `contributions`).
-- **Media still missing:** RoboCar, Zappy, Lego × IA, Cyclone crew dispatch, wesc,
-  octopus, and all events. Every other project has real screenshots or clips in its `media/` folder.
+- **Media still missing:** Zappy, Cyclone crew dispatch, octopus, and the events Corewar (campus), Zappy (campus),
+  Crealise, Free × Epitech and Global Game Jam. Every other entry has photos, screenshots or clips in its `media/` folder.
 
 To see every gap highlighted, run `npm run dev:draft`.
 

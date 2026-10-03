@@ -1,7 +1,7 @@
 // Interface text. Content text lives in src/content/.
 export const UI = {
   en: { home: 'Home', projects: 'Projects', hackathons: 'Hackathons', contact: 'Contact',
-    seeProjects: 'See projects', cv: 'Download CV', selectedWork: 'Selected work', allProjects: (n: number) => `All ${n} projects →`,
+    seeProjects: 'See projects', cv: 'Download CV', viewCv: 'View CV', openPdf: 'Open the PDF ↗', selectedWork: 'Selected work', allProjects: (n: number) => `All ${n} projects →`,
     hackTitle: 'Hackathons & awards', entries: (n: number) => `${n} entries`, experience: 'Experience & education', work: 'Experience', edu: 'Education', skills: 'Skills', beyond: 'Beyond code', press: 'In the press',
     contactTitle: "Let's talk about your April 2027 internship.", contactText: 'Embedded systems, data/AI or automation. Based in La Réunion, open to mainland France and remote.',
     copy: 'Copy', copied: 'Copied', selected: 'Selected', open: 'Open ↗',
@@ -15,7 +15,7 @@ export const UI = {
     devnote: 'Draft mode: this page comes from one YAML file in <code>src/content/projects/</code> or <code>src/content/events/</code>. Fill in <code>media[].src</code> to replace a placeholder.',
     st: { done: 'Done', progress: 'In progress', delivered: 'Delivered' } },
   fr: { home: 'Accueil', projects: 'Projets', hackathons: 'Hackathons', contact: 'Contact',
-    seeProjects: 'Voir les projets', cv: 'Télécharger le CV', selectedWork: 'Projets phares', allProjects: (n: number) => `Les ${n} projets →`,
+    seeProjects: 'Voir les projets', cv: 'Télécharger le CV', viewCv: 'Voir le CV', openPdf: 'Ouvrir le PDF ↗', selectedWork: 'Projets phares', allProjects: (n: number) => `Les ${n} projets →`,
     hackTitle: 'Hackathons & prix', entries: (n: number) => `${n} entrées`, experience: 'Expérience & formation', work: 'Expérience', edu: 'Formation', skills: 'Compétences', beyond: 'Au-delà du code', press: 'Dans la presse',
     contactTitle: "Parlons de votre stage d'avril 2027.", contactText: 'Systèmes embarqués, data/IA ou automatisation. Basé à La Réunion, ouvert à la métropole et au télétravail.',
     copy: 'Copier', copied: 'Copié', selected: 'Sélectionné', open: 'Ouvrir ↗',

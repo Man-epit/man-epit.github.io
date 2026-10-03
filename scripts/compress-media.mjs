@@ -3,11 +3,13 @@
 //   src/content/profile/originals/                    →  src/content/profile/media/
 //   photos → <name>.webp, max 2000px, quality 82
 //   videos → <name>.mp4 (12 s max, fits in 1280x1280, no audio) + <name>.poster.webp (frame at 3 s)
+// Also renders each public/cv/<name>.pdf to src/content/profile/media/<name>-<page>.webp (CV preview page).
 // Only files whose output is missing or older than the original are processed.
 // originals/ folders are git-ignored; media/ is committed.
 // Usage: npm run media
 import fs from 'node:fs';
 import path from 'node:path';
+import os from 'node:os';
 import { execFileSync } from 'node:child_process';
 import sharp from 'sharp';
 
@@ -56,4 +58,22 @@ for (const dir of entries) {
     console.log(`${src} → ${dest}  (${kb(src)} KB → ${kb(dest)} KB)\n  ${entry}`);
   }
 }
+// CV previews: one image per PDF page.
+const CV = 'public/cv';
+const PROFILE_MEDIA = path.join(ROOT, 'profile', 'media');
+for (const f of fs.readdirSync(CV).filter((f) => f.endsWith('.pdf'))) {
+  const pdf = path.join(CV, f);
+  const name = path.parse(f).name;
+  if (!newer(pdf, path.join(PROFILE_MEDIA, `${name}-1.webp`))) continue;
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'cv-'));
+  execFileSync('pdftoppm', ['-r', '200', '-png', pdf, path.join(tmp, 'p')]);
+  for (const page of fs.readdirSync(tmp)) {
+    const n = Number(page.match(/(\d+)\.png$/)[1]);
+    await sharp(path.join(tmp, page)).webp({ quality: 90 }).toFile(path.join(PROFILE_MEDIA, `${name}-${n}.webp`));
+  }
+  fs.rmSync(tmp, { recursive: true });
+  done++;
+  console.log(`${pdf} → ${PROFILE_MEDIA}/${name}-<page>.webp`);
+}
+
 console.log(done ? `${done} file(s) compressed.` : 'Nothing to do: drop raw files in src/content/<projects|events>/<slug>/originals/.');

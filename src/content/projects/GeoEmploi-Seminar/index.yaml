@@ -27,16 +27,16 @@ media:
     caption:
       en: "Job seeker view: zooming from France into Paris offers"
       fr: "Vue demandeur d'emploi : zoom de la France vers les offres de Paris"
-  - type: image
-    src: map-consent.webp
+  - type: clip
+    src: employer.mp4
     caption:
-      en: Geolocation asked with an explicit, revocable consent
-      fr: Géolocalisation demandée avec un consentement explicite et révocable
-  - type: image
-    src: map-paris.webp
+      en: "Employer view: managing an offer and accepting a candidate"
+      fr: "Vue employeur : gestion d'une offre et acceptation d'un candidat"
+  - type: clip
+    src: admin.mp4
     caption:
-      en: Offers clustered on IGN map tiles
-      fr: Offres regroupées sur les tuiles IGN
+      en: "Admin view: users, offers, applications and national metrics"
+      fr: "Vue administrateur : utilisateurs, offres, candidatures et métriques nationales"
 links:
   - label:
       en: Source code

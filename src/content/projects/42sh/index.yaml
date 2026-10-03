@@ -1,0 +1,67 @@
+slug: 42sh
+title: 42sh
+category: sys
+year: "2025"
+status: done
+featured: false
+order: 155
+summary:
+  en: "Unix shell in C modelled on tcsh: pipes, redirections, && / || / ; sequences, subshells, command substitution, variables, aliases, globbing, history and background jobs."
+  fr: "Shell Unix en C inspiré de tcsh : pipes, redirections, enchaînements && / || / ;, sous-shells, substitution de commandes, variables, alias, globbing, historique et jobs en arrière-plan."
+team:
+  en: 4 people
+  fr: 4 personnes
+context:
+  en: Epitech project, 1st year
+  fr: Projet Epitech, 1re année
+contextText:
+  en: "Epitech's 1st-year Unix programming project: write a shell that behaves like tcsh, with the same output, error messages and exit codes, using only system calls such as fork, execve, pipe and dup2."
+  fr: "Projet de programmation Unix de 1re année à Epitech : écrire un shell qui se comporte comme tcsh, avec la même sortie, les mêmes messages d'erreur et les mêmes codes de retour, en n'utilisant que des appels système comme fork, execve, pipe et dup2."
+contributions:
+  en:
+    - "Parser that builds a syntax tree by operator precedence: ; and background jobs, then ||, &&, redirections, pipes and parenthesised subshells"
+    - "Expansion of $variables and $?, `command` substitution, aliases, !N history and *?[ ] globbing"
+    - "Built-ins: cd, env, setenv, unsetenv, set, unset, alias, unalias, which, where, repeat, history, jobs, fg, exit"
+    - "Job control with process groups, and a test script that compares every case with tcsh"
+  fr:
+    - "Parseur qui construit un arbre syntaxique selon la priorité des opérateurs : ; et jobs en arrière-plan, puis ||, &&, redirections, pipes et sous-shells entre parenthèses"
+    - "Expansion des $variables et de $?, substitution `commande`, alias, historique !N et globbing *?[ ]"
+    - "Builtins : cd, env, setenv, unsetenv, set, unset, alias, unalias, which, where, repeat, history, jobs, fg, exit"
+    - "Contrôle des jobs par groupes de processus, et un script de test qui compare chaque cas avec tcsh"
+results:
+  - v: "15"
+    l:
+      en: built-in commands
+      fr: commandes intégrées
+  - v: "44"
+    l:
+      en: unit tests
+      fr: tests unitaires
+tags:
+  - C
+  - POSIX
+  - Criterion
+media:
+  - type: image
+    src: session.webp
+    caption:
+      en: "A session: pipes, variables, && / ||, command substitution, subshell and error messages"
+      fr: "Une session : pipes, variables, && / ||, substitution de commandes, sous-shell et messages d'erreur"
+  - type: clip
+    src: demo.mp4
+    caption:
+      en: The same session, typed live
+      fr: La même session, tapée en direct
+links:
+  - label:
+      en: Source code
+      fr: Code source
+    url: ""
+collaborators:
+  - Samuel Jaglale-Dalleau
+  - Nathaniel Leperlier
+  - Quentin Taranne-Payet
+related:
+  - myls
+  - mytop
+  - myftp

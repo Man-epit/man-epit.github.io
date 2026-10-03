@@ -12,32 +12,27 @@ role:
   en: Presenter
   fr: Présentateur
 summary:
-  en: Presented RoboCar and Buddy, an AI robot that answers visitors' questions, to guests at the 14 July reception.
-  fr: Présentation de RoboCar et de Buddy, un robot IA qui répond aux questions des visiteurs, lors de la réception du 14 juillet.
+  en: Presented RoboCar, the autonomous racing car, to guests at the Préfecture de La Réunion during the 14 July national day celebrations.
+  fr: Présentation de RoboCar, la voiture de course autonome, aux invités de la Préfecture de La Réunion lors des célébrations de la fête nationale du 14 juillet.
 contextText:
-  en: Epitech La Réunion was invited to show student AI projects at the Préfecture's 14 July reception, to an audience of officials and guests rather than a jury.
-  fr: Epitech La Réunion a été invitée à présenter des projets IA d'étudiants à la réception du 14 juillet de la Préfecture, devant des officiels et des invités plutôt qu'un jury.
+  en: Epitech La Réunion was invited by the Préfet to the 14 July celebrations to show what its students build, to an audience of officials and guests rather than a jury.
+  fr: Epitech La Réunion a été invitée par le Préfet aux célébrations du 14 juillet pour montrer ce que construisent ses étudiants, devant des officiels et des invités plutôt qu'un jury.
 media:
   - type: image
-    src: ""
+    src: robocar-stand.webp
     caption:
-      en: RoboCar demo at the Préfecture
-      fr: Démo de RoboCar à la Préfecture
+      en: "RoboCar stand at the Préfecture (photo: Aurélien Loyer)"
+      fr: "Le stand RoboCar à la Préfecture (photo : Aurélien Loyer)"
   - type: image
-    src: ""
+    src: prefecture.webp
     caption:
-      en: Buddy answering visitors
-      fr: Buddy répond aux visiteurs
-  - type: clip
-    src: ""
-    caption:
-      en: Short clip of the demo
-      fr: Courte vidéo de la démo
+      en: "The Préfecture gardens on 14 July (photo: Aurélien Loyer)"
+      fr: "Les jardins de la Préfecture le 14 juillet (photo : Aurélien Loyer)"
 links:
   - label:
-      en: LinkedIn post (campus director)
-      fr: Post LinkedIn (directeur du campus)
-    url: https://www.linkedin.com/in/anthonypalasse/
+      en: LinkedIn post (Epitech La Réunion)
+      fr: Post LinkedIn (Epitech La Réunion)
+    url: https://www.linkedin.com/posts/aurelien-loyer-epi_ce-14-juillet-jai-eu-lhonneur-de-repr%C3%A9senter-ugcPost-7483171665221193728-HJh8
 related:
   - RoboCar
 hide:

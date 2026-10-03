@@ -4,40 +4,58 @@ order: 10
 result:
   en: 1st place
   fr: 1re place
-when: ""
+when: 03/2026
 format:
   en: 1 week · team of 10
   fr: 1 semaine · équipe de 10
 role: ""
 summary:
-  en: "How do you turn tourists into engaged tourists? We built an IoT proof of concept: connected cameras detect food waste at buffets and generate reports to reduce it."
-  fr: "Comment transformer des touristes en touristes engagés ? Nous avons construit une preuve de concept IoT : des caméras connectées détectent le gaspillage alimentaire aux buffets et produisent des rapports pour le réduire."
+  en: "SOMIN (\"the path\" in Réunion Creole): an app that turns hotel buffet guests into engaged tourists by putting local produce first and cutting food waste, backed by an AI-powered connected bin."
+  fr: "SOMIN (« le chemin » en créole) : une application qui transforme les clients des buffets d'hôtel en touristes engagés, en remettant le terroir réunionnais au centre de l'assiette et en réduisant le gaspillage, avec une poubelle connectée analysée par IA."
 contextText:
-  en: "Week-long challenge set by Mace with Epitech: make tourism in La Réunion more responsible by getting visitors involved."
-  fr: "Défi d'une semaine proposé par Mace avec Epitech : rendre le tourisme à La Réunion plus responsable en impliquant les visiteurs."
+  en: "First edition of the hackathon run by Epitech La Réunion and Groupe Macé. The brief, from the group's hotel division: how can technology turn a consumer tourist into an engaged tourist? The team started from one figure: global food waste emits four times more CO₂ than global air traffic."
+  fr: "Première édition du hackathon organisé par Epitech La Réunion et le Groupe Macé. Le défi, posé par le pôle hôtelier du groupe : comment la technologie peut-elle transformer un touriste consommateur en touriste engagé ? L'équipe est partie d'un constat : le gaspillage alimentaire mondial émet quatre fois plus de CO₂ que le trafic aérien mondial."
+contributions:
+  en:
+    - "Local food guide: a QR code on each table opens the app, which tells the story of the local produce and the chef's recipes."
+    - "\"Somin\" tasting: the app suggests ideal portions (e.g. \"3 spoons of pitaya\") so guests can taste every local dish without overloading their plate."
+    - "Connected bin: an AI analyses leftovers so kitchens can plan quantities better and favour local purchases."
+  fr:
+    - "Guide du terroir : un QR code à table ouvre l'application, qui raconte l'histoire des produits péi et des recettes du chef."
+    - "Dégustation « Somin » : l'application suggère des portions idéales (ex. « 3 cuillères de pitaya ») pour goûter à toutes les saveurs locales sans surcharger son assiette."
+    - "Poubelle connectée : une IA analyse les restes pour aider les cuisines à mieux prévoir les quantités et privilégier les achats locaux."
+results:
+  - v: 13.5 t
+    l:
+      en: food saved over 5 years (projection), about 27,000 meals
+      fr: de nourriture sauvée en 5 ans (projection), soit 27 000 repas
+  - v: 33.7 t
+    l:
+      en: CO₂ avoided over 5 years (projection)
+      fr: de CO₂ évitées en 5 ans (projection)
 media:
-  - type: clip
-    src: ""
-    caption:
-      en: "Demo: camera detecting food waste"
-      fr: "Démo : la caméra détecte le gaspillage"
   - type: image
-    src: ""
+    src: somin-home.webp
     caption:
-      en: Team photo with the award
-      fr: Photo d'équipe avec le prix
+      en: "SOMIN home screen: \"Eating local is an act\""
+      fr: "Écran d'accueil de SOMIN : « Manger péi, c'est un acte »"
   - type: image
-    src: ""
+    src: somin-buffet.webp
     caption:
-      en: Generated waste report
-      fr: Rapport de gaspillage généré
-  - type: image
-    src: ""
-    caption:
-      en: Pitch on stage
-      fr: Pitch sur scène
+      en: Buffet page with suggested assortments of local dishes
+      fr: Page du buffet avec des assortiments de plats locaux suggérés
 links:
   - label:
-      en: Source code
-      fr: Code source
-    url: ""
+      en: LinkedIn post (team)
+      fr: Post LinkedIn (équipe)
+    url: https://www.linkedin.com/posts/loic-rabearivelo_hackathon-epitech-groupemace-ugcPost-7439312717389299712-o5gc
+collaborators:
+  - Loïc Rabearivelo
+  - Nathaniel Leperlier
+  - Enzo Abdallah
+  - Anthony Lauret
+  - Philippe Rochefeuille
+  - Isaac Allard
+  - Samuel Jaglale-Dalleau
+  - Geoffroy Martin
+  - Lucas Plante

@@ -29,7 +29,7 @@ const github = profile.github.replace(/^https?:\/\//, '').replace(/\/$/, '');
       <p class="pitch">{L(profile.pitch, lang)}</p>
       <div class="btns">
         <a class="btn primary" href={`/${lang}/projects/`}>{t.seeProjects}</a>
-        {(cv || DRAFT) && <a class="btn" href={cv || '#'} download={cv ? '' : undefined}>{t.cv}</a>}
+        {(cv || DRAFT) && <a class="btn" href={cv ? `/${lang}/cv/` : '#'}>{t.viewCv}</a>}
         {(profile.github || DRAFT) && <a class="btn" href={profile.github || '#'} target="_blank" rel="noopener">
           <Icon name="github" />GitHub</a>}
         <a class="btn" href={profile.linkedin} target="_blank" rel="noopener"><Icon name="linkedin" />LinkedIn</a>
