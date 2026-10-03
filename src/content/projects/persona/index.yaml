@@ -6,18 +6,38 @@ status: done
 featured: false
 order: 110
 summary:
-  en: "Chat-controlled AI newsletter service: sign-up with an email code, encrypted user data, prompt-injection guardrails, hourly free and premium newsletters, and GDPR deletion."
-  fr: "Service de newsletters IA piloté par chat : inscription par code e-mail, données utilisateur chiffrées, protections contre l'injection de prompts, newsletters gratuites et premium toutes les heures, et suppression RGPD."
+  en: "A personal AI newsletter you manage just by chatting with it: tell it what you care about and when, and every hour it searches the web, writes your newsletter in your preferred tone and emails it, while keeping your data encrypted and refusing attempts to hijack it."
+  fr: "Une newsletter IA personnelle qu'on gère simplement en lui parlant : dites-lui ce qui vous intéresse et quand, et chaque heure elle cherche sur le web, rédige votre newsletter dans le ton choisi et vous l'envoie, tout en chiffrant vos données et en refusant les tentatives de détournement."
 team:
   en: Solo
   fr: Seul
 context:
   en: Epitech project, 2nd year
   fr: Projet Epitech, 2e année
+contextText:
+  en: "The service has no web interface at all: everything, from sign-up to account deletion, happens in a conversation with AI agents. That made security and privacy the core of the design, since every message is untrusted input."
+  fr: "Le service n'a aucune interface web : tout, de l'inscription à la suppression du compte, se fait en conversation avec des agents IA. La sécurité et la vie privée sont donc au cœur de la conception, puisque chaque message est une entrée non fiable."
+contributions:
+  en:
+    - "A prompt-injection filter in front of the chat: an LLM guardrail plus a pattern score, before any agent sees the message"
+    - "Two agents, one for guests (sign up, log in) and one for signed-in users (topics, delivery hour, tier, account deletion), each action being a workflow the agent calls as a tool"
+    - "Sign-up with a 6-digit code sent by email, valid 5 minutes and checked with a signed token, so the code is never stored"
+    - "User data encrypted at rest, with the email also stored as a keyed hash so users can be found without decrypting anything, and GDPR deletion from the chat"
+    - "An hourly newsletter: web search on each user's topics, written by Mistral in HTML and sent by email, with a free tier and a premium tier (deeper search, larger model, custom tone and format)"
+  fr:
+    - "Un filtre anti-injection de prompt devant le chat : un garde-fou LLM plus un score de motifs, avant qu'un agent ne voie le message"
+    - "Deux agents, l'un pour les visiteurs (inscription, connexion), l'autre pour les utilisateurs connectés (sujets, heure d'envoi, offre, suppression du compte), chaque action étant un workflow que l'agent appelle comme un outil"
+    - "Inscription par un code à 6 chiffres envoyé par e-mail, valable 5 minutes et vérifié par un jeton signé, sans jamais stocker le code"
+    - "Données chiffrées au repos, avec l'e-mail aussi stocké sous forme de hash à clé pour retrouver un utilisateur sans rien déchiffrer, et suppression RGPD depuis le chat"
+    - "Une newsletter horaire : recherche web sur les sujets de chaque utilisateur, rédigée en HTML par Mistral et envoyée par e-mail, avec une offre gratuite et une offre premium (recherche plus poussée, modèle plus grand, ton et format personnalisés)"
+skills:
+  - { en: AI agents and tool calling, fr: Agents IA et appels d'outils }
+  - { en: Workflow automation, fr: Automatisation de workflows }
+  - { en: Privacy by design / GDPR, fr: Privacy by design / RGPD }
+  - { en: Prompt-injection defence, fr: Défense contre l'injection de prompt }
+  - { en: Web search for LLMs, fr: Recherche web pour LLM }
 tags:
   - n8n
-  - PostgreSQL
-  - Docker Compose
   - Mistral
   - Tavily
   - SMTP
