@@ -6,14 +6,18 @@ status: done
 featured: false
 order: 330
 summary:
-  en: "Isometric terrain editor: raise and lower points, resize the grid, zoom, textures by height."
-  fr: "Éditeur de terrain isométrique : monter et baisser des points, redimensionner la grille, zoomer, textures selon l'altitude."
+  en: "A small world editor in isometric 3D: sculpt the terrain by raising and lowering points, resize the grid, zoom around, and watch textures change with altitude."
+  fr: "Un petit éditeur de monde en 3D isométrique : sculpter le terrain en montant et descendant des points, redimensionner la grille, zoomer, et voir les textures changer avec l'altitude."
 team:
   en: 2 people
   fr: 2 personnes
 context:
   en: Epitech project, 1st year
   fr: Projet Epitech, 1re année
+skills:
+  - { en: "Isometric projection", fr: "Projection isométrique" }
+  - { en: "2D graphics", fr: "Graphisme 2D" }
+  - { en: "User interaction", fr: "Interaction utilisateur" }
 tags:
   - C
   - CSFML

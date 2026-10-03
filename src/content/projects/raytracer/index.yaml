@@ -6,14 +6,20 @@ status: done
 featured: false
 order: 300
 summary:
-  en: "Multithreaded CPU raytracer: libconfig scenes, shapes and lights as dlopen plugins, BVH, reflection and refraction, .obj import and progressive rendering."
-  fr: "Raytracer CPU multithreadé : scènes libconfig, formes et lumières en plugins dlopen, BVH, réflexion et réfraction, import .obj et rendu progressif."
+  en: "Photorealistic images computed from scratch on the CPU: light rays bounce, reflect and bend through glass in scenes described in a text file, with new shapes and lights added as plugins without recompiling, and the image sharpening progressively on screen while every core works on it."
+  fr: "Des images photoréalistes calculées de zéro sur le CPU : les rayons de lumière rebondissent, se reflètent et se courbent à travers le verre dans des scènes décrites dans un fichier texte, avec de nouvelles formes et lumières ajoutées en plugins sans recompiler, et l'image qui s'affine progressivement à l'écran pendant que tous les cœurs travaillent."
 team:
   en: 4 people
   fr: 4 personnes
 context:
   en: Epitech project, 2nd year
   fr: Projet Epitech, 2e année
+skills:
+  - { en: "3D rendering (ray tracing)", fr: "Rendu 3D (lancer de rayons)" }
+  - { en: "Plugin architecture", fr: "Architecture à plugins" }
+  - { en: "Multithreading", fr: "Multithreading" }
+  - { en: "Acceleration structures (BVH)", fr: "Structures d'accélération (BVH)" }
+  - { en: "Linear algebra", fr: "Algèbre linéaire" }
 tags:
   - C++20
   - CMake

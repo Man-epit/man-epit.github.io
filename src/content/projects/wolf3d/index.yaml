@@ -1,19 +1,24 @@
 slug: wolf3d
 title: wolf3d
-categories: [gfx]
+categories: [gfx, game]
 year: "2025"
 status: done
 featured: false
 order: 320
 summary:
-  en: Wolfenstein 3D-style raycasting engine with textured walls, 27 maps, a minimap and a small TCP relay server for multiplayer.
-  fr: "Moteur de raycasting façon Wolfenstein 3D : murs texturés, 27 cartes, minimap et petit serveur relais TCP pour le multijoueur."
+  en: "The 3D illusion of the 1992 classic Wolfenstein 3D, rebuilt from a flat 2D map with raycasting: textured walls, 27 levels, a minimap, and a small server to play with friends over the network."
+  fr: "L'illusion 3D du classique Wolfenstein 3D (1992), recréée à partir d'une carte 2D par raycasting : murs texturés, 27 niveaux, une minicarte, et un petit serveur pour jouer à plusieurs en réseau."
 team:
   en: 3 people
   fr: 3 personnes
 context:
   en: Epitech project, 1st year
   fr: Projet Epitech, 1re année
+skills:
+  - { en: "Raycasting", fr: "Raycasting" }
+  - { en: "Real-time rendering", fr: "Rendu temps réel" }
+  - { en: "Game loop", fr: "Boucle de jeu" }
+  - { en: "Network programming", fr: "Programmation réseau" }
 tags:
   - C
   - CSFML

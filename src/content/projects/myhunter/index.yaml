@@ -6,14 +6,18 @@ status: done
 featured: false
 order: 340
 summary:
-  en: Duck Hunt-style shooting game with animated birds, menu, pause and lives.
-  fr: Jeu de tir façon Duck Hunt avec oiseaux animés, menu, pause et vies.
+  en: "My first graphical game: a Duck Hunt-style shooter with animated birds, a menu, pause and lives."
+  fr: "Mon premier jeu graphique : un jeu de tir façon Duck Hunt avec oiseaux animés, menu, pause et vies."
 team:
   en: Solo
   fr: Seul
 context:
   en: Epitech project, 1st year
   fr: Projet Epitech, 1re année
+skills:
+  - { en: "Game loop", fr: "Boucle de jeu" }
+  - { en: "Sprite animation", fr: "Animation de sprites" }
+  - { en: "Event handling", fr: "Gestion des événements" }
 tags:
   - C
   - CSFML

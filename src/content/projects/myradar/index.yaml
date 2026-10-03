@@ -6,14 +6,18 @@ status: done
 featured: false
 order: 350
 summary:
-  en: "2D air-traffic simulation: aircraft and control towers read from a script and drawn at 60 FPS."
-  fr: "Simulation 2D de trafic aérien : avions et tours de contrôle lus depuis un script et affichés à 60 FPS."
+  en: "An air-traffic simulation: planes fly between airports from a script, control towers watch their zones, and planes that collide outside those zones are destroyed, all redrawn 60 times a second."
+  fr: "Une simulation de trafic aérien : des avions volent entre aéroports d'après un script, des tours de contrôle surveillent leurs zones, et les avions qui se percutent hors de ces zones sont détruits, le tout redessiné 60 fois par seconde."
 team:
   en: Solo
   fr: Seul
 context:
   en: Epitech project, 1st year
   fr: Projet Epitech, 1re année
+skills:
+  - { en: "Simulation", fr: "Simulation" }
+  - { en: "Collision detection", fr: "Détection de collisions" }
+  - { en: "Real-time rendering", fr: "Rendu temps réel" }
 tags:
   - C
   - CSFML

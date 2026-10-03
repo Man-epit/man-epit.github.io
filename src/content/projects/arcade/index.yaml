@@ -1,19 +1,23 @@
 slug: arcade
 title: arcade
-categories: [game]
+categories: [game, sys]
 year: "2026"
 status: done
 featured: false
 order: 310
 summary:
-  en: "Plugin-based game platform: games (Snake, Pac-Man, Pong, Space Invaders) and display backends loaded at runtime, with hot-swapping of the renderer."
-  fr: "Plateforme de jeux à plugins : jeux (Snake, Pac-Man, Pong, Space Invaders) et moteurs d'affichage chargés à l'exécution, avec changement de rendu à chaud."
+  en: "A retro arcade cabinet where games and graphics libraries are plugins: load Snake, Pac-Man, Pong or Space Invaders at runtime and switch the display between a terminal, SDL2 and SFML mid-game, without restarting."
+  fr: "Une borne d'arcade rétro où jeux et bibliothèques graphiques sont des plugins : lancer Snake, Pac-Man, Pong ou Space Invaders à la volée et passer l'affichage du terminal à SDL2 ou SFML en pleine partie, sans redémarrer."
 team:
   en: 3 people
   fr: 3 personnes
 context:
   en: Epitech project, 2nd year
   fr: Projet Epitech, 2e année
+skills:
+  - { en: "Plugin architecture (dynamic libraries)", fr: "Architecture à plugins (bibliothèques dynamiques)" }
+  - { en: "Interface design", fr: "Conception d'interfaces" }
+  - { en: "Object-oriented design (C++)", fr: "Conception orientée objet (C++)" }
 tags:
   - C++20
   - libdl
