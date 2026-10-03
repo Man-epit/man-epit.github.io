@@ -6,14 +6,19 @@ status: done
 featured: false
 order: 170
 summary:
-  en: "Concurrency exercise: one druid thread refills a shared potion pot for N villager threads, synchronised with a mutex and two semaphores."
-  fr: "Exercice de concurrence : un thread druide remplit une marmite de potion partagée par N threads villageois, synchronisés par un mutex et deux sémaphores."
+  en: "The classic producer–consumer problem, Asterix style: villagers keep drinking from a shared pot of magic potion while the druid refills it, and nobody may drink from an empty pot or refill a full one. Solved with threads, a mutex and semaphores, and tested across many configurations to rule out deadlocks."
+  fr: "Le problème classique du producteur-consommateur, version Astérix : les villageois boivent dans une marmite de potion magique partagée pendant que le druide la remplit, et personne ne doit boire dans une marmite vide ni remplir une marmite pleine. Résolu avec des threads, un mutex et des sémaphores, et testé sur de nombreuses configurations pour écarter tout interblocage."
 team:
   en: Solo
   fr: Seul
 context:
   en: Epitech project, 2nd year
   fr: Projet Epitech, 2e année
+skills:
+  - { en: "Multithreading", fr: "Multithreading" }
+  - { en: "Synchronisation (mutex, semaphores)", fr: "Synchronisation (mutex, sémaphores)" }
+  - { en: "Race conditions and deadlocks", fr: "Conditions de course et interblocages" }
+  - { en: "Concurrency testing", fr: "Tests de concurrence" }
 tags:
   - C
   - pthreads

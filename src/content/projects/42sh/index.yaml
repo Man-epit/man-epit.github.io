@@ -6,8 +6,8 @@ status: done
 featured: false
 order: 155
 summary:
-  en: "Unix shell in C modelled on tcsh: pipes, redirections, && / || / ; sequences, subshells, command substitution, variables, aliases, globbing, history and background jobs."
-  fr: "Shell Unix en C inspiré de tcsh : pipes, redirections, enchaînements && / || / ;, sous-shells, substitution de commandes, variables, alias, globbing, historique et jobs en arrière-plan."
+  en: "We rebuilt the Unix shell developers type into all day: a tcsh-compatible shell in C that turns each command line into a syntax tree and runs it, with pipes, redirections, subshells, variables, aliases, history and background jobs, checked output for output against the real tcsh."
+  fr: "Nous avons recréé le shell Unix que les développeurs utilisent toute la journée : un shell compatible tcsh en C qui transforme chaque ligne de commande en arbre syntaxique et l'exécute, avec pipes, redirections, sous-shells, variables, alias, historique et jobs en arrière-plan, vérifié sortie par sortie face au vrai tcsh."
 team:
   en: 4 people
   fr: 4 personnes
@@ -37,6 +37,12 @@ results:
     l:
       en: unit tests
       fr: tests unitaires
+skills:
+  - { en: "Process management (fork / exec)", fr: "Gestion de processus (fork / exec)" }
+  - { en: "Parsing / syntax trees", fr: "Parsing / arbres syntaxiques" }
+  - { en: "Job control and signals", fr: "Contrôle des jobs et signaux" }
+  - { en: "Inter-process communication", fr: "Communication inter-processus" }
+  - { en: "Testing against a reference implementation", fr: "Tests face à une implémentation de référence" }
 tags:
   - C
   - POSIX

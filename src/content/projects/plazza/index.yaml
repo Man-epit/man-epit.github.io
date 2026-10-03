@@ -6,14 +6,21 @@ status: done
 featured: false
 order: 160
 summary:
-  en: "Pizzeria simulator: a reception process forks kitchens on demand, each with a thread pool of cooks and a refilling stock, communicating over named pipes with a binary protocol."
-  fr: "Simulateur de pizzeria : la réception crée des cuisines (fork) à la demande, chacune avec un pool de threads cuisiniers et un stock qui se recharge, communiquant par tubes nommés avec un protocole binaire."
+  en: "A pizzeria that runs like a distributed system: the reception takes orders and opens new kitchens as separate processes when the load grows, each kitchen runs its cooks as threads sharing a refilling stock, and everything talks over named pipes with our own binary protocol."
+  fr: "Une pizzeria qui fonctionne comme un système distribué : l'accueil prend les commandes et ouvre de nouvelles cuisines, chacune dans son propre processus, quand la charge augmente ; chaque cuisine fait travailler ses cuisiniers en threads autour d'un stock qui se recharge, et tout communique par tubes nommés avec notre propre protocole binaire."
 team:
   en: 2 people
   fr: 2 personnes
 context:
   en: Epitech project, 2nd year
   fr: Projet Epitech, 2e année
+skills:
+  - { en: "Multi-process architecture", fr: "Architecture multi-processus" }
+  - { en: "Thread pools", fr: "Pools de threads" }
+  - { en: "Synchronisation", fr: "Synchronisation" }
+  - { en: "Inter-process communication (named pipes)", fr: "Communication inter-processus (tubes nommés)" }
+  - { en: "Load balancing", fr: "Répartition de charge" }
+  - { en: "Binary protocol design", fr: "Conception de protocole binaire" }
 tags:
   - C++20
   - std::thread
