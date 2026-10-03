@@ -6,11 +6,31 @@ status: done
 featured: false
 order: 90
 summary:
-  en: "Reinforcement-learning path: tabular Q-learning, a neural network in pure Python, then a DQN that drives a 2D race car with ray sensors and human demonstrations."
-  fr: "Parcours en apprentissage par renforcement : Q-learning tabulaire, réseau de neurones en Python pur, puis DQN qui pilote une voiture de course 2D avec capteurs à rayons et démonstrations humaines."
+  en: "My little personal lab to learn machine learning: I started with a simple Q-learning table, wrote a neural network and a Deep Q-Network in pure Python with no library, and ended with an agent that learns to drive a race car around a track, using virtual distance sensors and laps I drove myself."
+  fr: "Mon petit labo personnel pour apprendre le machine learning : j'ai commencé par une simple table de Q-learning, écrit un réseau de neurones et un Deep Q-Network en Python pur sans aucune bibliothèque, et fini par un agent qui apprend à piloter une voiture sur circuit, grâce à des capteurs de distance virtuels et à des tours que j'ai conduits moi-même."
+context:
+  en: Personal project
+  fr: Projet personnel
 team:
   en: Solo
   fr: Seul
+contextText:
+  en: "A personal project to understand reinforcement learning by building it step by step, each stage reusing what the previous one taught me."
+  fr: "Un projet personnel pour comprendre l'apprentissage par renforcement en le construisant étape par étape, chaque étape réutilisant ce que la précédente m'avait appris."
+contributions:
+  en:
+    - "Tabular Q-learning agent, to get the basics of rewards, exploration and value updates"
+    - "A neural network and a Deep Q-Network written in pure Python, with no library: forward pass, backpropagation and experience replay by hand"
+    - "A driving agent in TensorFlow/Keras: a 2D race car with ray sensors, trained with deep Q-learning and kick-started with laps I drove myself"
+  fr:
+    - "Agent de Q-learning tabulaire, pour comprendre les bases : récompenses, exploration et mise à jour des valeurs"
+    - "Un réseau de neurones et un Deep Q-Network écrits en Python pur, sans bibliothèque : propagation, rétropropagation et replay d'expérience à la main"
+    - "Un agent de conduite en TensorFlow/Keras : une voiture 2D avec capteurs à rayons, entraînée en deep Q-learning et amorcée avec des tours que j'ai conduits moi-même"
+skills:
+  - { en: Reinforcement learning, fr: Apprentissage par renforcement }
+  - { en: Neural networks from scratch, fr: Réseaux de neurones from scratch }
+  - { en: Deep Q-learning, fr: Deep Q-learning }
+  - { en: Imitation learning, fr: Apprentissage par imitation }
 tags:
   - Python
   - TensorFlow/Keras
