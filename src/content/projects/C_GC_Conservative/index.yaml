@@ -1,16 +1,24 @@
 slug: C_GC_Conservative
 title: C_GC_Conservative
-categories: [sys]
+categories: [sys, lang]
 year: "2025"
 status: done
 featured: false
 order: 180
 summary:
-  en: "Conservative mark-and-sweep garbage collector for C: scans the stack for roots, follows pointers through the heap and supports interior pointers."
-  fr: "Ramasse-miettes conservatif mark-and-sweep pour le C : parcourt la pile pour trouver les racines, suit les pointeurs dans le tas et gère les pointeurs internes."
+  en: "C has no garbage collector, so I wrote one: it finds the memory a program still uses by scanning the stack for anything that looks like a pointer, follows those pointers through the heap, and frees everything left unreached, with no change to the program's code."
+  fr: "Le C n'a pas de ramasse-miettes, alors j'en ai écrit un : il retrouve la mémoire encore utilisée en parcourant la pile à la recherche de tout ce qui ressemble à un pointeur, suit ces pointeurs à travers le tas, et libère tout ce qui n'est plus atteignable, sans modifier le code du programme."
+context:
+  en: Personal project
+  fr: Projet personnel
 team:
   en: Solo
   fr: Seul
+skills:
+  - { en: "Memory management", fr: "Gestion mémoire" }
+  - { en: "Garbage collection", fr: "Ramasse-miettes" }
+  - { en: "Low-level C", fr: "C bas niveau" }
+  - { en: "Pointer analysis", fr: "Analyse de pointeurs" }
 tags:
   - C
   - GNU C builtins

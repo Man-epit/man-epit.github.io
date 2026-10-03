@@ -6,14 +6,18 @@ status: done
 featured: false
 order: 190
 summary:
-  en: "Clone of Linux top: reads /proc and redraws the header (load, tasks, CPU, memory) and a process table every 3 s."
-  fr: "Clone de top : lit /proc et rafraîchit l'en-tête (charge, tâches, CPU, mémoire) et la table des processus toutes les 3 s."
+  en: "My own version of the Linux top command: it reads the kernel's live process data from /proc and redraws the system load, CPU, memory and the full process list every few seconds in the terminal."
+  fr: "Ma propre version de la commande Linux top : elle lit en direct les données des processus du noyau dans /proc et réaffiche toutes les quelques secondes la charge système, le CPU, la mémoire et la liste complète des processus dans le terminal."
 team:
   en: Solo
   fr: Seul
 context:
   en: Epitech project, 1st year
   fr: Projet Epitech, 1re année
+skills:
+  - { en: "Linux internals (/proc)", fr: "Fonctionnement interne de Linux (/proc)" }
+  - { en: "Process monitoring", fr: "Supervision de processus" }
+  - { en: "Terminal UI (ncurses)", fr: "Interface terminal (ncurses)" }
 tags:
   - C
   - ncurses

@@ -6,14 +6,18 @@ status: done
 featured: false
 order: 200
 summary:
-  en: Reimplementation of ls with -l -a -r -R -d -t, using only low-level system calls and a hand-written my_printf.
-  fr: Réimplémentation de ls avec -l -a -r -R -d -t, uniquement avec des appels système bas niveau et un my_printf maison.
+  en: "The ls command rebuilt from the ground up with only low-level system calls, down to my own printf: long format, hidden files, recursion, sorting by time and reverse order."
+  fr: "La commande ls reconstruite à partir de zéro avec uniquement des appels système bas niveau, jusqu'à mon propre printf : format long, fichiers cachés, récursion, tri par date et ordre inverse."
 team:
   en: Solo
   fr: Seul
 context:
   en: Epitech project, 1st year
   fr: Projet Epitech, 1re année
+skills:
+  - { en: "Unix file systems", fr: "Systèmes de fichiers Unix" }
+  - { en: "System calls", fr: "Appels système" }
+  - { en: "Unix permissions and metadata", fr: "Permissions et métadonnées Unix" }
 tags:
   - C
   - POSIX
