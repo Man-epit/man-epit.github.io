@@ -1,13 +1,13 @@
 slug: cvrie
 title: cvrie
-categories: [data]
+categories: [data, ai]
 year: "2026"
 status: done
 featured: false
 order: 120
 summary:
-  en: "Two medical ML studies: stroke classification on brain CT scans (PCA + SVM, grid-searched models) and clustering of patient testimonies (TF-IDF + NMF, t-SNE)."
-  fr: "Deux études de ML médical : classification d'AVC sur scanners cérébraux (PCA + SVM, modèles optimisés par grid search) et clustering de témoignages de patients (TF-IDF + NMF, t-SNE)."
+  en: "Can a model spot a stroke on a brain scan, or recognise an illness from how patients describe it? Two medical studies: a classifier that tells normal scans, bleeding and ischemic strokes apart on CT scans (89% accuracy), and an unsupervised model that groups a thousand patient testimonies into 12 pathologies."
+  fr: "Un modèle peut-il repérer un AVC sur un scanner, ou reconnaître une maladie à la façon dont les patients la décrivent ? Deux études médicales : un classifieur qui distingue scanners normaux, hémorragies et AVC ischémiques (89 % de précision), et un modèle non supervisé qui regroupe un millier de témoignages de patients en 12 pathologies."
 team:
   en: 2 people
   fr: 2 personnes
@@ -27,6 +27,13 @@ results:
     l:
       en: topic clusters from about 1,000 testimonies
       fr: thèmes extraits d'environ 1 000 témoignages
+skills:
+  - { en: Medical imaging, fr: Imagerie médicale }
+  - { en: Classification, fr: Classification }
+  - { en: Dimensionality reduction (PCA), fr: Réduction de dimension (ACP) }
+  - { en: NLP / topic modelling, fr: NLP / topic modelling }
+  - { en: Clustering, fr: Clustering }
+  - { en: Model evaluation, fr: Évaluation de modèles }
 tags:
   - Python
   - scikit-learn
