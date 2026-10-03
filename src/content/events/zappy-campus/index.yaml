@@ -9,12 +9,13 @@ format:
   en: End-of-2nd-year project
   fr: Projet de fin de 2e année
 summary:
-  en: "Ranked first on the campus for the 2nd-year final project: a networked survival game with a C++ server, Python AI players and a browser viewer."
-  fr: "Classé premier du campus au projet de fin de 2e année : un jeu de survie en réseau avec serveur C++, joueurs IA en Python et visualiseur navigateur."
+  en: "First of the campus for the end-of-2nd-year project: a networked simulation where autonomous AI agents cooperate and evolve, with a C++ server, an OpenGL client, and a bridge that opened the world to a VR headset, a web app and LLM agents."
+  fr: "Premiers du campus au projet de fin de 2e année : une simulation en réseau où des agents IA autonomes coopèrent et évoluent, avec un serveur C++, un client OpenGL et un bridge qui a ouvert ce monde à un casque VR, à une application web et à des agents LLM."
 tags:
   - C++20
+  - OpenGL
   - Python
-  - PixiJS
+  - Meta Quest 2
 media:
   - type: image   # placeholder, remove once real media is added
     src: placeholder.webp
@@ -26,8 +27,8 @@ media:
   - type: clip
     src: ""
     caption:
-      en: Game running with AI teams
-      fr: Partie en cours avec les équipes d'IA
+      en: Simulation running with AI agents
+      fr: Simulation en cours avec les agents IA
 related:
   - Zappy
 hide:

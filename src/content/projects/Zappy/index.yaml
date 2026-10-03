@@ -1,53 +1,65 @@
 slug: Zappy
 title: Zappy
-categories: [net]
+categories: [net, ai, llm]
 year: "2026"
 status: done
 featured: false
 order: 40
 summary:
-  en: "Networked survival game: a C++20 game server, autonomous Python AI players, a browser viewer in PixiJS and a mock server for testing."
-  fr: "Jeu de survie en réseau : serveur de jeu en C++20, joueurs IA autonomes en Python, visualiseur navigateur en PixiJS et faux serveur de test."
+  en: "A networked simulation where autonomous AI agents live, cooperate and evolve in a shared world. We designed the whole architecture around a strict protocol: a C++ server running the simulation, an OpenGL client to watch it and AI agents acting in it, then a bridge that opened the same world to a VR headset in augmented reality, a web app and LLM-driven agents with their own personalities."
+  fr: "Une simulation en réseau où des agents IA autonomes vivent, coopèrent et évoluent dans un monde partagé. Nous avons conçu toute l'architecture autour d'un protocole strict : un serveur C++ qui fait tourner la simulation, un client OpenGL pour l'observer et des agents IA qui y agissent, puis un bridge qui a ouvert ce même monde à un casque VR en réalité augmentée, à une application web et à des agents pilotés par des LLM, chacun avec sa personnalité."
 role: ""
-team: ""
+team:
+  en: 6 people
+  fr: 6 personnes
 context:
   en: End-of-2nd-year project
   fr: Projet de fin de 2e année
 contextText:
-  en: "Epitech's end-of-2nd-year project: AI teams must gather resources and cooperate to level up in a shared world run by a server."
-  fr: "Projet de fin de 2e année d'Epitech : des équipes d'IA doivent récolter des ressources et coopérer pour monter de niveau dans un monde partagé géré par un serveur."
+  en: "Epitech's end-of-2nd-year project, one month for a team of six. Behind it is a question that matters more and more in AI: letting agents learn and evolve in a simulation before they act in the real world. The challenge was to design an architecture solid enough to run that simulation, with every component following the same strict protocol."
+  fr: "Projet de fin de 2e année d'Epitech, un mois pour une équipe de six. Derrière, une question de plus en plus centrale en IA : laisser des agents apprendre et évoluer dans une simulation avant d'agir dans le monde réel. Le défi était de concevoir une architecture assez solide pour faire tourner cette simulation, avec des composants qui respectent tous le même protocole strict."
 contributions:
   en:
-    - Game server in C++20 on POSIX sockets with poll()
-    - Autonomous AI players in Python with asyncio
-    - Browser viewer with Node.js and PixiJS
-    - Mock server to test AI clients without the full game
+    - "Simulation server in C++20: a single-threaded event loop on poll(), a command queue per agent, time-scaled actions, every rule of the world enforced on the server side, and a written protocol specification (RFC)"
+    - "Graphical client in C++ with OpenGL (GLFW) that follows the simulation live"
+    - "Autonomous AI agents in Python: each one perceives its surroundings, decides on its own and coordinates with the others by broadcasting messages"
+    - "Bridge (bonus): a client that keeps a cached copy of the server state and serves it over HTTP, so any number of extra clients can follow the simulation without loading the server. It connected a Meta Quest 2 showing the world in augmented reality, and a web app for phone and PC"
+    - "LLM agents (bonus): language models connected through an API, with a personality system that shapes how each agent acts in the world"
+    - "A test server to try agents in isolation"
   fr:
-    - Serveur de jeu en C++20 sur sockets POSIX avec poll()
-    - Joueurs IA autonomes en Python avec asyncio
-    - Visualiseur navigateur en Node.js et PixiJS
-    - Faux serveur pour tester les IA sans le jeu complet
+    - "Serveur de simulation en C++20 : boucle d'événements mono-thread sur poll(), une file de commandes par agent, actions cadencées dans le temps, toutes les règles du monde appliquées côté serveur, et une spécification écrite du protocole (RFC)"
+    - "Client graphique en C++ avec OpenGL (GLFW) qui suit la simulation en direct"
+    - "Agents IA autonomes en Python : chacun perçoit son environnement, décide seul et se coordonne avec les autres en diffusant des messages"
+    - "Bridge (bonus) : un client qui garde en cache l'état du serveur et le sert en HTTP, pour que n'importe quel nombre de clients supplémentaires suive la simulation sans charger le serveur. Il a permis de connecter un Meta Quest 2 affichant le monde en réalité augmentée, et une application web pour téléphone et PC"
+    - "Agents LLM (bonus) : des modèles de langage connectés via une API, avec un système de personnalités qui façonne la manière dont chaque agent agit dans le monde"
+    - "Un serveur de test pour essayer les agents isolément"
+results:
+  - v:
+      en: 1st
+      fr: 1er
+    l:
+      en: of the campus
+      fr: du campus
 tags:
   - C++20
-  - POSIX sockets
-  - poll
-  - Python asyncio
+  - OpenGL
+  - GLFW
+  - Python
   - Node.js
+  - HTTP
   - PixiJS
-  - Criterion
+  - Meta Quest 2
+  - LLM API
+skills:
+  - { en: Software architecture, fr: Architecture logicielle }
+  - { en: Protocol design, fr: Conception de protocole }
+  - { en: Network programming, fr: Programmation réseau }
+  - { en: Multi-agent simulation, fr: Simulation multi-agents }
+  - { en: LLM agents, fr: Agents LLM }
+  - { en: AR / VR integration, fr: Intégration AR / VR }
 media:
   - type: image   # placeholder, remove once real media is added
     src: placeholder.webp
-  - type: clip
-    src: ""
-    caption:
-      en: Viewer recording with several AI teams playing
-      fr: Capture du visualiseur avec plusieurs équipes d'IA
-  - type: image
-    src: ""
-    caption:
-      en: Server / AI / viewer architecture
-      fr: Architecture serveur / IA / visualiseur
 collaborators:
   - Lucien Rivière
   - Quentin Taranne-Payet
