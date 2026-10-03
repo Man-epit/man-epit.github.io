@@ -6,14 +6,35 @@ status: done
 featured: false
 order: 130
 summary:
-  en: "SNCF train-delay project: data cleaning, exploratory analysis, delay and cancellation models, and a Streamlit dashboard."
-  fr: "Projet sur les retards SNCF : nettoyage des données, analyse exploratoire, modèles de retard et d'annulation, et tableau de bord Streamlit."
+  en: "Why are French trains late? Most of the work was on the data itself: we took a deliberately messy SNCF export, cleaned years of punctuality records route by route, and explored them until the patterns showed, from delay causes to the worst routes and the worst months. Prediction models and an interactive dashboard came on top of that groundwork."
+  fr: "Pourquoi les trains français sont-ils en retard ? L'essentiel du travail a porté sur les données : nous sommes partis d'un export SNCF volontairement sale, avons nettoyé des années de statistiques de ponctualité ligne par ligne, puis les avons explorées jusqu'à faire apparaître les tendances, des causes de retard aux pires lignes et aux pires mois. Les modèles de prédiction et le tableau de bord interactif sont venus ensuite, sur cette base."
 team:
   en: 3 people
   fr: 3 personnes
 context:
   en: Epitech project, 1st year
   fr: Projet Epitech, 1re année
+contextText:
+  en: "Epitech data-science project built on SNCF's monthly punctuality statistics, one row per month and per departure/arrival station pair. The export was made messy on purpose, so the first challenge was to trust the data before drawing any conclusion from it."
+  fr: "Projet de data science d'Epitech construit sur les statistiques mensuelles de ponctualité de la SNCF, une ligne par mois et par couple gare de départ / gare d'arrivée. L'export avait été volontairement abîmé : le premier défi était de pouvoir faire confiance aux données avant d'en tirer la moindre conclusion."
+contributions:
+  en:
+    - "Data cleaning: duplicates removed, broken dates repaired, negative and fractional train counts fixed, inconsistent delays dropped, station names normalised, missing values filled, and new columns (year, month, route, high-delay month) derived"
+    - "Exploratory analysis: scheduled vs cancelled trains month by month, how departure and arrival delays relate, the share of each delay cause, the 50 routes with the longest delays, breakdowns by month and day of the week, and how delays are distributed"
+    - "Models on the cleaned data: regressions (linear, decision tree, random forest) to predict average delays, and classifiers for the risk of at least one cancellation, compared with RMSE, R², accuracy and ROC AUC"
+    - "A multi-page Streamlit dashboard: key figures, monthly trends, a view per station pair, and a correlation heatmap of the delay causes"
+  fr:
+    - "Nettoyage des données : doublons supprimés, dates réparées, nombres de trains négatifs ou fractionnaires corrigés, retards incohérents écartés, noms de gares normalisés, valeurs manquantes complétées, et nouvelles colonnes (année, mois, ligne, mois à fort retard) calculées"
+    - "Analyse exploratoire : trains prévus et annulés mois par mois, lien entre retard au départ et à l'arrivée, part de chaque cause de retard, les 50 lignes les plus en retard, répartition par mois et par jour de la semaine, et distribution des retards"
+    - "Modèles sur les données nettoyées : régressions (linéaire, arbre de décision, forêt aléatoire) pour prédire les retards moyens, et classifieurs pour le risque d'au moins une annulation, comparés par RMSE, R², précision et ROC AUC"
+    - "Un tableau de bord Streamlit multi-pages : chiffres clés, tendances mensuelles, vue par couple de gares, et carte de corrélation des causes de retard"
+skills:
+  - { en: Data cleaning, fr: Nettoyage de données }
+  - { en: Exploratory data analysis, fr: Analyse exploratoire }
+  - { en: Data visualisation, fr: Visualisation de données }
+  - { en: Feature engineering, fr: Feature engineering }
+  - { en: Regression and classification, fr: Régression et classification }
+  - { en: Dashboarding, fr: Tableaux de bord }
 tags:
   - Python
   - pandas
