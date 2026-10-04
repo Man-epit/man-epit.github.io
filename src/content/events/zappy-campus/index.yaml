@@ -17,8 +17,11 @@ tags:
   - Python
   - Meta Quest 2
 media:
-  - type: image   # placeholder, remove once real media is added
-    src: placeholder.webp
+  - type: image
+    src: ai-simulation.webp
+    caption:
+      en: "AI agents learning in a simulated world (image: mikemacmarketing, CC BY 2.0)"
+      fr: "Des agents IA qui apprennent dans un monde simulé (image : mikemacmarketing, CC BY 2.0)"
   - type: image
     src: ""
     caption:

@@ -16,8 +16,11 @@ contextText: ""
 tags:
   - C++
 media:
-  - type: image   # placeholder, remove once real media is added
-    src: placeholder.webp
+  - type: image
+    src: ggj-logo.webp
+    caption:
+      en: Global Game Jam
+      fr: Global Game Jam
   - type: clip
     src: ""
     caption:

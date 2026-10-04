@@ -58,8 +58,11 @@ skills:
   - { en: LLM agents, fr: Agents LLM }
   - { en: AR / VR integration, fr: Intégration AR / VR }
 media:
-  - type: image   # placeholder, remove once real media is added
-    src: placeholder.webp
+  - type: image
+    src: ai-simulation.webp
+    caption:
+      en: "AI agents learning in a simulated world (image: mikemacmarketing, CC BY 2.0)"
+      fr: "Des agents IA qui apprennent dans un monde simulé (image : mikemacmarketing, CC BY 2.0)"
 collaborators:
   - Lucien Rivière
   - Quentin Taranne-Payet

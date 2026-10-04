@@ -6,14 +6,19 @@ status: done
 featured: false
 order: 370
 summary:
-  en: Ansible deployment of a 5-VM voting app (Flask poll, Redis, Java worker, PostgreSQL, Node result app) with Vault-encrypted secrets.
-  fr: Déploiement Ansible d'une application de vote sur 5 VM (sondage Flask, Redis, worker Java, PostgreSQL, résultats en Node) avec secrets chiffrés par Vault.
+  en: "One command to bring up a whole voting application spread across five servers: Ansible installs and configures every machine, from the web front-end to the database and the results page, with passwords kept encrypted."
+  fr: "Une seule commande pour déployer toute une application de vote répartie sur cinq serveurs : Ansible installe et configure chaque machine, du front web à la base de données et à la page de résultats, avec des mots de passe chiffrés."
 team:
   en: 2 people
   fr: 2 personnes
 context:
   en: Epitech project, 2nd year
   fr: Projet Epitech, 2e année
+skills:
+  - { en: "Infrastructure as code", fr: "Infrastructure as code" }
+  - { en: "Configuration management", fr: "Gestion de configuration" }
+  - { en: "Secrets management", fr: "Gestion des secrets" }
+  - { en: "Multi-service deployment", fr: "Déploiement multi-services" }
 tags:
   - Ansible
   - Vagrant
@@ -22,8 +27,11 @@ tags:
   - Redis
   - PostgreSQL
 media:
-  - type: image   # placeholder, remove once real media is added
-    src: placeholder.webp
+  - type: image
+    src: ansible-logo.webp
+    caption:
+      en: Deployed with Ansible
+      fr: Déployé avec Ansible
   - type: image
     src: ""
     caption:

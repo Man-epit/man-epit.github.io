@@ -20,6 +20,10 @@ const items = [['home', t.home, `/${lang}/`, ''], ['projects', t.projects, `/${l
   {description && <meta name="description" content={description} />}
   {LANGS.map((l) => <link rel="alternate" hreflang={l} href={swap(l)} />)}
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon-96.png" sizes="96x96" type="image/png" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" />

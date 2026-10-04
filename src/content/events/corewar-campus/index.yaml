@@ -17,8 +17,11 @@ tags:
   - Unity
   - VR
 media:
-  - type: image   # placeholder, remove once real media is added
-    src: placeholder.webp
+  - type: image
+    src: arena.webp
+    caption:
+      en: Each champion's code and process pointer in its colour
+      fr: Le code et le pointeur de chaque champion dans sa couleur
   - type: image
     src: ""
     caption:

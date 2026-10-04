@@ -16,8 +16,11 @@ summary:
   fr: J'ai apporté le regard technique d'Epitech à une équipe de design. Nous avons conçu une application pour les personnes en détresse, face à l'isolement croissant de ceux qui utilisent l'IA comme ami ou comme psy.
 contextText: ""
 media:
-  - type: image   # placeholder, remove once real media is added
-    src: placeholder.webp
+  - type: image
+    src: crealise-logo.webp
+    caption:
+      en: Crealise, digital school in La Réunion
+      fr: Crealise, école du numérique à La Réunion
   - type: image
     src: ""
     caption:
