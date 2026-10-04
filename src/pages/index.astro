@@ -1,9 +1,25 @@
 ---
 // Redirect / to /fr/ or /en/ depending on the browser language.
+import Favicons from '../components/Favicons.astro';
+import { getProfile, L } from '../lib';
+
+const profile = await getProfile();
 ---
 <!doctype html>
-<meta charset="utf-8" />
-<title>Manny Bray-Mahinc</title>
-<meta http-equiv="refresh" content="0;url=/en/" />
-<script is:inline>location.replace((navigator.language || '').toLowerCase().startsWith('fr') ? '/fr/' : '/en/');</script>
-<a href="/en/">English</a> · <a href="/fr/">Français</a>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{profile.name} Portfolio</title>
+  <meta name="description" content={L(profile.pitch, 'en')} />
+  <link rel="alternate" hreflang="en" href={new URL('/en/', Astro.site)} />
+  <link rel="alternate" hreflang="fr" href={new URL('/fr/', Astro.site)} />
+  <link rel="alternate" hreflang="x-default" href={new URL('/', Astro.site)} />
+  <Favicons />
+  <meta http-equiv="refresh" content="0;url=/en/" />
+  <script is:inline>location.replace((navigator.language || '').toLowerCase().startsWith('fr') ? '/fr/' : '/en/');</script>
+</head>
+<body>
+  <a href="/en/">English</a> · <a href="/fr/">Français</a>
+</body>
+</html>
