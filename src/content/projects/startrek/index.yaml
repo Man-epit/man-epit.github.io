@@ -3,7 +3,7 @@ title: startrek
 categories: [ai]
 year: "2026"
 status: done
-featured: true
+featured: false
 order: 60
 summary:
   en: Deep Q-Network written from scratch that learns to land in Gymnasium's LunarLander, with YAML configs, baselines and multi-seed experiments. Reaches an average return of about 240.

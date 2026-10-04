@@ -3,7 +3,7 @@ title: Zappy
 categories: [net, ai, llm]
 year: "2026"
 status: done
-featured: false
+featured: true
 order: 40
 summary:
   en: "A networked simulation where autonomous AI agents live, cooperate and evolve in a shared world. We designed the whole architecture around a strict protocol: a C++ server running the simulation, an OpenGL client to watch it and AI agents acting in it, then a bridge that opened the same world to a VR headset in augmented reality, a web app and LLM-driven agents with their own personalities."
