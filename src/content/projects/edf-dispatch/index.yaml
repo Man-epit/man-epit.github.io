@@ -8,11 +8,11 @@ status: delivered
 featured: false
 order: 360
 summary:
-  en: Tool that assigns field crews during cyclone crises. Cut processing time from 2–4 hours to 15–30 minutes.
-  fr: Outil d'affectation des équipes terrain pendant les crises cycloniques. Temps de traitement réduit de 2–4 heures à 15–30 minutes.
+  en: "An app to assign EDF's field crews in times of crisis, such as a cyclone hitting La Réunion. It brought the time needed to dispatch the crews from 2–4 hours down to 15–30 minutes."
+  fr: "Une application pour affecter les équipes terrain d'EDF en période de crise, comme lors du passage d'un cyclone à La Réunion. Elle a fait passer le temps de répartition des équipes de 2–4 heures à 15–30 minutes."
 role:
-  en: Data analyst & automation developer
-  fr: Data analyst & développeur automatisation
+  en: Automation developer
+  fr: Développeur automatisation
 team:
   en: EDF, 6 months
   fr: EDF, 6 mois
@@ -20,37 +20,34 @@ context:
   en: Internship at EDF
   fr: Stage chez EDF
 contextText:
-  en: During a cyclone, EDF has to decide quickly which crews go where. The assignment was done by hand and took hours.
-  fr: Pendant un cyclone, EDF doit décider vite quelle équipe part où. L'affectation se faisait à la main et prenait des heures.
+  en: "During a crisis such as a cyclone, every minute counts to get power back: EDF has to decide quickly which crew goes where."
+  fr: "En période de crise, comme lors d'un cyclone, chaque minute compte pour rétablir le courant : EDF doit décider vite quelle équipe part où."
 contributions:
   en:
-    - Analysed operational and financial data and proposed improvements to data collection
-    - Designed and built the crew-assignment tool in Svelte and Supabase
+    - Designed and built the crew-assignment app in Svelte and Supabase
   fr:
-    - Analyse des données opérationnelles et financières, avec des propositions pour améliorer leur collecte
-    - Conception et développement de l'outil d'affectation en Svelte et Supabase
+    - Conception et développement de l'application d'affectation en Svelte et Supabase
 results:
-  - v: 2–4h → 15–30min
+  - v:
+      en: 2–4 h to 15–30 min
+      fr: 2–4 h à 15–30 min
     l:
-      en: crew assignment time
-      fr: temps d'affectation des équipes
+      en: time to dispatch the crews
+      fr: temps de répartition des équipes
 tags:
   - Svelte
   - Supabase
-  - Data analysis
+skills:
+  - { en: Full-stack web, fr: Web full-stack }
+  - { en: Process automation, fr: Automatisation de processus }
+  - { en: Crisis operations tooling, fr: Outils de gestion de crise }
+  - { en: Database design, fr: Conception de base de données }
 media:
-  - type: image   # placeholder, remove once real media is added
-    src: placeholder.webp
   - type: image
-    src: ""
+    src: edf-logo.webp
     caption:
-      en: Anonymised screenshot (check with EDF first)
-      fr: Capture anonymisée (à valider avec EDF)
-  - type: image
-    src: ""
-    caption:
-      en: Before/after process diagram
-      fr: Schéma du processus avant/après
+      en: Internship at EDF
+      fr: Stage chez EDF
 hide:
   - links
 learned: ""
