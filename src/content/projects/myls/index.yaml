@@ -28,8 +28,3 @@ media:
     caption:
       en: my_ls with -l, -la, -R and -lt
       fr: my_ls avec -l, -la, -R et -lt
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/myls

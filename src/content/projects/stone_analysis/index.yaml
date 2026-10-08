@@ -26,10 +26,5 @@ media:
     caption:
       en: Top frequencies by FFT, then a message hidden and recovered
       fr: Fréquences dominantes par FFT, puis message caché et retrouvé
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/stone_analysis
 collaborators:
   - Lucien Rivière

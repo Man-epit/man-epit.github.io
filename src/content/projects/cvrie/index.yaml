@@ -60,10 +60,5 @@ media:
     caption:
       en: "Choosing K: elbow and silhouette"
       fr: "Choix de K : coude et silhouette"
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/cvrie
 collaborators:
   - Quentin Taranne-Payet

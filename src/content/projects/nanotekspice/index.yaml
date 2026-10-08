@@ -28,10 +28,5 @@ media:
     caption:
       en: "4-bit adder (4008): 11 + 6 = 17"
       fr: "Additionneur 4 bits (4008) : 11 + 6 = 17"
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/nanotekspice
 collaborators:
   - Nathaniel Leperlier

@@ -27,8 +27,3 @@ media:
     caption:
       en: Insert, search and delete in a 5-bucket table
       fr: Insertion, recherche et suppression dans une table à 5 alvéoles
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/secured

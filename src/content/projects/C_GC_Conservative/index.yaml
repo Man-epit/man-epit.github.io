@@ -28,8 +28,3 @@ media:
     caption:
       en: The int[50] block allocated on line 18 is freed once unreachable
       fr: Le bloc int[50] alloué ligne 18 est libéré une fois inaccessible
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/C_GC_Conservative

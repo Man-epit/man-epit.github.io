@@ -28,11 +28,6 @@ media:
     caption:
       en: Assembling a champion into .cor bytecode
       fr: Assemblage d'un champion en bytecode .cor
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/robot_factory
 collaborators:
   - Nathaniel Leperlier
 related:

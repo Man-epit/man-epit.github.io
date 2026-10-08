@@ -59,11 +59,6 @@ media:
     caption:
       en: "Admin view: users, offers, applications and national metrics"
       fr: "Vue administrateur : utilisateurs, offres, candidatures et métriques nationales"
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/Seminar
 collaborators:
   - Samuel Jaglale-Dalleau
   - Vincent

@@ -65,11 +65,6 @@ media:
     caption:
       en: Mean return over 5 seeds with 95% CI
       fr: Retour moyen sur 5 seeds avec IC à 95 %
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/startrek
 collaborators:
   - Quentin Taranne-Payet
 related:

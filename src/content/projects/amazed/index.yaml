@@ -28,11 +28,6 @@ media:
     caption:
       en: Six robots split across the two shortest paths
       fr: Six robots répartis sur les deux plus courts chemins
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/amazed
 collaborators:
   - Nathaniel Leperlier
   - Quentin Taranne-Payet

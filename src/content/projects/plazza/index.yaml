@@ -37,11 +37,6 @@ media:
     caption:
       en: "Kitchen status: cooks and ingredient stock"
       fr: "État des cuisines : cuisiniers et stock d'ingrédients"
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/plazza
 collaborators:
   - Arthur Girardin--Calbe
 related:

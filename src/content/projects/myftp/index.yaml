@@ -38,10 +38,5 @@ media:
     caption:
       en: Session with a standard ftp client
       fr: Session avec un client ftp standard
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/myftp
 related:
   - myteams

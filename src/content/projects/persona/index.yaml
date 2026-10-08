@@ -57,10 +57,5 @@ media:
     caption:
       en: Prompt-injection guardrails
       fr: Garde-fous contre l'injection de prompts
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/persona
 related:
   - codename

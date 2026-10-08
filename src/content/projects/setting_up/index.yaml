@@ -33,8 +33,3 @@ media:
     caption:
       en: Largest empty square found in a 34 × 90 map
       fr: Plus grand carré vide trouvé dans une carte 34 × 90
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/setting_up

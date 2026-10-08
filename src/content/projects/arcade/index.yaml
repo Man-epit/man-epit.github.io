@@ -40,11 +40,6 @@ media:
     caption:
       en: The same game on the ncurses backend
       fr: Le même jeu avec le rendu ncurses
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/arcade
 collaborators:
   - Nathaniel Leperlier
   - Quentin Taranne-Payet

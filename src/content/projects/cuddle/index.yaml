@@ -28,10 +28,5 @@ media:
     caption:
       en: Type inference, describe and groupby on a CSV
       fr: Inférence de types, describe et groupby sur un CSV
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/cuddle
 collaborators:
   - Quentin Taranne-Payet

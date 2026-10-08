@@ -32,8 +32,3 @@ media:
     caption:
       en: Simulation at 60 FPS
       fr: Simulation à 60 FPS
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/myradar

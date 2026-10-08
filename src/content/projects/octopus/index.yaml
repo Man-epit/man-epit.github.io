@@ -37,10 +37,5 @@ media:
     caption:
       en: Screenshot or short demo
       fr: Capture d'écran ou courte démo
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/octopus
 collaborators:
   - Théo Futol

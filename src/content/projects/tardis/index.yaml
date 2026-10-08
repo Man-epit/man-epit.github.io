@@ -63,11 +63,6 @@ media:
     caption:
       en: Average arrival delay by month
       fr: Retard moyen à l'arrivée par mois
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/tardis
 collaborators:
   - Quentin Taranne-Payet
   - Nathaniel Leperlier

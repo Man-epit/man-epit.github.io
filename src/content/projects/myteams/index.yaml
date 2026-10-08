@@ -35,11 +35,6 @@ media:
     caption:
       en: Server log and live notifications on both clients
       fr: Journal du serveur et notifications en direct sur les deux clients
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/myteams
 collaborators:
   - Quentin Taranne-Payet
   - Lucien Rivière

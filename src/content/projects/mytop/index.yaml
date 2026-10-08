@@ -28,8 +28,3 @@ media:
     caption:
       en: Header and process table read from /proc
       fr: En-tête et table des processus lus depuis /proc
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/mytop

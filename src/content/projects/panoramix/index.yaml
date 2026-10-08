@@ -29,10 +29,5 @@ media:
     caption:
       en: Druid and villagers sharing the potion pot
       fr: Le druide et les villageois se partagent la marmite
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/panoramix
 related:
   - plazza

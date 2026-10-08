@@ -56,10 +56,5 @@ media:
     caption:
       en: Verdict and model answer for each test
       fr: Verdict et réponse du modèle pour chaque test
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/codename
 related:
   - persona

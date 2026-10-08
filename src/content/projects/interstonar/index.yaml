@@ -33,8 +33,3 @@ media:
     caption:
       en: Local mode (sphere tracing) and global mode (N-body)
       fr: Mode local (sphere tracing) et mode global (N corps)
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/interstonar

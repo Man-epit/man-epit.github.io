@@ -46,10 +46,5 @@ media:
     caption:
       en: Track, checkpoints and ray sensors
       fr: Circuit, points de passage et capteurs
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/machine_learning
 related:
   - startrek

@@ -86,10 +86,6 @@ media:
       fr: "Capture vidéo : code → photo → note de l'IA"
 links:
   - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/Lego-ia-supabase
-  - label:
       en: Epitech article
       fr: Article Epitech
     url: https://www.epitech.eu/2025/10/10/defi-intelligence-artificielle-formation-epitech/

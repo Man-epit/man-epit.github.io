@@ -71,11 +71,6 @@ media:
     caption:
       en: Each champion's code and process pointer in its colour
       fr: Le code et le pointeur de chaque champion dans sa couleur
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/corewar
 collaborators:
   - Nathaniel Leperlier
 related:

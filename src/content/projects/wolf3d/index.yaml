@@ -33,11 +33,6 @@ media:
     caption:
       en: Textured walls and minimap
       fr: Murs texturés et minimap
-links:
-  - label:
-      en: Source code
-      fr: Code source
-    url: https://github.com/Man-epit/wolf3d
 collaborators:
   - Lucien Rivière
   - Quentin Taranne-Payet
