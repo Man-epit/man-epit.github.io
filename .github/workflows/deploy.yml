@@ -19,6 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # full history for the sitemap lastmod dates
       - uses: withastro/action@v3
         with:
           node-version: 24
