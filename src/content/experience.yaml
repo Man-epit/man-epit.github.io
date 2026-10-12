@@ -18,8 +18,8 @@
     en: Data analyst & automation developer
     fr: Data analyst & développeur automatisation
   note:
-    en: "Cyclone crew dispatch: <b>2–4h → 15–30min</b>"
-    fr: "Affectation des équipes cyclone : <b>2–4h → 15–30min</b>"
+    en: "Designed an internal crew dispatch tool (Svelte, Supabase) that cut team assignment during cyclone crises from <b>2–4 h to 15–30 min</b>; exploratory analysis of operational and financial data"
+    fr: "Conception d'un outil interne de répartition (Svelte, Supabase) qui réduit l'affectation des équipes en crise cyclonique de <b>2–4 h à 15–30 min</b> ; analyse exploratoire des données opérationnelles et financières"
 - id: work-seaview-2022-2024
   type: work
   when: 2022 – 2024
