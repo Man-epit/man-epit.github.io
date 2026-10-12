@@ -3,10 +3,13 @@
   when:
     en: 02/2026 – now
     fr: 02/2026 – auj.
-  org: Epitech
+  org: Epitech La Réunion
   role:
-    en: Teaching assistant
-    fr: Assistant pédagogique
+    en: Teaching assistant (AER)
+    fr: Assistant pédagogique (AER)
+  note:
+    en: "6-month internship, then part-time (2 days/week): supporting <b>100+ students</b> on their programming projects"
+    fr: "Stage de 6 mois, puis temps partiel (2 j/sem.) : accompagnement de <b>plus de 100 étudiants</b> sur leurs projets de programmation"
 - id: work-edf-07-2025-12-2025
   type: work
   when: 07/2025 – 12/2025
@@ -17,22 +20,73 @@
   note:
     en: "Cyclone crew dispatch: <b>2–4h → 15–30min</b>"
     fr: "Affectation des équipes cyclone : <b>2–4h → 15–30min</b>"
-- id: edu-epitech-2024-now
+- id: work-seaview-2022-2024
+  type: work
+  when: 2022 – 2024
+  org: Seaview & Villa Vanille
+  role:
+    en: Head waiter & bartender
+    fr: Chef de rang & barman
+  note:
+    en: From dishwasher to running a section, alongside my studies
+    fr: De la plonge à la responsabilité d'un rang, en parallèle de mes études
+- id: work-gaia-2019-2021
+  type: work
+  when: 2019 – 2021
+  org: Gaïa Groupe
+  role:
+    en: Warehouse assistant
+    fr: Assistant entrepôt
+  note:
+    en: First job at 15, an internship turned into two fixed-term contracts
+    fr: Premier emploi à 15 ans, un stage transformé en deux CDD
+- id: edu-epitech-paris-2028-2029
   type: edu
-  when:
-    en: 2024 – now
-    fr: 2024 – auj.
+  when: 2028 – 2029
+  org: Epitech Paris
+  role:
+    en: Programme Grande École, 5th year
+    fr: Programme Grande École, 5e année
+  note:
+    en: "Final year, leading to the <b>Expert en Technologies de l'Information</b> degree (Master's level)"
+    fr: "Dernière année, diplôme d'<b>Expert en Technologies de l'Information</b> (bac +5)"
+- id: edu-epitech-international-2027-2028
+  type: edu
+  when: 2027 – 2028
   org: Epitech
   role:
-    en: Programme Grande École, 3rd year
-    fr: Programme Grande École, 3e année
+    en: Programme Grande École, 4th year abroad
+    fr: Programme Grande École, 4e année à l'international
+  note:
+    en: Year of study at a partner university abroad
+    fr: Année d'études dans une université partenaire à l'étranger
+- id: edu-epitech-la-reunion-2024-2027
+  type: edu
+  when: 2024 – 2027
+  org: Epitech La Réunion
+  role:
+    en: Programme Grande École, years 1 to 3
+    fr: Programme Grande École, 1re à 3e année
+  note:
+    en: "Project-based learning, 30+ projects; <b>ranked 1st on campus</b> for Corewar (2025) and Zappy (2026)"
+    fr: "Pédagogie par projets, plus de 30 projets ; <b>1er du campus</b> sur Corewar (2025) et Zappy (2026)"
+- id: edu-ionis-stm-2026-2027
+  type: edu
+  when: 2026 – 2027
+  org: IONIS-STM
+  role:
+    en: Teaching & Coaching, level TC2 (in progress)
+    fr: Teaching & Coaching, niveau TC2 (en cours)
+  note:
+    en: IONIS Group certification for teaching assistants
+    fr: Formation certifiante des assistants pédagogiques du Groupe IONIS
 - id: edu-universite-de-la-re-union-2023-2024
   type: edu
-  when: 2023 – 2024
+  when: 09/2023 – 05/2024
   org: Université de La Réunion
   role:
-    en: Double degree, Maths & CS
-    fr: Double licence Maths-Info
+    en: Double degree, Maths & CS (1st year)
+    fr: Double licence Maths-Info (L1)
 - id: edu-baccalaure-at-ge-ne-ral-2023
   type: edu
   when: "2023"

@@ -69,7 +69,7 @@ const experience = defineCollection({
 
 const skills = defineCollection({
   loader: file('src/content/skills.yaml'),
-  schema: z.object({ group: text, items: z.array(z.string()) }),
+  schema: z.object({ group: text, items: z.array(z.union([z.string(), z.object({ name: text, project: z.string() })])) }),
 });
 
 const leadership = defineCollection({

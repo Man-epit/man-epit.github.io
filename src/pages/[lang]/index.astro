@@ -72,7 +72,7 @@ const github = profile.github.replace(/^https?:\/\//, '').replace(/\/$/, '');
 
   <section class="block" id="skills">
     <div class="shead"><h2>{t.skills}</h2></div>
-    <div class="skills">{skills.map(({ data: s }) => <div class="sk"><h3>{L(s.group, lang)}</h3><ul>{s.items.map((i) => <li>{i}</li>)}</ul></div>)}</div>
+    <div class="skills">{skills.map(({ data: s }) => <div class="sk"><h3>{L(s.group, lang)}</h3><ul>{s.items.map((i) => <li>{typeof i === 'string' ? i : <a href={`/${lang}/projects/${i.project}/`}>{L(i.name, lang)}</a>}</li>)}</ul></div>)}</div>
   </section>
 
   <section class="block" id="about">

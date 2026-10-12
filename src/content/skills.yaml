@@ -9,6 +9,7 @@
     - Python
     - JavaScript
     - Haskell
+    - { name: SQL, project: GeoEmploi }
 - id: embedded-systems
   group:
     en: Embedded & systems
@@ -20,6 +21,8 @@
     - pthreads
     - Linux /proc
     - systemd
+    - { name: OpenGL, project: Zappy }
+    - { name: { en: Computer vision, fr: Vision par ordinateur }, project: RoboCar }
 - id: ai-data
   group:
     en: AI & data
@@ -38,10 +41,16 @@
     fr: Web, DevOps & outils
   items:
     - Git
+    - { name: Docker, project: GeoEmploi }
     - Docker Compose
     - Ansible
     - GitHub Actions
+    - Jenkins
+    - { name: Bash, project: RoboCar }
     - Svelte
     - Supabase
     - FastAPI
+    - { name: Node.js/Express, project: Lego-ia-supabase }
+    - { name: PostgreSQL, project: GeoEmploi }
+    - { name: Redis, project: octopus }
     - n8n

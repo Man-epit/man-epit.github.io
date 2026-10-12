@@ -126,6 +126,8 @@ section.block{padding-block:56px 8px}
 .sk h3{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;color:var(--muted);margin-bottom:10px}
 .sk ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:6px}
 .sk li{font-size:14px;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:3px 9px}
+.sk li a{color:inherit;text-decoration:none}
+.sk li:has(a):hover{border-color:var(--accent)}
 
 /* two col */
 .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
