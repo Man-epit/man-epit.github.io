@@ -1,6 +1,12 @@
 ---
-// Icon links for every page, including the root redirect that search engines index.
+// Icon links and site identity for every page, including the root redirect that search engines index.
+import { getProfile } from '../lib';
+
+const { name } = await getProfile();
+const site = { '@context': 'https://schema.org', '@type': 'WebSite', name, url: Astro.site!.href };
 ---
+<script type="application/ld+json" set:html={JSON.stringify(site)} />
+<meta property="og:site_name" content={name} />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 <link rel="icon" href="/favicon-96.png" sizes="96x96" type="image/png" />
 <link rel="icon" href="/favicon.ico" sizes="48x48" />
