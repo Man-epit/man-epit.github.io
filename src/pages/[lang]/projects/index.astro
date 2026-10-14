@@ -14,7 +14,7 @@ const count = (k: keyof typeof CATEGORIES) => projects.filter((p) => p.data.cate
 const used = (Object.keys(CATEGORIES) as (keyof typeof CATEGORIES)[]).filter((k) => count(k));
 const chips: [string, string, number][] = [['all', t.all, projects.length], ...used.map((k): [string, string, number] => [k, catLabel(k, lang), count(k)])];
 ---
-<Base lang={lang} page="projects" title={t.projects}>
+<Base lang={lang} page="projects" title={t.projects} description={t.projIntro(projects.length)}>
   <div class="phead"><h1>{t.projects}</h1><p>{t.projIntro(projects.length)}</p></div>
   <div class="filters" role="group" aria-label={t.filterBy}>
     {chips.map(([k, label, n]) => <button type="button" class="chip" data-c={k} aria-pressed={k === 'all' ? 'true' : 'false'}>{label}<span class="n">{n}</span></button>)}

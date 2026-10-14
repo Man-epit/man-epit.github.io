@@ -21,6 +21,7 @@ const items = [['home', t.home, `/${lang}/`, ''], ['projects', t.projects, `/${l
   {description && <meta name="description" content={description} />}
   <link rel="canonical" href={new URL(path, Astro.site)} />
   {LANGS.map((l) => <link rel="alternate" hreflang={l} href={new URL(swap(l), Astro.site)} />)}
+  <link rel="alternate" hreflang="x-default" href={new URL(/^\/(en|fr)\/$/.test(path) ? '/' : swap('en'), Astro.site)} />
   <Favicons />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

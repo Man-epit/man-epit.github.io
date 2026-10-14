@@ -3,7 +3,7 @@
 import { Picture } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
 import Base from '../../layouts/Base.astro';
-import { getProfile } from '../../lib';
+import { getProfile, L } from '../../lib';
 import { UI, LANGS, type Lang } from '../../i18n/ui';
 
 export const getStaticPaths = () => LANGS.map((lang) => ({ params: { lang } }));
@@ -18,7 +18,7 @@ const pages = Object.entries(all)
   .filter(([n]) => n)
   .sort(([a], [b]) => a - b);
 ---
-<Base lang={lang} title="CV">
+<Base lang={lang} title="CV" description={L(profile.pitch, lang)}>
   <div class="crumb"><a href={`/${lang}/`}>← {t.home}</a></div>
   <div class="phead cvhead">
     <h1>CV</h1>

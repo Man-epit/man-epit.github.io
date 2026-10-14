@@ -40,7 +40,7 @@ export const GET: APIRoute = async ({ site }) => {
         '  <url>',
         `    <loc>${url(l, p.path)}</loc>`,
         ...LANGS.map((alt) => `    <xhtml:link rel="alternate" hreflang="${alt}" href="${url(alt, p.path)}"/>`),
-        `    <xhtml:link rel="alternate" hreflang="x-default" href="${url(LANGS[0], p.path)}"/>`,
+        `    <xhtml:link rel="alternate" hreflang="x-default" href="${p.path ? url(LANGS[0], p.path) : new URL('/', site).href}"/>`,
         `    <lastmod>${p.lastmod}</lastmod>`,
         `    <changefreq>${p.changefreq}</changefreq>`,
         `    <priority>${p.priority}</priority>`,
