@@ -1,0 +1,124 @@
+slug: Amiable
+title: Amiable
+categories: [web]
+year: "2026"
+status: done
+featured: false
+order: 40
+summary:
+  en: "A sovereign platform that follows court-ordered mediation and conciliation from the judge's order to the final agreement, connecting courts, the court of appeal, mediators, parties and lawyers while keeping everything said during the mediation out of the judge's reach."
+  fr: "Une plateforme souveraine qui suit les médiations et conciliations ordonnées par le juge, de l'ordonnance jusqu'à l'accord, en reliant juridictions, cour d'appel, médiateurs, parties et avocats, tout en gardant hors de portée du juge ce qui se dit pendant la médiation."
+team:
+  en: 6 people
+  fr: 6 personnes
+context:
+  en: Justice Tech 2026 hackathon (Track 2)
+  fr: Hackathon Justice Tech 2026 (piste 2)
+contextText:
+  en: "Built for the Justice Tech 2026 hackathon, on the circuit created by decree no. 2025-660: a judge orders a mediation or a conciliation, designates a mediator (or a mediation organisation), may order the parties to attend an information meeting, and must be told about absences, difficulties and the outcome, but never about what is said. The demo runs on data from La Réunion and Mayotte: 4 courts, 8 mediators and conciliators, 5 mediation organisations and 53 measures over 12 months."
+  fr: "Construit pendant le hackathon Justice Tech 2026, autour du circuit créé par le décret n° 2025-660 : le juge ordonne une médiation ou une conciliation, désigne un médiateur (ou une structure de médiation), peut enjoindre aux parties d'assister à une réunion d'information, et doit être informé des absences, des difficultés et de l'issue, jamais du contenu des échanges. La démonstration tourne sur des données de La Réunion et de Mayotte : 4 juridictions, 8 médiateurs et conciliateurs, 5 structures et 53 mesures sur 12 mois."
+contributions:
+  en:
+    - "Six roles with their own space: judge and clerk, court of appeal, mediator or conciliator, lawyer and party. The court side and the mediation side are separated on the server, so a judge never sees messages, documents or appointments, not even as an unread notification."
+    - "Order entry wizard: case number, judge, dispute, specialty and order PDF, then parties and lawyers, then the designation of a mediator or an organisation from a directory filtered by specialty, sector, practice and language, shown on an IGN map."
+    - "Legal deadlines computed per regime (civil mediation, conciliation, administrative courts, information meetings), with countdowns, 30-day alerts and extension requests the judge grants or refuses."
+    - "Scheduling: the mediator proposes slots on a calendar, parties and lawyers answer from their phone, slots turn green, red or grey with their status in words, and the chosen slot becomes an appointment with a pre-filled notice and an .ics file."
+    - "Confidential messaging and documents for each case, read-only once closed, with an access log showing who opened or downloaded what."
+    - "Court of appeal dashboard: every court of the district at a glance, compared statistics with CSV export, state of the mediator list and a coverage matrix by sector and specialty."
+    - "Closing: three outcomes (agreement, partial agreement, no agreement), end-of-mission report, electronic signature through Yousign, homologation once every party has consented, and automatic deletion of exchanges after a set retention period."
+    - "Sovereign by design: self-hosted, French government design system (DSFR), no external analytics or CDN, and a drafting assistant running on a local open model (Ollama)."
+  fr:
+    - "Six rôles avec chacun leur espace : magistrat et greffe, cour d'appel, médiateur ou conciliateur, avocat et partie. La zone juridiction et la zone médiation sont séparées côté serveur : un juge ne voit jamais les messages, documents ou rendez-vous, pas même sous forme de notification."
+    - "Saisie d'une ordonnance en plusieurs étapes : n° RG, magistrat, objet, spécialité et PDF de l'ordonnance, puis parties et avocats, puis désignation d'un médiateur ou d'une structure dans un annuaire filtré par spécialité, secteur, pratique et langue, affiché sur une carte IGN."
+    - "Délais légaux calculés selon le régime (médiation civile, conciliation, tribunal administratif, réunion d'information), avec compte à rebours, alertes à 30 jours et demandes de prolongation que le juge accorde ou refuse."
+    - "Prise de rendez-vous : le médiateur propose des créneaux sur un calendrier, parties et avocats répondent depuis leur téléphone, les créneaux passent au vert, au rouge ou au gris avec leur état écrit en toutes lettres, et le créneau retenu devient un rendez-vous avec convocation pré-remplie et fichier .ics."
+    - "Messagerie et documents confidentiels pour chaque dossier, en lecture seule après la clôture, avec un journal d'accès qui indique qui a consulté ou téléchargé quoi."
+    - "Tableau de bord de la cour d'appel : toutes les juridictions du ressort en un coup d'œil, statistiques comparées exportables en CSV, état de la liste des médiateurs et matrice de couverture par secteur et spécialité."
+    - "Clôture : trois issues (accord, accord partiel, absence d'accord), rapport de fin de mission, signature électronique via Yousign, homologation après consentement de chaque partie, et suppression automatique des échanges après une durée de conservation paramétrée."
+    - "Souverain dès la conception : auto-hébergé, Design System de l'État (DSFR), aucune mesure d'audience ni CDN externe, et un assistant de rédaction qui tourne sur un modèle ouvert en local (Ollama)."
+results:
+  - v: "6"
+    l:
+      en: roles, each with its own space
+      fr: rôles, chacun avec son espace
+  - v: "4"
+    l:
+      en: deadline regimes computed automatically
+      fr: régimes de délai calculés automatiquement
+  - v: "228"
+    l:
+      en: unit tests, plus Playwright end-to-end scenarios
+      fr: tests unitaires, plus des scénarios Playwright de bout en bout
+skills:
+  - { en: Full-stack web development, fr: Développement web full-stack }
+  - { en: Access control / privacy by design, fr: Contrôle d'accès / privacy by design }
+  - { en: Legal domain modelling, fr: Modélisation d'un domaine juridique }
+  - { en: Web accessibility (DSFR), fr: Accessibilité web (DSFR) }
+  - { en: Local LLM integration, fr: Intégration d'un LLM local }
+tags:
+  - Next.js
+  - TypeScript
+  - Prisma
+  - SQLite
+  - DSFR
+  - Leaflet
+  - Ollama
+  - Playwright
+media:
+  - type: clip
+    src: magistrat.mp4
+    caption:
+      en: "Judge: demo sign-in, dashboard, measures of the court and a case file"
+      fr: "Magistrat : connexion de démonstration, tableau de bord, mesures de la juridiction et fiche d'un dossier"
+  - type: clip
+    src: ordonnance.mp4
+    caption:
+      en: "Clerk: entering an order, from the order PDF to the parties and the designation step"
+      fr: "Greffe : saisie d'une ordonnance, du PDF de l'ordonnance aux parties et à l'étape de désignation"
+  - type: clip
+    src: annuaire-langue.mp4
+    caption:
+      en: "Mediator directory filtered by language, with mediators and organisations on the map"
+      fr: "Annuaire des médiateurs filtré par langue, avec praticiens et structures sur la carte"
+  - type: clip
+    src: cour-appel.mp4
+    caption:
+      en: "Court of appeal: district overview, compared statistics and the mediator list"
+      fr: "Cour d'appel : vue d'ensemble du ressort, statistiques comparées et état de la liste des médiateurs"
+  - type: clip
+    src: creneaux.mp4
+    caption:
+      en: "Mediator: proposing meeting slots on the calendar"
+      fr: "Médiateur : proposition de créneaux sur le calendrier"
+  - type: clip
+    src: avocat-mobile.mp4
+    caption:
+      en: "Lawyer on a phone: answering the proposed slots"
+      fr: "Avocat sur téléphone : réponse aux créneaux proposés"
+  - type: clip
+    src: rendez-vous.mp4
+    caption:
+      en: "Mediator: retaining a slot, which creates the appointment and its notice"
+      fr: "Médiateur : choix d'un créneau, qui crée le rendez-vous et sa convocation"
+  - type: clip
+    src: messagerie.mp4
+    caption:
+      en: "Confidential messaging, documents and access log of a case"
+      fr: "Messagerie confidentielle, documents et journal d'accès d'un dossier"
+  - type: clip
+    src: cloture.mp4
+    caption:
+      en: "Closing: Yousign signature form, homologation and the local drafting assistant"
+      fr: "Clôture : formulaire de signature Yousign, homologation et assistant de rédaction local"
+  - type: clip
+    src: profil-langues.mp4
+    caption:
+      en: "Mediator profile: choosing the languages offered to the parties"
+      fr: "Profil du médiateur : choix des langues proposées aux parties"
+related: [GeoEmploi]
+collaborators:
+  - Arthur Girardin--Calbe
+  - Théo Futol
+  - Quentin Taranne-Payet
+  - Julien Ferdinand
+  - Lucien Rivière

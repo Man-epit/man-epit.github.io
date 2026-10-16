@@ -1,0 +1,27 @@
+slug: justice-tech-2026
+name: Justice Tech 2026
+order: 80
+result:
+  en: Participant
+  fr: Participant
+when: 10/2026
+format:
+  en: Hackathon · team of 6
+  fr: Hackathon · équipe de 6
+role: ""
+summary:
+  en: "Track 2 of the Justice Tech 2026 hackathon: a tool to follow court-ordered mediation between courts, mediators, parties and lawyers. The team built Amiable, demonstrated on 13 October 2026."
+  fr: "Piste 2 du hackathon Justice Tech 2026 : un outil pour suivre les médiations ordonnées par le juge entre juridictions, médiateurs, parties et avocats. L'équipe a construit Amiable, présenté le 13 octobre 2026."
+media:
+  - type: image
+    src: amiable-slide.webp
+    caption:
+      en: "Amiable: title slide of the final pitch"
+      fr: "Amiable : diapositive de titre du pitch final"
+related: [Amiable]
+collaborators:
+  - Arthur Girardin--Calbe
+  - Théo Futol
+  - Quentin Taranne-Payet
+  - Julien Ferdinand
+  - Lucien Rivière
