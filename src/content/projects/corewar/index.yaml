@@ -3,7 +3,7 @@ title: Corewar
 categories: [lang, sys]
 year: "2025"
 status: done
-featured: true
+featured: false
 order: 50
 summary:
   en: "Programs fighting for control of a shared memory: we wrote the virtual machine that runs these battles, with its own instruction set and processes that fork, a shell to step through the fight, and a live 3D view of the memory, all the way to a VR headset. First of our campus."

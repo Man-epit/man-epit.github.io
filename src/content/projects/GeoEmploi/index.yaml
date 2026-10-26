@@ -3,7 +3,7 @@ title: GeoEmploi
 categories: [web]
 year: "2026"
 status: done
-featured: true
+featured: false
 order: 30
 summary:
   en: "A job board where the search starts from the map, built in one week for a demanding (fictional) ministry: government maps only, your location shared only if you agree and never more precisely than your town, fully usable without JavaScript, and everything self-hosted."

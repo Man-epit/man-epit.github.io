@@ -3,7 +3,7 @@ title: Amiable
 categories: [web]
 year: "2026"
 status: done
-featured: false
+featured: true
 order: 40
 summary:
   en: "A sovereign platform that follows court-ordered mediation and conciliation from the judge's order to the final agreement, connecting courts, the court of appeal, mediators, parties and lawyers while keeping everything said during the mediation out of the judge's reach."

@@ -64,7 +64,11 @@ const events = defineCollection({
 
 const experience = defineCollection({
   loader: file('src/content/experience.yaml'),
-  schema: z.object({ type: z.enum(['work', 'edu']), when: text, org: text, role: text, note: text.optional() }),
+  schema: z.object({
+    type: z.enum(['work', 'edu']), when: text, org: text, role: text, note: text.optional(),
+    // One line per year, for a long programme shown as a single entry.
+    years: z.array(z.object({ when: text, text })).optional(),
+  }),
 });
 
 const skills = defineCollection({

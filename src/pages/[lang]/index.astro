@@ -52,7 +52,8 @@ const github = profile.github.replace(/^https?:\/\//, '').replace(/\/$/, '');
       <div class="it"><div class="when">{L(x.when, lang)}</div>
         <div><span class:list={['kind', x.type]}>{x.type === 'edu' ? t.edu : t.work}</span>
         <h3>{L(x.org, lang)} <small>· {L(x.role, lang)}</small></h3>
-        {x.note && <ul><li set:html={L(x.note, lang)} /></ul>}</div></div>
+        {x.note && <ul><li set:html={L(x.note, lang)} /></ul>}
+        {x.years && <ul class="years">{x.years.map((y) => <li><span class="y">{L(y.when, lang)}</span><span set:html={L(y.text, lang)} /></li>)}</ul>}</div></div>
     ))}</div>
   </section>
 

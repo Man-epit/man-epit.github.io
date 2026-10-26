@@ -40,36 +40,37 @@
   note:
     en: First job at 15, an internship turned into two fixed-term contracts
     fr: Premier emploi à 15 ans, un stage transformé en deux CDD
-- id: edu-epitech-paris-2028-2029
+- id: edu-epitech-2024-2029
   type: edu
-  when: 2028 – 2029
-  org: Epitech Paris
-  role:
-    en: Programme Grande École, 5th year
-    fr: Programme Grande École, 5e année
-  note:
-    en: "Final year, leading to the <b>Expert en Technologies de l'Information</b> degree (Master's level)"
-    fr: "Dernière année, diplôme d'<b>Expert en Technologies de l'Information</b> (bac +5)"
-- id: edu-epitech-international-2027-2028
-  type: edu
-  when: 2027 – 2028
+  when: 2024 – 2029
   org: Epitech
   role:
-    en: Programme Grande École, 4th year abroad
-    fr: Programme Grande École, 4e année à l'international
+    en: Programme Grande École
+    fr: Programme Grande École
   note:
-    en: Year of study at a partner university abroad
-    fr: Année d'études dans une université partenaire à l'étranger
-- id: edu-epitech-la-reunion-2024-2027
-  type: edu
-  when: 2024 – 2027
-  org: Epitech La Réunion
-  role:
-    en: Programme Grande École, years 1 to 3
-    fr: Programme Grande École, 1re à 3e année
-  note:
-    en: "Project-based learning, 30+ projects; <b>ranked 1st on campus</b> for Corewar (2025) and Zappy (2026)"
-    fr: "Pédagogie par projets, plus de 30 projets ; <b>1er du campus</b> sur Corewar (2025) et Zappy (2026)"
+    en: "Project-based learning, 30+ projects, leading to the <b>Expert en Technologies de l'Information</b> degree (Master's level)"
+    fr: "Pédagogie par projets, plus de 30 projets, jusqu'au diplôme d'<b>Expert en Technologies de l'Information</b> (bac +5)"
+  years:
+    - when: 2024 – 2025
+      text:
+        en: "1st year, La Réunion: C and Unix fundamentals; <b>ranked 1st on campus</b> for Corewar"
+        fr: "1re année, La Réunion : fondamentaux du C et d'Unix ; <b>1er du campus</b> sur Corewar"
+    - when: 2025 – 2026
+      text:
+        en: "2nd year, La Réunion: object-oriented C++ and network programming; <b>ranked 1st on campus</b> for Zappy"
+        fr: "2e année, La Réunion : C++ orienté objet et programmation réseau ; <b>1er du campus</b> sur Zappy"
+    - when: 2026 – 2027
+      text:
+        en: "3rd year, La Réunion: in progress, ending with a 4-month internship from April 2027"
+        fr: "3e année, La Réunion : en cours, conclue par un stage de 4 mois à partir d'avril 2027"
+    - when: 2027 – 2028
+      text:
+        en: 4th year abroad, at a partner university
+        fr: 4e année à l'international, dans une université partenaire
+    - when: 2028 – 2029
+      text:
+        en: 5th year, Epitech Paris
+        fr: 5e année, Epitech Paris
 - id: edu-ionis-stm-2026-2027
   type: edu
   when: 2026 – 2027

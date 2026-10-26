@@ -1,11 +1,9 @@
-slug: edf-dispatch
-title:
-  en: Cyclone crew dispatch
-  fr: Affectation des équipes cyclone
+slug: cyclone
+title: Cyclone
 categories: [work]
 year: "2025"
 status: delivered
-featured: false
+featured: true
 order: 360
 summary:
   en: "An app to assign EDF's field crews in times of crisis, such as a cyclone hitting La Réunion. It brought the time needed to dispatch the crews from 2–4 hours down to 15–30 minutes."
